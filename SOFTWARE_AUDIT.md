@@ -1,6 +1,6 @@
 # Software audit
 
-Checked 2026-09-11 through public GitHub metadata and selected source inspection. Exact JSON records: [software_metadata.json](research/software_metadata.json), [asset_audit.json](research/asset_audit.json). A recent push is a maintenance signal, not a guarantee of support. No environment was installed and no upstream test or scientific reproduction was run.
+Checked 2026-09-11 through public GitHub metadata and selected source inspection. Exact JSON records: [software_metadata.json](research/software_metadata.json), [asset_audit.json](research/asset_audit.json). A recent push is a maintenance signal, not a guarantee of support. Subsequent EXP-002 validation used a project venv with the installed bundled NumPy; no upstream runtime or scientific reproduction ran. [Validation environment and evidence](experiments/EXP-002-validation.md).
 
 | Candidate | Pinned commit | License reported | Last push / inspection / decision |
 |---|---|---|---|
@@ -31,3 +31,7 @@ The two rate-limited records retain `unresolved` audit status even though their 
 Use independent interfaces for data loading, dynamics, interventions, task adapters, and evaluation. A loader returns stable IDs plus an oriented weighted graph and provenance. Dynamics expose reset/step/state/checkpoint. An intervention produces a graph and change manifest. A task supplies observations and chronological feedback. Evaluation owns splits, readout fitting, metrics, and resource accounting. These are requirements, not a chosen software framework.
 
 Start the selected pilot with Python, NumPy/SciPy, and a small deterministic runner in an isolated environment; freeze exact package versions after an installation smoke test on the target workstation. Do not provision body simulation, accelerator packages, or a database service merely to build the foundation.
+
+## EXP-002 validation implementation update
+
+The bounded implementation needs only NumPy, pinned to 2.3.5 in [requirements-validation.txt](requirements-validation.txt), and the Python standard library. It ran with CPython 3.12.14 in `.venv` using `--system-site-packages` to reuse the bundled dependency without modifying global packages. This is not evidence of a clean install on the colleague's PC. MATLAB, `octave` and `octave-cli` were absent from PATH; no matching installation was found in the common Program Files/tool directories inspected. This is a scoped availability check, not proof that no executable exists anywhere on disk. The author comparison is prepared; its numerical statements are preserved at the pinned hash. No author runtime was installed or executed. D016 skips the separate measured workstation pilot.

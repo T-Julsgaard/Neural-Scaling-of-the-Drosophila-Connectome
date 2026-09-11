@@ -42,10 +42,27 @@ def main():
     manifest = json.loads((ROOT / 'research/experiment_manifest.json').read_text(encoding='utf-8'))
     assert len(manifest['experiments']) == 3
     for e in manifest['experiments']:
-        if e['status'] != 'proposed' or e['runtime_measured'] or not (ROOT / e['spec']).is_file():
+        expected_status = 'validation' if e['id'] == 'EXP-002' else 'proposed'
+        if e['status'] != expected_status or e['runtime_measured'] or not (ROOT / e['spec']).is_file():
             errors.append('Invalid handoff state ' + e['id'])
         if set(e['source_ids']) - source_ids:
             errors.append('Unknown handoff source ' + e['id'])
+    validation = json.loads((ROOT / 'research/exp002_validation.json').read_text(encoding='utf-8'))
+    if validation['status'] != 'passed' or validation['failures'] or validation['skipped']:
+        errors.append('EXP-002 bounded validation did not fully pass')
+    if validation['development_blocks'] or validation['confirmation_blocks']:
+        errors.append('Unexpected EXP-002 scientific campaign')
+    if validation['author_code_reproduction'] != 'not_run' or validation['independent_reviewer'] != 'not_performed':
+        errors.append('Review/reproduction status changed; update the integrity contract explicitly')
+    for name, expected in validation['code_snapshot_sha256'].items():
+        if not (ROOT / name).is_file() or hashlib.sha256((ROOT / name).read_text(encoding='utf-8').encode('utf-8')).hexdigest() != expected:
+            errors.append('Stale EXP-002 validation snapshot: ' + name)
+    target = json.loads((ROOT / 'research/target_hardware.json').read_text(encoding='utf-8'))
+    if target['verified_on_target'] or target['target_access_performed'] or target['target_benchmarks']:
+        errors.append('Unexpected target execution claim')
+    for key, value in (('reported_ram_gb', 'ram_gb'), ('cpu', 'cpu'), ('gpu', 'gpu'), ('vram_gb', 'gpu_vram_gb')):
+        if manifest['target'][key] != target['reported'][value]:
+            errors.append('Target manifest disagrees with reported ' + value)
     report_path = ROOT / 'research/validation_report.json'
     # The generated report is a legitimate forward link while this script runs.
     docs = [p for p in ROOT.glob('*.md') if p.name not in ORIGINALS]
@@ -77,9 +94,12 @@ def main():
               'markdown_documents_checked': len(docs), 'local_links_checked': links,
               'bibliographic_sources': len(refs), 'experiment_specifications': 3,
               'original_sha256': hashes, 'scientific_experiments_run': 0,
+              'exp002_bounded_validation': validation['status'],
+              'exp002_validation_tests': validation['tests_run'],
+              'note': 'Zero scientific campaigns; bounded learning-rule and toy/episode checks ran separately',
               'limits': ['Does not verify remote URL availability', 'Does not run upstream code or neural models',
                          'Does not establish scientific reproduction or target hardware performance']}
-    report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+    report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n', encoding='utf-8', newline='\n')
     print(json.dumps({k: v for k, v in report.items() if k not in ('original_sha256', 'limits')}, ensure_ascii=True))
     raise SystemExit(bool(errors))
 

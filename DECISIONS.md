@@ -1,6 +1,6 @@
 # Decision record
 
-All entries dated 2026-09-11 unless superseded. User authorization covers the research foundation; experiments/platform construction are subsequent milestones.
+All entries dated 2026-09-11 unless superseded. Initial authorization covered the research foundation. The subsequent user request selects EXP-002 learning-rule validation and skips the measured workstation pilot (D016).
 
 | ID | Decision | Reason / evidence / reversal condition |
 |---|---|---|
@@ -19,5 +19,8 @@ All entries dated 2026-09-11 unless superseded. User authorization covers the re
 | D013 | No simulated results in the foundation | User scope ends at specifications; static source/data audits do not populate experimental outcomes |
 | D014 | Stop initial literature survey after revised shortlist and two further stable targeted rounds | Scoped completion in SEARCH_LOG; reopen on pilot/new evidence, not a claim of exhaustive discovery |
 | D015 | Do not choose a single biological sign/weight mapping for all datasets | Chemical label, receptor and effective weight differ; source assumptions must be explicit |
+| D016 | Select and execute bounded EXP-002 learning-rule validation; skip the measured workstation pilot | User's follow-up request supersedes D011's separate target-measurement prerequisite for this milestone and D013's earlier no-simulation scope. No development/confirmation campaign is included; future scientific runs retain environment/resource records |
+| D017 | Record the target as a colleague's PC with reported 64 GB RAM, RTX 5090 32 GB and Ryzen 7 9800X3D | [Hardware record](research/target_hardware.json). DDR4 report conflicts with AMD's DDR5 specification; preserve reported facts and unresolved verification separately. Current session is not evidence of target environment |
+| D018 | Keep R02's gate open after passing automated equation checks | No author runtime or independent reviewer available in this session. A distinct scalar Decimal oracle and analytic fixtures pass; this does not itself satisfy independent review or author execution. Prepare both review and runtime handoffs; no scientific interpretation yet |
 
 When reversing a decision, retain the original entry and add a dated superseding entry with evidence, affected experiments and next action.

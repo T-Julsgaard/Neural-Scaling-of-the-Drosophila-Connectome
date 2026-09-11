@@ -1,6 +1,6 @@
 # Shared benchmark and analysis contract — version 1
 
-Status: **specified, not executed**. This contract applies to the three [candidate experiments](EXPERIMENTS.md). Numerical thresholds are prospective project decisions, not established biological thresholds.
+Status: **scientific protocol specified; bounded EXP-002 implementation checks executed**. No development or confirmation campaign has run. This contract applies to the three [candidate experiments](EXPERIMENTS.md). Numerical thresholds are prospective project decisions, not established biological thresholds. D016 changes the EXP-002 hardware-pilot workflow, not its hypothesis, selection budget, metrics or confirmation seeds.
 
 ## Claims and resource matching
 
@@ -13,7 +13,7 @@ Record N (modeled neural units), E (distinct directed weighted pairs), S (sum of
 
 ## Randomness and data separation
 
-Use NumPy `Generator(PCG64)` with an explicit version in the future environment lock. Derive streams using `SeedSequence([experiment_number, stage_code, block_seed, replicate, component])`; stage codes: 0 validation, 1 development, 2 confirmation. Component codes: 1 graph, 2 stimulus/prototype, 3 observation noise, 4 outcome table, 5 action uniforms, 6 weight initialization, 7 bootstrap. Pair stimulus, outcome-table and action-uniform streams across arms. Each learner sees only the outcome of its own chosen action; pairing does not expose unchosen rewards.
+Use NumPy `Generator(PCG64)` with an explicit version in the environment lock (bounded validation uses NumPy 2.3.5). Derive streams using `SeedSequence([experiment_number, stage_code, block_seed, replicate, component])`; stage codes: 0 validation, 1 development, 2 confirmation. Component codes: 1 graph, 2 stimulus/prototype, 3 observation noise, 4 outcome table, 5 action uniforms, 6 weight initialization, 7 bootstrap. Pair stimulus, outcome-table and action-uniform streams across arms. Each learner sees only the outcome of its own chosen action; pairing does not expose unchosen rewards. The current runner handles one validation episode per family/seed. Its independent A/B probe stream extends component 3 with `[32, current_trial, round(sigma*1000)]`; a future multi-episode runner must document episode-specific derivation before development begins.
 
 Development block seeds: 100–109. Confirmation block seeds: 1000–1019. Five validation seeds: 0–4. Never reuse confirmation seeds for configuration selection. A block is an independent task/input and randomness bundle, **not an independent animal**. Graph variants within a block are nested replicates, not extra independent biological samples. Fixed reference anatomy remains one specimen or consensus circuit.
 
@@ -61,4 +61,4 @@ Every future completed block writes an atomic checkpoint containing configuratio
 
 ## Target-machine gate
 
-The user reports a separate 64 GB workstation. GPU model, VRAM, free storage, OS/Python/driver versions remain unknown. The current session GPU is not the target. Before any execution estimate is promoted to a commitment, capture target specifications and time a validation block with measured peak RAM. All three candidates have CPU-first designs; none assumes a particular GPU. If measured memory exceeds 16 GB for a pilot or runtime extrapolates above seven days, first stream matrices/reduce parallelism and inspect the algorithm. Any scientific reduction in seeds, tasks or controls requires a recorded protocol revision **before** confirmation. A longer run can be justified; paid compute requires a measured limitation and explicit benefit/cost proposal.
+The user reports a colleague's 64 GB PC with RTX 5090 32 GB and Ryzen 7 9800X3D. Memory type, free storage and OS/Python/driver versions remain unverified; [hardware provenance](research/target_hardware.json) preserves the DDR4/DDR5 discrepancy. The current session is not the verified target. **The user skipped the separate measured workstation pilot for EXP-002 (D016).** No target benchmark is required for this bounded validation milestone, and no timings are promoted to commitments. Future scientific runs still record their actual environment and resource counters. All three candidates have CPU-first designs. If a future run exceeds 16 GB memory or projects above seven days, first stream matrices/reduce parallelism and inspect the algorithm. Any scientific reduction in seeds, tasks or controls requires a recorded protocol revision **before** confirmation. Paid compute requires a measured limitation and explicit benefit/cost proposal.

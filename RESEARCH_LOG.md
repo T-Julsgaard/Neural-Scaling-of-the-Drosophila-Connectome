@@ -1,5 +1,19 @@
 # Research log
 
+## 2026-09-11 — EXP-002 bounded learning-rule validation
+
+**Request:** continue with EXP-002 learning-rule validation and skip the measured workstation pilot. The target is a colleague's PC, reported as 64 GB DDR4 RAM, RTX 5090 32 GB and Ryzen 7 9800X3D. Recorded those facts as user-reported, with the DDR4/AMD-DDR5 discrepancy unresolved. No target hardware probe or benchmark ran.
+
+**Implemented:** NumPy float64 frozen/reward-only/feedback/delta rules; hash-checked D05 40-PN/73-mature-KC loader and sparse encoder; a validation-only chronological episode for both task families; chosen-action-only updates; copied-state A/B probes; atomic, digest-checked episode checkpoints; 256 supplied 20-KC/two-cue equation fixture; a separate scalar Decimal oracle and analytic/toy checks. Added bounded source recovery, source-preserving MATLAB harness preparation and an explicit trace comparator. Dependencies are recorded for CPython 3.12.14/NumPy 2.3.5; the local venv reuses bundled packages and is not a target clean-install test.
+
+**Results:** Thirteen automated tests passed. Maximum equation-trace error was 4.44e-16 versus the 1e-10 tolerance; feedback/delta rate matching agreed exactly on 166 eligible supplied-trace steps; 60 checkpoint restore points matched full state and scalar traces. Probe nonmutation, chronology, hash/orientation/normalization, sparse ties, numerical guards, deterministic toy reversal and shuffled-reward controls passed. These are implementation checks on validation data, not H2 findings, biological evidence or a floor/ceiling assessment. The initial CSV newline error was repaired and all checks rerun.
+
+**Gate and limits:** MATLAB/Octave was not found in the inspected locations. The author wrapper preserves the original DAN/eq8 section and uses a 257th sentinel because the source omits its last update; it has not executed. No independent person/agent reviewed the equation adaptation. R02's automated checks pass, while its independent-review/author-runtime gate remains open. No development/confirmation blocks, full published reproduction, GPU benchmark or paid compute ran. The full campaign runner, statistical analysis and resource accounting remain future work.
+
+**Evidence:** [validation handoff](experiments/EXP-002-validation.md), [machine-readable results](research/exp002_validation.json), [target report](research/target_hardware.json), D016–D018. The two original documents remain unchanged.
+
+**Next concrete action:** independent review of the equation adaptation or execution of the prepared author trace, followed by development-only assay implementation. Skip the separate workstation pilot as requested.
+
 ## 2026-09-11 — Foundation implementation
 
 **Request:** implement the approved research foundation, preserving an open branch portfolio and stopping before experimental-platform construction or simulations. Read the initial prompt before the master brief; treat document recommendations as material to assess. Target the separate 64 GB workstation, not this session's GPU.

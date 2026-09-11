@@ -1,14 +1,14 @@
 # Neural Scaling of the Drosophila Connectome
 
-**Research foundation • 11 September 2026 • no scientific experiments run.**
+**EXP-002 validation implementation • 11 September 2026 • no development or confirmation campaign run.**
 
-We investigate which changes to a Drosophila-derived neural system improve computational or adaptive capabilities, and whether biological organization gives an advantage over suitable alternatives. The foundation contains a dated research synthesis, a 70-source bibliography, source/data audits, competing branches, and three detailed experiment handoffs. It does not contain a simulator or experimental results.
+We investigate which changes to a Drosophila-derived neural system improve computational or adaptive capabilities, and whether biological organization gives an advantage over suitable alternatives. The foundation contains a dated research synthesis, a 70-source bibliography, source/data audits, competing branches, and three detailed experiment handoffs. A small CPU-only EXP-002 implementation now passes bounded equation, data, toy-learning and episode-state checks. There are no scientific hypothesis results.
 
-Start with [STATE_OF_ART.md](STATE_OF_ART.md) for the evidence and [RESEARCH_BRANCHES.md](RESEARCH_BRANCHES.md) for the resulting choices. The recommended next milestone is validation for [EXP-002: fixed-wiring adaptation](experiments/EXP-002.md). [EXP-001: intrinsic capacity](experiments/EXP-001.md) is an independent alternative. [EXP-003: structured growth](experiments/EXP-003.md) reuses the validated learning assay.
+Start with the [EXP-002 validation handoff](experiments/EXP-002-validation.md) for commands, measured check results and remaining gates. [STATE_OF_ART.md](STATE_OF_ART.md) and [RESEARCH_BRANCHES.md](RESEARCH_BRANCHES.md) retain the research context. EXP-002 is selected; R02 automated adaptation checks pass, but independent review or author-runtime comparison remains open. [EXP-001: intrinsic capacity](experiments/EXP-001.md) is an independent alternative. [EXP-003: structured growth](experiments/EXP-003.md) requires a validated and scientifically usable learning assay.
 
 ```mermaid
 flowchart LR
-    A[Verified research foundation] --> B[Selected reproduction and pilot]
+    A[Verified research foundation] --> B[Selected learning-rule validation]
     B --> C[Reusable experimental pipeline]
     C --> D[Controlled growth or alternative branch]
     D --> E[Adult and cross-dataset validation]
@@ -43,7 +43,7 @@ The source inspection pinned 11 repository commits and checked small data inputs
 
 The learning/growth handoffs use a 73-mature-KC larval-derived feature circuit with two synthetic output units. The capacity handoff uses a tiny tiled visual graph. Their limits are deliberate: neither directly tests adult whole-brain scaling. A later adult/cross-dataset validation is required before that interpretation.
 
-The target is the user's separate 64 GB workstation. Its exact GPU/VRAM, storage and software environment are not yet verified. Resource estimates in the specs are analytical envelopes; no timings or performance outcomes have been measured. All three candidates are CPU-first and require a measured validation block before scheduling.
+The intended target is a colleague's PC: user-reported 64 GB RAM, RTX 5090 with 32 GB VRAM, and Ryzen 7 9800X3D. The reported DDR4 memory conflicts with AMD's DDR5 specification; actual memory type, OS, storage and software remain unverified. See the [hardware record](research/target_hardware.json). The user explicitly skipped the measured workstation pilot. Validation checks ran in this session's environment; no target benchmark or runtime estimate has been measured, and no GPU is required for this milestone.
 
 ## Session protocol
 
@@ -53,7 +53,7 @@ At start, read this page, ROADMAP, DECISIONS, OPEN_QUESTIONS and the latest RESE
 
 With Python available, run `python tools/validate_foundation.py` for offline record/link/hash checks. `python tools/inspect_reference_data.py` additionally requires the ignored source cache, recoverable by the bounded public download tools. `audit_public_sources.py` and `audit_research_assets.py` require public network access and inspect upstream material without executing it. `refresh_bibliography.py` verifies DOI metadata and regenerates readable/BibTeX views. These are research-record tools, not an experimental platform.
 
-On the actual Windows experiment workstation, [collect_target_hardware.ps1](tools/collect_target_hardware.ps1) can capture CPU/RAM/GPU/VRAM, disk space and basic software information. It has not been run on the target; its output still requires identifying the machine as the intended workstation.
+The optional [collect_target_hardware.ps1](tools/collect_target_hardware.ps1) remains available for a future Windows target. It has not been run on the colleague's PC and is not a prerequisite for these bounded validation checks.
 
 ## Foundation acceptance record
 
@@ -67,4 +67,4 @@ On the actual Windows experiment workstation, [collect_target_hardware.ps1](tool
 | Evidence-based progression and stop conditions | ROADMAP and per-experiment decision rules |
 | Search stopping condition | Two post-revision targeted rounds without shortlist-changing evidence; scope and gaps documented |
 
-The research foundation is ready for selection of a reproduction/pilot. Its open questions are explicit handoff limits, not completed experiments or a guarantee of originality.
+The foundation remains intact. EXP-002 is now in validation, with evidence and limits recorded in the handoff. Next: review the equation adaptation independently or run the prepared author comparison; then implement development-only assay evaluation without a separate workstation pilot.

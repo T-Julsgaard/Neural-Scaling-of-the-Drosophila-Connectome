@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-09-11",
+  "machine_relationship": "colleague_pc_intended_for_future_experiments",
+  "source": "user_report_in_followup_request",
+  "reported": {
+    "ram_gb": 64,
+    "ram_type": "DDR4",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "gpu_vram_gb": 32,
+    "cpu": "AMD Ryzen 7 9800X3D"
+  },
+  "verified_on_target": false,
+  "target_access_performed": false,
+  "measured_pilot": "skipped_by_explicit_user_request",
+  "os": null,
+  "free_storage_gb": null,
+  "python_version": null,
+  "gpu_driver_version": null,
+  "memory_type_discrepancy": {
+    "reported": "DDR4",
+    "cpu_manufacturer_supported_type": "DDR5",
+    "source_url": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+    "checked_date": "2026-09-11",
+    "status": "unresolved; likely report typo, actual hardware not inspected"
+  },
+  "current_validation_environment_is_target": false,
+  "target_benchmarks": [],
+  "gpu_required_for_learning_rule_validation": false
+}

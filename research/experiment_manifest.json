@@ -1,12 +1,12 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "date": "2026-09-11",
   "purpose": "handoff index, not executable runtime configuration",
   "scientific_experiments_completed": 0,
-  "target": {"reported_ram_gb": 64, "gpu": null, "vram_gb": null, "free_storage_gb": null, "environment_verified": false},
+  "target": {"relationship": "colleague_pc", "reported_ram_gb": 64, "reported_ram_type": "DDR4", "ram_type_verified": false, "cpu": "AMD Ryzen 7 9800X3D", "gpu": "NVIDIA GeForce RTX 5090", "vram_gb": 32, "free_storage_gb": null, "environment_verified": false, "specification_source": "user_report", "measured_pilot": "skipped_by_user", "record": "research/target_hardware.json"},
   "experiments": [
     {"id": "EXP-001", "status": "proposed", "spec": "experiments/EXP-001.md", "branch": "B4", "rank": 2, "source_ids": ["S63", "S15", "S16", "S67"], "validation": ["R01"], "primary_margin": 0.02, "primary_interval_percent": 98.33, "confirmation_blocks": 20, "nested_graph_replicates": 3, "peak_ram_gb_estimate": 8, "retained_storage_gb_cap": 5, "runtime_measured": false},
-    {"id": "EXP-002", "status": "proposed", "spec": "experiments/EXP-002.md", "branch": "B1", "rank": 1, "source_ids": ["S64", "S10", "S45", "S68"], "validation": ["R02"], "primary_margin": 0.05, "primary_interval_percent": 98.33, "confirmation_blocks": 20, "episodes_per_block": 20, "trials_per_episode": 384, "kc_count": 73, "synthetic_outputs": 2, "peak_ram_gb_estimate": 2, "retained_storage_gb_cap": 2, "runtime_measured": false},
+    {"id": "EXP-002", "status": "validation", "spec": "experiments/EXP-002.md", "branch": "B1", "rank": 1, "source_ids": ["S64", "S10", "S45", "S68"], "validation": ["R02"], "validation_report": "research/exp002_validation.json", "automated_checks": "passed", "r02_gate": "independent_review_or_author_runtime_pending", "development_blocks_completed": 0, "confirmation_blocks_completed": 0, "measured_pilot": "skipped_by_user", "primary_margin": 0.05, "primary_interval_percent": 98.33, "confirmation_blocks": 20, "episodes_per_block": 20, "trials_per_episode": 384, "kc_count": 73, "synthetic_outputs": 2, "peak_ram_gb_estimate": 2, "retained_storage_gb_cap": 2, "runtime_measured": false},
     {"id": "EXP-003", "status": "proposed", "spec": "experiments/EXP-003.md", "branch": "B3", "rank": 3, "source_ids": ["S64", "S12", "S13", "S14", "S20", "S68"], "validation": ["R03", "validated_EXP-002_assay"], "primary_margin": 0.05, "primary_interval_percent": 98.33, "confirmation_blocks": 20, "nested_graph_replicates": 3, "kc_sizes": [73, 80, 91, 110, 146], "primary_kc_size": 110, "peak_ram_gb_estimate": 4, "retained_storage_gb_cap": 10, "runtime_measured": false}
   ]
 }
