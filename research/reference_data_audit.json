@@ -1,0 +1,2358 @@
+{
+  "checked_at": "2026-09-11",
+  "kind": "static_input_audit_not_experiment",
+  "source_id": "S64",
+  "csv_member": "connectivity matrix table 1.csv",
+  "csv_sha256": "b9d06b052b0c4b91a7221b3dde9552b670bb81c034d0d3ed7fdb5e4a3b2cfc4b",
+  "neurons": 387,
+  "orientation": "row presynaptic, column postsynaptic; publication convention",
+  "id_rule": "matrix:<zero-based index> for verified PN/KC/MBON subset only; other row/column positions can differ",
+  "row_column_label_mismatches": [
+    {
+      "index": 307,
+      "row_label": "OAN-a1",
+      "column_label": "MBIN-e1 left"
+    },
+    {
+      "index": 308,
+      "row_label": "OAN-a2",
+      "column_label": "MBIN-e1 right"
+    },
+    {
+      "index": 309,
+      "row_label": "MBIN-b1 left",
+      "column_label": "OAN-a1"
+    },
+    {
+      "index": 310,
+      "row_label": "MBIN-b1 right",
+      "column_label": "OAN-a2"
+    },
+    {
+      "index": 311,
+      "row_label": "MBIN-b2 left",
+      "column_label": "MBIN-b1 left"
+    },
+    {
+      "index": 312,
+      "row_label": "MBIN-b2 right",
+      "column_label": "MBIN-b1 right"
+    },
+    {
+      "index": 313,
+      "row_label": "DAN-c1 left",
+      "column_label": "MBIN-b2 left"
+    },
+    {
+      "index": 314,
+      "row_label": "DAN-c1 right",
+      "column_label": "MBIN-b2 right"
+    },
+    {
+      "index": 315,
+      "row_label": "DAN-d1 left",
+      "column_label": "DAN-c1 left"
+    },
+    {
+      "index": 316,
+      "row_label": "DAN-d1 right",
+      "column_label": "DAN-c1 right"
+    },
+    {
+      "index": 317,
+      "row_label": "OAN-e1 left",
+      "column_label": "DAN-d1 left"
+    },
+    {
+      "index": 318,
+      "row_label": "OAN-e1 right",
+      "column_label": "DAN-d1 right"
+    },
+    {
+      "index": 319,
+      "row_label": "MBIN-e1 left",
+      "column_label": "OAN-e1 left"
+    },
+    {
+      "index": 320,
+      "row_label": "MBIN-e1 right",
+      "column_label": "OAN-e1 right"
+    }
+  ],
+  "duplicate_display_labels": {
+    "1 claw KC left": 17,
+    "1 claw KC right": 19,
+    "2 claw KC left": 11,
+    "2 claw KC right": 8,
+    "3 claw KC left": 14,
+    "3 claw KC right": 16,
+    "4 claw KC left": 18,
+    "4 claw KC right": 17,
+    "5 claw KC left": 8,
+    "5 claw KC right": 10,
+    "6 claw KC left": 5,
+    "6 claw KC right": 2,
+    "young KC left": 37,
+    "young KC right": 41
+  },
+  "groups": {
+    "PN_left": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "KC_left": [
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      222,
+      223,
+      224,
+      225,
+      226,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265
+    ],
+    "MBON_left": [
+      337,
+      339,
+      341,
+      343,
+      345,
+      347,
+      349,
+      351,
+      353,
+      355,
+      357,
+      359,
+      361,
+      363,
+      365,
+      367,
+      369,
+      371,
+      373,
+      375,
+      377,
+      379,
+      381,
+      383
+    ],
+    "KC_mature_left": [
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      222,
+      223,
+      224,
+      225,
+      226
+    ]
+  },
+  "kc_receiving_mbon_left": [
+    337,
+    339,
+    341,
+    343,
+    347,
+    349,
+    355,
+    357,
+    359,
+    361,
+    363,
+    365,
+    367,
+    369,
+    373,
+    375,
+    377,
+    379,
+    383
+  ],
+  "pn_kc_left": {
+    "shape": [
+      40,
+      110
+    ],
+    "aggregated_edges": 386,
+    "synapse_count_sum": 2215,
+    "zero_input_kc": [
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      241,
+      242,
+      243,
+      244,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      254,
+      255,
+      256,
+      257,
+      265
+    ]
+  },
+  "pn_kc_mature_left": {
+    "shape": [
+      40,
+      73
+    ],
+    "aggregated_edges": 365,
+    "synapse_count_sum": 2188
+  },
+  "nodes": [
+    {
+      "id": "matrix:0",
+      "matrix_index": 0,
+      "label": "1a PN left"
+    },
+    {
+      "id": "matrix:1",
+      "matrix_index": 1,
+      "label": "1a PN right"
+    },
+    {
+      "id": "matrix:2",
+      "matrix_index": 2,
+      "label": "13a PN left"
+    },
+    {
+      "id": "matrix:3",
+      "matrix_index": 3,
+      "label": "13a PN right"
+    },
+    {
+      "id": "matrix:4",
+      "matrix_index": 4,
+      "label": "22c PN left"
+    },
+    {
+      "id": "matrix:5",
+      "matrix_index": 5,
+      "label": "22c PN right"
+    },
+    {
+      "id": "matrix:6",
+      "matrix_index": 6,
+      "label": "24a PN left"
+    },
+    {
+      "id": "matrix:7",
+      "matrix_index": 7,
+      "label": "24a PN right"
+    },
+    {
+      "id": "matrix:8",
+      "matrix_index": 8,
+      "label": "30a PN left"
+    },
+    {
+      "id": "matrix:9",
+      "matrix_index": 9,
+      "label": "30a PN right"
+    },
+    {
+      "id": "matrix:10",
+      "matrix_index": 10,
+      "label": "33a PN left"
+    },
+    {
+      "id": "matrix:11",
+      "matrix_index": 11,
+      "label": "33a PN right"
+    },
+    {
+      "id": "matrix:12",
+      "matrix_index": 12,
+      "label": "35a PN bilateral left"
+    },
+    {
+      "id": "matrix:13",
+      "matrix_index": 13,
+      "label": "35a PN bilateral right"
+    },
+    {
+      "id": "matrix:14",
+      "matrix_index": 14,
+      "label": "42a PN left"
+    },
+    {
+      "id": "matrix:15",
+      "matrix_index": 15,
+      "label": "42a PN right"
+    },
+    {
+      "id": "matrix:16",
+      "matrix_index": 16,
+      "label": "42b PN left"
+    },
+    {
+      "id": "matrix:17",
+      "matrix_index": 17,
+      "label": "42b PN right"
+    },
+    {
+      "id": "matrix:18",
+      "matrix_index": 18,
+      "label": "45a PN left"
+    },
+    {
+      "id": "matrix:19",
+      "matrix_index": 19,
+      "label": "45a PN right"
+    },
+    {
+      "id": "matrix:20",
+      "matrix_index": 20,
+      "label": "45b PN left"
+    },
+    {
+      "id": "matrix:21",
+      "matrix_index": 21,
+      "label": "45b PN right"
+    },
+    {
+      "id": "matrix:22",
+      "matrix_index": 22,
+      "label": "47a & 33b PN left"
+    },
+    {
+      "id": "matrix:23",
+      "matrix_index": 23,
+      "label": "47a & 33b PN right"
+    },
+    {
+      "id": "matrix:24",
+      "matrix_index": 24,
+      "label": "49a PN left"
+    },
+    {
+      "id": "matrix:25",
+      "matrix_index": 25,
+      "label": "49a PN right"
+    },
+    {
+      "id": "matrix:26",
+      "matrix_index": 26,
+      "label": "59a PN left"
+    },
+    {
+      "id": "matrix:27",
+      "matrix_index": 27,
+      "label": "59a PN right"
+    },
+    {
+      "id": "matrix:28",
+      "matrix_index": 28,
+      "label": "63a PN left"
+    },
+    {
+      "id": "matrix:29",
+      "matrix_index": 29,
+      "label": "63a PN right"
+    },
+    {
+      "id": "matrix:30",
+      "matrix_index": 30,
+      "label": "67b PN left"
+    },
+    {
+      "id": "matrix:31",
+      "matrix_index": 31,
+      "label": "67b PN right"
+    },
+    {
+      "id": "matrix:32",
+      "matrix_index": 32,
+      "label": "74a PN left"
+    },
+    {
+      "id": "matrix:33",
+      "matrix_index": 33,
+      "label": "74a PN right"
+    },
+    {
+      "id": "matrix:34",
+      "matrix_index": 34,
+      "label": "82a PN left"
+    },
+    {
+      "id": "matrix:35",
+      "matrix_index": 35,
+      "label": "82a PN right"
+    },
+    {
+      "id": "matrix:36",
+      "matrix_index": 36,
+      "label": "83a PN left"
+    },
+    {
+      "id": "matrix:37",
+      "matrix_index": 37,
+      "label": "83a PN right"
+    },
+    {
+      "id": "matrix:38",
+      "matrix_index": 38,
+      "label": "85c PN left"
+    },
+    {
+      "id": "matrix:39",
+      "matrix_index": 39,
+      "label": "85c PN right"
+    },
+    {
+      "id": "matrix:40",
+      "matrix_index": 40,
+      "label": "94a & 94b PN left"
+    },
+    {
+      "id": "matrix:41",
+      "matrix_index": 41,
+      "label": "94a & 94b PN right"
+    },
+    {
+      "id": "matrix:42",
+      "matrix_index": 42,
+      "label": "Gustatory PN 1 left"
+    },
+    {
+      "id": "matrix:43",
+      "matrix_index": 43,
+      "label": "Gustatory PN 2 left"
+    },
+    {
+      "id": "matrix:44",
+      "matrix_index": 44,
+      "label": "Gustatory PN 3 left"
+    },
+    {
+      "id": "matrix:45",
+      "matrix_index": 45,
+      "label": "Gustatory PN 4 left"
+    },
+    {
+      "id": "matrix:46",
+      "matrix_index": 46,
+      "label": "Multiglomerular PN 1 left"
+    },
+    {
+      "id": "matrix:47",
+      "matrix_index": 47,
+      "label": "Multiglomerular PN 2 left"
+    },
+    {
+      "id": "matrix:48",
+      "matrix_index": 48,
+      "label": "Multiglomerular PN 3 left"
+    },
+    {
+      "id": "matrix:49",
+      "matrix_index": 49,
+      "label": "Multiglomerular PN 4 left"
+    },
+    {
+      "id": "matrix:50",
+      "matrix_index": 50,
+      "label": "Multiglomerular PN 5 left"
+    },
+    {
+      "id": "matrix:51",
+      "matrix_index": 51,
+      "label": "Unkown PN 1 left"
+    },
+    {
+      "id": "matrix:52",
+      "matrix_index": 52,
+      "label": "Unkown PN 2 left"
+    },
+    {
+      "id": "matrix:53",
+      "matrix_index": 53,
+      "label": "Thermo PN 1 left"
+    },
+    {
+      "id": "matrix:54",
+      "matrix_index": 54,
+      "label": "Thermo PN 2 left"
+    },
+    {
+      "id": "matrix:55",
+      "matrix_index": 55,
+      "label": "Thermo PN 3 left"
+    },
+    {
+      "id": "matrix:56",
+      "matrix_index": 56,
+      "label": "Thermo PN 4 left"
+    },
+    {
+      "id": "matrix:57",
+      "matrix_index": 57,
+      "label": "Vision PN 1 left"
+    },
+    {
+      "id": "matrix:58",
+      "matrix_index": 58,
+      "label": "Thermo PN 6 left"
+    },
+    {
+      "id": "matrix:59",
+      "matrix_index": 59,
+      "label": "Thermo PN 7 left"
+    },
+    {
+      "id": "matrix:60",
+      "matrix_index": 60,
+      "label": "Thermo PN 8 left"
+    },
+    {
+      "id": "matrix:61",
+      "matrix_index": 61,
+      "label": "Gustatory PN 1 right"
+    },
+    {
+      "id": "matrix:62",
+      "matrix_index": 62,
+      "label": "Gustatory PN 2 right"
+    },
+    {
+      "id": "matrix:63",
+      "matrix_index": 63,
+      "label": "Gustatory PN 3 right"
+    },
+    {
+      "id": "matrix:64",
+      "matrix_index": 64,
+      "label": "Gustatory PN 4 right"
+    },
+    {
+      "id": "matrix:65",
+      "matrix_index": 65,
+      "label": "Multiglomerular PN 1 right"
+    },
+    {
+      "id": "matrix:66",
+      "matrix_index": 66,
+      "label": "Multiglomerular PN 2 right"
+    },
+    {
+      "id": "matrix:67",
+      "matrix_index": 67,
+      "label": "Multiglomerular PN 3 right"
+    },
+    {
+      "id": "matrix:68",
+      "matrix_index": 68,
+      "label": "Multiglomerular PN 4 right"
+    },
+    {
+      "id": "matrix:69",
+      "matrix_index": 69,
+      "label": "Multiglomerular PN 5 right"
+    },
+    {
+      "id": "matrix:70",
+      "matrix_index": 70,
+      "label": "Unkown PN 1 right"
+    },
+    {
+      "id": "matrix:71",
+      "matrix_index": 71,
+      "label": "Unkown PN 2 right"
+    },
+    {
+      "id": "matrix:72",
+      "matrix_index": 72,
+      "label": "Thermo PN 1 right"
+    },
+    {
+      "id": "matrix:73",
+      "matrix_index": 73,
+      "label": "Thermo PN 2 right"
+    },
+    {
+      "id": "matrix:74",
+      "matrix_index": 74,
+      "label": "Thermo PN 3 right"
+    },
+    {
+      "id": "matrix:75",
+      "matrix_index": 75,
+      "label": "Thermo PN 4 right"
+    },
+    {
+      "id": "matrix:76",
+      "matrix_index": 76,
+      "label": "Vision PN 1 right"
+    },
+    {
+      "id": "matrix:77",
+      "matrix_index": 77,
+      "label": "Thermo PN 5 right"
+    },
+    {
+      "id": "matrix:78",
+      "matrix_index": 78,
+      "label": "Thermo PN 6 right"
+    },
+    {
+      "id": "matrix:79",
+      "matrix_index": 79,
+      "label": "Thermo PN 7 right"
+    },
+    {
+      "id": "matrix:80",
+      "matrix_index": 80,
+      "label": "Thermo PN 8 right"
+    },
+    {
+      "id": "matrix:81",
+      "matrix_index": 81,
+      "label": "Thermo PN 9 right"
+    },
+    {
+      "id": "matrix:82",
+      "matrix_index": 82,
+      "label": "Multiglomerular PN 6 right"
+    },
+    {
+      "id": "matrix:83",
+      "matrix_index": 83,
+      "label": "Multiglomerular PN 7 right"
+    },
+    {
+      "id": "matrix:84",
+      "matrix_index": 84,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:85",
+      "matrix_index": 85,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:86",
+      "matrix_index": 86,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:87",
+      "matrix_index": 87,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:88",
+      "matrix_index": 88,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:89",
+      "matrix_index": 89,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:90",
+      "matrix_index": 90,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:91",
+      "matrix_index": 91,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:92",
+      "matrix_index": 92,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:93",
+      "matrix_index": 93,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:94",
+      "matrix_index": 94,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:95",
+      "matrix_index": 95,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:96",
+      "matrix_index": 96,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:97",
+      "matrix_index": 97,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:98",
+      "matrix_index": 98,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:99",
+      "matrix_index": 99,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:100",
+      "matrix_index": 100,
+      "label": "1 claw KC left"
+    },
+    {
+      "id": "matrix:101",
+      "matrix_index": 101,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:102",
+      "matrix_index": 102,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:103",
+      "matrix_index": 103,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:104",
+      "matrix_index": 104,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:105",
+      "matrix_index": 105,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:106",
+      "matrix_index": 106,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:107",
+      "matrix_index": 107,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:108",
+      "matrix_index": 108,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:109",
+      "matrix_index": 109,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:110",
+      "matrix_index": 110,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:111",
+      "matrix_index": 111,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:112",
+      "matrix_index": 112,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:113",
+      "matrix_index": 113,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:114",
+      "matrix_index": 114,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:115",
+      "matrix_index": 115,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:116",
+      "matrix_index": 116,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:117",
+      "matrix_index": 117,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:118",
+      "matrix_index": 118,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:119",
+      "matrix_index": 119,
+      "label": "1 claw KC right"
+    },
+    {
+      "id": "matrix:120",
+      "matrix_index": 120,
+      "label": "2 claw KC left"
+    },
+    {
+      "id": "matrix:121",
+      "matrix_index": 121,
+      "label": "2 claw KC left"
+    },
+    {
+      "id": "matrix:122",
+      "matrix_index": 122,
+      "label": "2 claw KC left"
+    },
+    {
+      "id": "matrix:123",
+      "matrix_index": 123,
+      "label": "2 claw KC left"
+    },
+    {
+      "id": "matrix:124",
+      "matrix_index": 124,
+      "label": "2 claw KC left"
+    },
+    {
+      "id": "matrix:125",
+      "matrix_index": 125,
+      "label": "2 claw KC left"
+    },
+    {
+      "id": "matrix:126",
+      "matrix_index": 126,
+      "label": "2 claw KC left"
+    },
+    {
+      "id": "matrix:127",
+      "matrix_index": 127,
+      "label": "2 claw KC left"
+    },
+    {
+      "id": "matrix:128",
+      "matrix_index": 128,
+      "label": "2 claw KC left"
+    },
+    {
+      "id": "matrix:129",
+      "matrix_index": 129,
+      "label": "2 claw KC left"
+    },
+    {
+      "id": "matrix:130",
+      "matrix_index": 130,
+      "label": "2 claw KC left"
+    },
+    {
+      "id": "matrix:131",
+      "matrix_index": 131,
+      "label": "2 claw KC right"
+    },
+    {
+      "id": "matrix:132",
+      "matrix_index": 132,
+      "label": "2 claw KC right"
+    },
+    {
+      "id": "matrix:133",
+      "matrix_index": 133,
+      "label": "2 claw KC right"
+    },
+    {
+      "id": "matrix:134",
+      "matrix_index": 134,
+      "label": "2 claw KC right"
+    },
+    {
+      "id": "matrix:135",
+      "matrix_index": 135,
+      "label": "2 claw KC right"
+    },
+    {
+      "id": "matrix:136",
+      "matrix_index": 136,
+      "label": "2 claw KC right"
+    },
+    {
+      "id": "matrix:137",
+      "matrix_index": 137,
+      "label": "2 claw KC right"
+    },
+    {
+      "id": "matrix:138",
+      "matrix_index": 138,
+      "label": "2 claw KC right"
+    },
+    {
+      "id": "matrix:139",
+      "matrix_index": 139,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:140",
+      "matrix_index": 140,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:141",
+      "matrix_index": 141,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:142",
+      "matrix_index": 142,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:143",
+      "matrix_index": 143,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:144",
+      "matrix_index": 144,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:145",
+      "matrix_index": 145,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:146",
+      "matrix_index": 146,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:147",
+      "matrix_index": 147,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:148",
+      "matrix_index": 148,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:149",
+      "matrix_index": 149,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:150",
+      "matrix_index": 150,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:151",
+      "matrix_index": 151,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:152",
+      "matrix_index": 152,
+      "label": "3 claw KC left"
+    },
+    {
+      "id": "matrix:153",
+      "matrix_index": 153,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:154",
+      "matrix_index": 154,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:155",
+      "matrix_index": 155,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:156",
+      "matrix_index": 156,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:157",
+      "matrix_index": 157,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:158",
+      "matrix_index": 158,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:159",
+      "matrix_index": 159,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:160",
+      "matrix_index": 160,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:161",
+      "matrix_index": 161,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:162",
+      "matrix_index": 162,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:163",
+      "matrix_index": 163,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:164",
+      "matrix_index": 164,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:165",
+      "matrix_index": 165,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:166",
+      "matrix_index": 166,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:167",
+      "matrix_index": 167,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:168",
+      "matrix_index": 168,
+      "label": "3 claw KC right"
+    },
+    {
+      "id": "matrix:169",
+      "matrix_index": 169,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:170",
+      "matrix_index": 170,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:171",
+      "matrix_index": 171,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:172",
+      "matrix_index": 172,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:173",
+      "matrix_index": 173,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:174",
+      "matrix_index": 174,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:175",
+      "matrix_index": 175,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:176",
+      "matrix_index": 176,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:177",
+      "matrix_index": 177,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:178",
+      "matrix_index": 178,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:179",
+      "matrix_index": 179,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:180",
+      "matrix_index": 180,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:181",
+      "matrix_index": 181,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:182",
+      "matrix_index": 182,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:183",
+      "matrix_index": 183,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:184",
+      "matrix_index": 184,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:185",
+      "matrix_index": 185,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:186",
+      "matrix_index": 186,
+      "label": "4 claw KC left"
+    },
+    {
+      "id": "matrix:187",
+      "matrix_index": 187,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:188",
+      "matrix_index": 188,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:189",
+      "matrix_index": 189,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:190",
+      "matrix_index": 190,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:191",
+      "matrix_index": 191,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:192",
+      "matrix_index": 192,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:193",
+      "matrix_index": 193,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:194",
+      "matrix_index": 194,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:195",
+      "matrix_index": 195,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:196",
+      "matrix_index": 196,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:197",
+      "matrix_index": 197,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:198",
+      "matrix_index": 198,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:199",
+      "matrix_index": 199,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:200",
+      "matrix_index": 200,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:201",
+      "matrix_index": 201,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:202",
+      "matrix_index": 202,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:203",
+      "matrix_index": 203,
+      "label": "4 claw KC right"
+    },
+    {
+      "id": "matrix:204",
+      "matrix_index": 204,
+      "label": "5 claw KC left"
+    },
+    {
+      "id": "matrix:205",
+      "matrix_index": 205,
+      "label": "5 claw KC left"
+    },
+    {
+      "id": "matrix:206",
+      "matrix_index": 206,
+      "label": "5 claw KC left"
+    },
+    {
+      "id": "matrix:207",
+      "matrix_index": 207,
+      "label": "5 claw KC left"
+    },
+    {
+      "id": "matrix:208",
+      "matrix_index": 208,
+      "label": "5 claw KC left"
+    },
+    {
+      "id": "matrix:209",
+      "matrix_index": 209,
+      "label": "5 claw KC left"
+    },
+    {
+      "id": "matrix:210",
+      "matrix_index": 210,
+      "label": "5 claw KC left"
+    },
+    {
+      "id": "matrix:211",
+      "matrix_index": 211,
+      "label": "5 claw KC left"
+    },
+    {
+      "id": "matrix:212",
+      "matrix_index": 212,
+      "label": "5 claw KC right"
+    },
+    {
+      "id": "matrix:213",
+      "matrix_index": 213,
+      "label": "5 claw KC right"
+    },
+    {
+      "id": "matrix:214",
+      "matrix_index": 214,
+      "label": "5 claw KC right"
+    },
+    {
+      "id": "matrix:215",
+      "matrix_index": 215,
+      "label": "5 claw KC right"
+    },
+    {
+      "id": "matrix:216",
+      "matrix_index": 216,
+      "label": "5 claw KC right"
+    },
+    {
+      "id": "matrix:217",
+      "matrix_index": 217,
+      "label": "5 claw KC right"
+    },
+    {
+      "id": "matrix:218",
+      "matrix_index": 218,
+      "label": "5 claw KC right"
+    },
+    {
+      "id": "matrix:219",
+      "matrix_index": 219,
+      "label": "5 claw KC right"
+    },
+    {
+      "id": "matrix:220",
+      "matrix_index": 220,
+      "label": "5 claw KC right"
+    },
+    {
+      "id": "matrix:221",
+      "matrix_index": 221,
+      "label": "5 claw KC right"
+    },
+    {
+      "id": "matrix:222",
+      "matrix_index": 222,
+      "label": "6 claw KC left"
+    },
+    {
+      "id": "matrix:223",
+      "matrix_index": 223,
+      "label": "6 claw KC left"
+    },
+    {
+      "id": "matrix:224",
+      "matrix_index": 224,
+      "label": "6 claw KC left"
+    },
+    {
+      "id": "matrix:225",
+      "matrix_index": 225,
+      "label": "6 claw KC left"
+    },
+    {
+      "id": "matrix:226",
+      "matrix_index": 226,
+      "label": "6 claw KC left"
+    },
+    {
+      "id": "matrix:227",
+      "matrix_index": 227,
+      "label": "6 claw KC right"
+    },
+    {
+      "id": "matrix:228",
+      "matrix_index": 228,
+      "label": "6 claw KC right"
+    },
+    {
+      "id": "matrix:229",
+      "matrix_index": 229,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:230",
+      "matrix_index": 230,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:231",
+      "matrix_index": 231,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:232",
+      "matrix_index": 232,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:233",
+      "matrix_index": 233,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:234",
+      "matrix_index": 234,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:235",
+      "matrix_index": 235,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:236",
+      "matrix_index": 236,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:237",
+      "matrix_index": 237,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:238",
+      "matrix_index": 238,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:239",
+      "matrix_index": 239,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:240",
+      "matrix_index": 240,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:241",
+      "matrix_index": 241,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:242",
+      "matrix_index": 242,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:243",
+      "matrix_index": 243,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:244",
+      "matrix_index": 244,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:245",
+      "matrix_index": 245,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:246",
+      "matrix_index": 246,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:247",
+      "matrix_index": 247,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:248",
+      "matrix_index": 248,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:249",
+      "matrix_index": 249,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:250",
+      "matrix_index": 250,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:251",
+      "matrix_index": 251,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:252",
+      "matrix_index": 252,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:253",
+      "matrix_index": 253,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:254",
+      "matrix_index": 254,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:255",
+      "matrix_index": 255,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:256",
+      "matrix_index": 256,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:257",
+      "matrix_index": 257,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:258",
+      "matrix_index": 258,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:259",
+      "matrix_index": 259,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:260",
+      "matrix_index": 260,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:261",
+      "matrix_index": 261,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:262",
+      "matrix_index": 262,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:263",
+      "matrix_index": 263,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:264",
+      "matrix_index": 264,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:265",
+      "matrix_index": 265,
+      "label": "young KC left"
+    },
+    {
+      "id": "matrix:266",
+      "matrix_index": 266,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:267",
+      "matrix_index": 267,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:268",
+      "matrix_index": 268,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:269",
+      "matrix_index": 269,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:270",
+      "matrix_index": 270,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:271",
+      "matrix_index": 271,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:272",
+      "matrix_index": 272,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:273",
+      "matrix_index": 273,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:274",
+      "matrix_index": 274,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:275",
+      "matrix_index": 275,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:276",
+      "matrix_index": 276,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:277",
+      "matrix_index": 277,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:278",
+      "matrix_index": 278,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:279",
+      "matrix_index": 279,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:280",
+      "matrix_index": 280,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:281",
+      "matrix_index": 281,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:282",
+      "matrix_index": 282,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:283",
+      "matrix_index": 283,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:284",
+      "matrix_index": 284,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:285",
+      "matrix_index": 285,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:286",
+      "matrix_index": 286,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:287",
+      "matrix_index": 287,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:288",
+      "matrix_index": 288,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:289",
+      "matrix_index": 289,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:290",
+      "matrix_index": 290,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:291",
+      "matrix_index": 291,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:292",
+      "matrix_index": 292,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:293",
+      "matrix_index": 293,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:294",
+      "matrix_index": 294,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:295",
+      "matrix_index": 295,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:296",
+      "matrix_index": 296,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:297",
+      "matrix_index": 297,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:298",
+      "matrix_index": 298,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:299",
+      "matrix_index": 299,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:300",
+      "matrix_index": 300,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:301",
+      "matrix_index": 301,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:302",
+      "matrix_index": 302,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:303",
+      "matrix_index": 303,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:304",
+      "matrix_index": 304,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:305",
+      "matrix_index": 305,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:306",
+      "matrix_index": 306,
+      "label": "young KC right"
+    },
+    {
+      "id": "matrix:307",
+      "matrix_index": 307,
+      "label": "OAN-a1"
+    },
+    {
+      "id": "matrix:308",
+      "matrix_index": 308,
+      "label": "OAN-a2"
+    },
+    {
+      "id": "matrix:309",
+      "matrix_index": 309,
+      "label": "MBIN-b1 left"
+    },
+    {
+      "id": "matrix:310",
+      "matrix_index": 310,
+      "label": "MBIN-b1 right"
+    },
+    {
+      "id": "matrix:311",
+      "matrix_index": 311,
+      "label": "MBIN-b2 left"
+    },
+    {
+      "id": "matrix:312",
+      "matrix_index": 312,
+      "label": "MBIN-b2 right"
+    },
+    {
+      "id": "matrix:313",
+      "matrix_index": 313,
+      "label": "DAN-c1 left"
+    },
+    {
+      "id": "matrix:314",
+      "matrix_index": 314,
+      "label": "DAN-c1 right"
+    },
+    {
+      "id": "matrix:315",
+      "matrix_index": 315,
+      "label": "DAN-d1 left"
+    },
+    {
+      "id": "matrix:316",
+      "matrix_index": 316,
+      "label": "DAN-d1 right"
+    },
+    {
+      "id": "matrix:317",
+      "matrix_index": 317,
+      "label": "OAN-e1 left"
+    },
+    {
+      "id": "matrix:318",
+      "matrix_index": 318,
+      "label": "OAN-e1 right"
+    },
+    {
+      "id": "matrix:319",
+      "matrix_index": 319,
+      "label": "MBIN-e1 left"
+    },
+    {
+      "id": "matrix:320",
+      "matrix_index": 320,
+      "label": "MBIN-e1 right"
+    },
+    {
+      "id": "matrix:321",
+      "matrix_index": 321,
+      "label": "MBIN-e2 left"
+    },
+    {
+      "id": "matrix:322",
+      "matrix_index": 322,
+      "label": "MBIN-e2 right"
+    },
+    {
+      "id": "matrix:323",
+      "matrix_index": 323,
+      "label": "DAN-f1 left"
+    },
+    {
+      "id": "matrix:324",
+      "matrix_index": 324,
+      "label": "DAN-f1 right"
+    },
+    {
+      "id": "matrix:325",
+      "matrix_index": 325,
+      "label": "DAN-g1 left"
+    },
+    {
+      "id": "matrix:326",
+      "matrix_index": 326,
+      "label": "DAN-g1 right"
+    },
+    {
+      "id": "matrix:327",
+      "matrix_index": 327,
+      "label": "OAN-g1 left"
+    },
+    {
+      "id": "matrix:328",
+      "matrix_index": 328,
+      "label": "OAN-g1 right"
+    },
+    {
+      "id": "matrix:329",
+      "matrix_index": 329,
+      "label": "DAN-i1 left"
+    },
+    {
+      "id": "matrix:330",
+      "matrix_index": 330,
+      "label": "DAN-i1 right"
+    },
+    {
+      "id": "matrix:331",
+      "matrix_index": 331,
+      "label": "DAN-j1 left"
+    },
+    {
+      "id": "matrix:332",
+      "matrix_index": 332,
+      "label": "DAN-j1 right"
+    },
+    {
+      "id": "matrix:333",
+      "matrix_index": 333,
+      "label": "DAN-k1 left"
+    },
+    {
+      "id": "matrix:334",
+      "matrix_index": 334,
+      "label": "DAN-k1 right"
+    },
+    {
+      "id": "matrix:335",
+      "matrix_index": 335,
+      "label": "MBIN-l1 left"
+    },
+    {
+      "id": "matrix:336",
+      "matrix_index": 336,
+      "label": "MBIN-l1 right"
+    },
+    {
+      "id": "matrix:337",
+      "matrix_index": 337,
+      "label": "MBON-a1 left"
+    },
+    {
+      "id": "matrix:338",
+      "matrix_index": 338,
+      "label": "MBON-a1 right"
+    },
+    {
+      "id": "matrix:339",
+      "matrix_index": 339,
+      "label": "MBON-a2 left"
+    },
+    {
+      "id": "matrix:340",
+      "matrix_index": 340,
+      "label": "MBON-a2 right"
+    },
+    {
+      "id": "matrix:341",
+      "matrix_index": 341,
+      "label": "MBON-b1 left"
+    },
+    {
+      "id": "matrix:342",
+      "matrix_index": 342,
+      "label": "MBON-b1 right"
+    },
+    {
+      "id": "matrix:343",
+      "matrix_index": 343,
+      "label": "MBON-b2 left"
+    },
+    {
+      "id": "matrix:344",
+      "matrix_index": 344,
+      "label": "MBON-b2 right"
+    },
+    {
+      "id": "matrix:345",
+      "matrix_index": 345,
+      "label": "MBON-b3 left"
+    },
+    {
+      "id": "matrix:346",
+      "matrix_index": 346,
+      "label": "MBON-b3 right"
+    },
+    {
+      "id": "matrix:347",
+      "matrix_index": 347,
+      "label": "MBON-c1 left"
+    },
+    {
+      "id": "matrix:348",
+      "matrix_index": 348,
+      "label": "MBON-c1 right"
+    },
+    {
+      "id": "matrix:349",
+      "matrix_index": 349,
+      "label": "MBON-d1 left"
+    },
+    {
+      "id": "matrix:350",
+      "matrix_index": 350,
+      "label": "MBON-d1 right"
+    },
+    {
+      "id": "matrix:351",
+      "matrix_index": 351,
+      "label": "MBON-d2 left"
+    },
+    {
+      "id": "matrix:352",
+      "matrix_index": 352,
+      "label": "MBON-d2 right"
+    },
+    {
+      "id": "matrix:353",
+      "matrix_index": 353,
+      "label": "MBON-d3 left"
+    },
+    {
+      "id": "matrix:354",
+      "matrix_index": 354,
+      "label": "MBON-d3 right"
+    },
+    {
+      "id": "matrix:355",
+      "matrix_index": 355,
+      "label": "MBON-e1 left"
+    },
+    {
+      "id": "matrix:356",
+      "matrix_index": 356,
+      "label": "MBON-e1 right"
+    },
+    {
+      "id": "matrix:357",
+      "matrix_index": 357,
+      "label": "MBON-e2 left"
+    },
+    {
+      "id": "matrix:358",
+      "matrix_index": 358,
+      "label": "MBON-e2 right"
+    },
+    {
+      "id": "matrix:359",
+      "matrix_index": 359,
+      "label": "MBON-f1 left"
+    },
+    {
+      "id": "matrix:360",
+      "matrix_index": 360,
+      "label": "MBON-f1 right"
+    },
+    {
+      "id": "matrix:361",
+      "matrix_index": 361,
+      "label": "MBON-g1 left"
+    },
+    {
+      "id": "matrix:362",
+      "matrix_index": 362,
+      "label": "MBON-g1 right"
+    },
+    {
+      "id": "matrix:363",
+      "matrix_index": 363,
+      "label": "MBON-g2 left"
+    },
+    {
+      "id": "matrix:364",
+      "matrix_index": 364,
+      "label": "MBON-g2 right"
+    },
+    {
+      "id": "matrix:365",
+      "matrix_index": 365,
+      "label": "MBON-h1 left"
+    },
+    {
+      "id": "matrix:366",
+      "matrix_index": 366,
+      "label": "MBON-h1 right"
+    },
+    {
+      "id": "matrix:367",
+      "matrix_index": 367,
+      "label": "MBON-h2 left"
+    },
+    {
+      "id": "matrix:368",
+      "matrix_index": 368,
+      "label": "MBON-h2 right"
+    },
+    {
+      "id": "matrix:369",
+      "matrix_index": 369,
+      "label": "MBON-i1 left"
+    },
+    {
+      "id": "matrix:370",
+      "matrix_index": 370,
+      "label": "MBON-i1 right"
+    },
+    {
+      "id": "matrix:371",
+      "matrix_index": 371,
+      "label": "MBON-j1 left"
+    },
+    {
+      "id": "matrix:372",
+      "matrix_index": 372,
+      "label": "MBON-j1 right"
+    },
+    {
+      "id": "matrix:373",
+      "matrix_index": 373,
+      "label": "MBON-k1 left"
+    },
+    {
+      "id": "matrix:374",
+      "matrix_index": 374,
+      "label": "MBON-k1 right"
+    },
+    {
+      "id": "matrix:375",
+      "matrix_index": 375,
+      "label": "MBON-m1 left"
+    },
+    {
+      "id": "matrix:376",
+      "matrix_index": 376,
+      "label": "MBON-m1 right"
+    },
+    {
+      "id": "matrix:377",
+      "matrix_index": 377,
+      "label": "MBON-n1 left"
+    },
+    {
+      "id": "matrix:378",
+      "matrix_index": 378,
+      "label": "MBON-n1 right"
+    },
+    {
+      "id": "matrix:379",
+      "matrix_index": 379,
+      "label": "MBON-o1 left"
+    },
+    {
+      "id": "matrix:380",
+      "matrix_index": 380,
+      "label": "MBON-o1 right"
+    },
+    {
+      "id": "matrix:381",
+      "matrix_index": 381,
+      "label": "MBON-p1 left"
+    },
+    {
+      "id": "matrix:382",
+      "matrix_index": 382,
+      "label": "MBON-p1 right"
+    },
+    {
+      "id": "matrix:383",
+      "matrix_index": 383,
+      "label": "MBON-q1 left"
+    },
+    {
+      "id": "matrix:384",
+      "matrix_index": 384,
+      "label": "MBON-q1 right"
+    },
+    {
+      "id": "matrix:385",
+      "matrix_index": 385,
+      "label": "APL left"
+    },
+    {
+      "id": "matrix:386",
+      "matrix_index": 386,
+      "label": "APL right"
+    }
+  ]
+}
