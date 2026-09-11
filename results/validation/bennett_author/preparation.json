@@ -1,0 +1,27 @@
+{
+  "source_commit": "7ec52afb9bd7bb748d94d60dea9f483645a2ce8e",
+  "source_sha256": "eaaf1641d19e225a84a022ae8d0ebbfafecdfe99cb8ea9f4fa9b58ce4a9aa1f6",
+  "changes": [
+    "rename entry point",
+    "remove unused RNG seeding",
+    "supply initial plus weights",
+    "supply initial minus weights",
+    "supply activities and choices",
+    "replace random action selection with supplied zero-based choices"
+  ],
+  "eq8_update_and_DAN_arithmetic": "unchanged",
+  "author_trials": 257,
+  "compared_updates": 256,
+  "runtime_executed": false,
+  "license": "GPL-3.0; original source and modified wrapper retained with upstream notice in the private repository",
+  "files": {
+    "activities.csv": "7e2f5461ae486b0bc68bb02825514829e2127fca815f8db5c05d7b3887f1b84f",
+    "choices.csv": "87e494e8e5f580f1e066e5b48ed2a04237c94e5ce77d875713120257dfdc01dd",
+    "initial_minus.csv": "40ea52ef144effbcc8d2215a7dacc8274e6ee3edc23ebf5322180defd720ef55",
+    "initial_plus.csv": "36d6e88ff8bd30eef647ac23686abc8df49a562f3fb5696e419c9b2fac57abc6",
+    "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "mb_mv_a_fixture.m": "a8a86897a25d94f1b6d79d724d7019c7b1b31faff2183838db29a7fa36ee73fe",
+    "rewards.csv": "0d559a975835356497636a50d52b155dea808a9acb49e31928bd71646c8aa4e9",
+    "run_reference.m": "22588805982163847bdef2bc89ed0eb5c9a45f2051d3e7a067f8cf5b78c5f8ff"
+  }
+}

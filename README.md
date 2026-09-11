@@ -43,7 +43,7 @@ The source inspection pinned 11 repository commits and checked small data inputs
 
 The learning/growth handoffs use a 73-mature-KC larval-derived feature circuit with two synthetic output units. The capacity handoff uses a tiny tiled visual graph. Their limits are deliberate: neither directly tests adult whole-brain scaling. A later adult/cross-dataset validation is required before that interpretation.
 
-The intended target is a colleague's PC: user-reported 64 GB RAM, RTX 5090 with 32 GB VRAM, and Ryzen 7 9800X3D. The reported DDR4 memory conflicts with AMD's DDR5 specification; actual memory type, OS, storage and software remain unverified. See the [hardware record](research/target_hardware.json). The user explicitly skipped the measured workstation pilot. Validation checks ran in this session's environment; no target benchmark or runtime estimate has been measured, and no GPU is required for this milestone.
+The intended target is a colleague's PC: user-confirmed 64 GB DDR5 RAM, RTX 5090 with 32 GB VRAM, and Ryzen 7 9800X3D. The user corrected the earlier DDR4 typo; OS, storage and software remain unverified. See the [hardware record](research/target_hardware.json). The user explicitly skipped the measured workstation pilot. Validation checks ran in this session's environment; no target benchmark or runtime estimate has been measured, and no GPU is required for this milestone.
 
 ## Session protocol
 
@@ -51,7 +51,9 @@ At start, read this page, ROADMAP, DECISIONS, OPEN_QUESTIONS and the latest RESE
 
 ## Audit tools
 
-With Python available, run `python tools/validate_foundation.py` for offline record/link/hash checks. `python tools/inspect_reference_data.py` additionally requires the ignored source cache, recoverable by the bounded public download tools. `audit_public_sources.py` and `audit_research_assets.py` require public network access and inspect upstream material without executing it. `refresh_bibliography.py` verifies DOI metadata and regenerates readable/BibTeX views. These are research-record tools, not an experimental platform.
+With Python available, run `python tools/validate_foundation.py` for offline record/link/hash checks. `python tools/inspect_reference_data.py` uses the included source cache, also recoverable by the bounded public download tools. `audit_public_sources.py` and `audit_research_assets.py` require public network access and inspect upstream material without executing it. `refresh_bibliography.py` verifies DOI metadata and regenerates readable/BibTeX views. These are research-record tools, not an experimental platform.
+
+The private repository includes all current project documents, code, research sources in `.cache/research_assets/`, and generated validation artifacts in `results/validation/`. Their original bytes and upstream attribution are preserved; third-party material retains its source terms. Local `.venv` dependencies and Python bytecode are excluded and can be recreated using the validation requirements. The working repository stays in the original project folder.
 
 The optional [collect_target_hardware.ps1](tools/collect_target_hardware.ps1) remains available for a future Windows target. It has not been run on the colleague's PC and is not a prerequisite for these bounded validation checks.
 

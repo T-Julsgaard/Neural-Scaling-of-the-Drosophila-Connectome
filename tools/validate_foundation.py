@@ -60,7 +60,7 @@ def main():
     target = json.loads((ROOT / 'research/target_hardware.json').read_text(encoding='utf-8'))
     if target['verified_on_target'] or target['target_access_performed'] or target['target_benchmarks']:
         errors.append('Unexpected target execution claim')
-    for key, value in (('reported_ram_gb', 'ram_gb'), ('cpu', 'cpu'), ('gpu', 'gpu'), ('vram_gb', 'gpu_vram_gb')):
+    for key, value in (('reported_ram_gb', 'ram_gb'), ('reported_ram_type', 'ram_type'), ('cpu', 'cpu'), ('gpu', 'gpu'), ('vram_gb', 'gpu_vram_gb')):
         if manifest['target'][key] != target['reported'][value]:
             errors.append('Target manifest disagrees with reported ' + value)
     report_path = ROOT / 'research/validation_report.json'

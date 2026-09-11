@@ -1,9 +1,11 @@
 __pycache__/
 .venv/
-.cache/
+.cache/*
+!.cache/research_assets/
 data/raw/
 data/derived/
-results/
+results/*
+!results/validation/
 *.tmp
 .env
 .env.*

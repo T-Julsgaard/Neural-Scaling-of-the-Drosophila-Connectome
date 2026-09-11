@@ -1,11 +1,12 @@
 """Prepare a deterministic wrapper around hash-verified author code.
 
-Does not run MATLAB/Octave. Generated modified GPL source stays in ignored
-results with attribution. The original source is never changed.
+Does not run MATLAB/Octave. Generated modified GPL source is retained in the
+private project's validation snapshot with attribution. Original source is unchanged.
 """
 import hashlib
 import json
 from pathlib import Path
+import shutil
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -58,11 +59,13 @@ end
 dlmwrite('author_trace.csv', trace, 'delimiter', ',', 'precision', '%.17g');
 """
     (output / "run_reference.m").write_text(script, encoding="utf-8")
+    if (source.parent / "LICENSE").is_file():
+        shutil.copyfile(source.parent / "LICENSE", output / "LICENSE")
     manifest = {"source_commit": fixture["source_commit"], "source_sha256": SOURCE_HASH,
                 "changes": changes, "eq8_update_and_DAN_arithmetic": "unchanged",
                 "author_trials": 257, "compared_updates": 256, "runtime_executed": False,
-                "license": "GPL-3.0; generated modified source is not vendored in the repository",
-                "files": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(output.iterdir()) if p.suffix in (".m", ".csv") and p.name != "author_trace.csv"}}
+                "license": "GPL-3.0; original source and modified wrapper retained with upstream notice in the private repository",
+                "files": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(output.iterdir()) if (p.suffix in (".m", ".csv") or p.name == "LICENSE") and p.name != "author_trace.csv"}}
     (output / "preparation.json").write_text(json.dumps(manifest, indent=2) + "\n")
     return output, manifest
 

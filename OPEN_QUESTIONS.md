@@ -4,7 +4,7 @@ Updated 2026-09-11. Uncertainty is part of the research record, not a hidden imp
 
 | ID | Question | What resolves it / next owner or stage | Blocks what? |
 |---|---|---|---|
-| Q01 | Target memory type, OS, free storage and software environment? | Colleague's PC reported as 64 GB, RTX 5090 32 GB, Ryzen 7 9800X3D. DDR4 conflicts with AMD's DDR5 specification; [details](research/target_hardware.json). Verify when actual execution is planned | Future campaign setup; measured target pilot explicitly skipped, bounded checks unaffected |
+| Q01 | Target OS, free storage and software environment? | User confirmed 64 GB DDR5, RTX 5090 32 GB, Ryzen 7 9800X3D; earlier DDR4 was a typo. [Details](research/target_hardware.json). Verify remaining environment when actual execution is planned | Future campaign setup; measured target pilot explicitly skipped, bounded checks unaffected |
 | Q02 | Which branch is selected for implementation? | RESOLVED: user selected EXP-002 learning-rule validation; automated checks now pass | No selection blocker; EXP-001 stays independent |
 | Q03 | Can R02 pass author-runtime comparison or independent adaptation review? | No MATLAB/Octave found in inspected locations; prepared deterministic author wrapper; automated Decimal/analytic checks pass but independent review is pending | R02 gate before scientific interpretation; does not invalidate completed implementation checks |
 | Q04 | Which adult circuit best validates a successful larval result? | Define the effect to transfer; compare FAFB/hemibrain/BANC coverage and type mappings | Adult extrapolation |

@@ -22,7 +22,7 @@ The initial research prompt supplies the scientific philosophy. The master brief
 
 Research and documentation proceed independently within this milestone. Discuss discoveries that materially change the framing. At session start read README, ROADMAP, DECISIONS, OPEN_QUESTIONS, and the latest RESEARCH_LOG entry; follow their links to evidence, failed paths, and experiment specifications. At session end update affected records and the next action.
 
-Use local hardware and free public resources first. The target experiment machine is a colleague's reported 64 GB PC with RTX 5090 32 GB and Ryzen 7 9800X3D, distinct from the current session environment. The reported memory type and remaining environment details need verification; the user skipped a measured target pilot. Long jobs require checkpointing, resumption, bounded outputs, and resource records. Paid or university compute requires a demonstrated local limitation and a benefit/cost proposal.
+Use local hardware and free public resources first. The target experiment machine is a colleague's reported 64 GB DDR5 PC with RTX 5090 32 GB and Ryzen 7 9800X3D, distinct from the current session environment. The user confirmed DDR5; remaining environment details need verification. The user skipped a measured target pilot. Long jobs require checkpointing, resumption, bounded outputs, and resource records. Paid or university compute requires a demonstrated local limitation and a benefit/cost proposal.
 
 ## Success
 

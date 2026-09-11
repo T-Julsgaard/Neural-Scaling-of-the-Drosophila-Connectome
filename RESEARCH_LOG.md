@@ -1,5 +1,15 @@
 # Research log
 
+## 2026-09-11 — Private GitHub repository and DDR5 correction
+
+**Request:** create a private GitHub repository, commit and push all project progress, retain this exact working folder, and add no assistant contributor. User corrected the target RAM from DDR4 to DDR5.
+
+**Work:** created [T-Julsgaard/Neural-Scaling-of-the-Drosophila-Connectome](https://github.com/T-Julsgaard/Neural-Scaling-of-the-Drosophila-Connectome) and verified private visibility before uploading files. The existing repository and history remain in the original working directory. The publication snapshot adds all cached research sources and current generated validation artifacts; local `.venv` dependencies and Python bytecode remain excluded. Original source/artifact bytes are protected from Git newline conversion. Eight pinned upstream license notices are preserved with their sources, including the GPL notice beside the generated Bennett wrapper. Existing commits use only the user's identity and contain no assistant co-author trailers.
+
+**Records:** corrected current hardware statements to user-confirmed 64 GB DDR5 while preserving the historical typo/correction trail. No target-machine inspection or benchmark occurred. Reran all 13 bounded validation tests successfully after updating the source-packaging helper; no development or confirmation campaign ran. [Source license provenance](research/source_license_manifest.json) and [source/artifact snapshot](research/project_snapshot.json) document the included material.
+
+**Next concrete action:** after verifying the pushed commit and complete remote file tree, return to R02's independent-review/author-runtime gate. The measured workstation pilot remains skipped.
+
 ## 2026-09-11 — EXP-002 bounded learning-rule validation
 
 **Request:** continue with EXP-002 learning-rule validation and skip the measured workstation pilot. The target is a colleague's PC, reported as 64 GB DDR4 RAM, RTX 5090 32 GB and Ryzen 7 9800X3D. Recorded those facts as user-reported, with the DDR4/AMD-DDR5 discrepancy unresolved. No target hardware probe or benchmark ran.
