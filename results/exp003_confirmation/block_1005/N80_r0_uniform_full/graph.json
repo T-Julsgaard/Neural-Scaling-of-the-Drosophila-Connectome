@@ -1,0 +1,345 @@
+{
+  "sha256": "deb842c5860114aa85a050e1f6b2f2b332f3bf40797e99a47251e0374f3dbc13",
+  "payload": {
+    "schema": 2,
+    "stage": "confirmation",
+    "block": 1005,
+    "replicate": 0,
+    "size": 80,
+    "arm": "uniform",
+    "source": {
+      "source_id": "S64",
+      "archive_sha256": "c1dbbb9b3096d8d70e6093a6e14a0eafa9fe684ccaa1aefe1ab7d1cb81dbf85d",
+      "csv_sha256": "b9d06b052b0c4b91a7221b3dde9552b670bb81c034d0d3ed7fdb5e4a3b2cfc4b",
+      "projection_sha256": "5cbefe14a326e60c3307023323c25d9c614ebac25ecc392d7e14602a22cdc090",
+      "pn_ids": [
+        "matrix:0",
+        "matrix:2",
+        "matrix:4",
+        "matrix:6",
+        "matrix:8",
+        "matrix:10",
+        "matrix:12",
+        "matrix:14",
+        "matrix:16",
+        "matrix:18",
+        "matrix:20",
+        "matrix:22",
+        "matrix:24",
+        "matrix:26",
+        "matrix:28",
+        "matrix:30",
+        "matrix:32",
+        "matrix:34",
+        "matrix:36",
+        "matrix:38",
+        "matrix:40",
+        "matrix:42",
+        "matrix:43",
+        "matrix:44",
+        "matrix:45",
+        "matrix:46",
+        "matrix:47",
+        "matrix:48",
+        "matrix:49",
+        "matrix:50",
+        "matrix:51",
+        "matrix:52",
+        "matrix:53",
+        "matrix:54",
+        "matrix:55",
+        "matrix:56",
+        "matrix:57",
+        "matrix:58",
+        "matrix:59",
+        "matrix:60"
+      ],
+      "kc_ids": [
+        "matrix:84",
+        "matrix:85",
+        "matrix:86",
+        "matrix:87",
+        "matrix:88",
+        "matrix:89",
+        "matrix:90",
+        "matrix:91",
+        "matrix:92",
+        "matrix:93",
+        "matrix:94",
+        "matrix:95",
+        "matrix:96",
+        "matrix:97",
+        "matrix:98",
+        "matrix:99",
+        "matrix:100",
+        "matrix:120",
+        "matrix:121",
+        "matrix:122",
+        "matrix:123",
+        "matrix:124",
+        "matrix:125",
+        "matrix:126",
+        "matrix:127",
+        "matrix:128",
+        "matrix:129",
+        "matrix:130",
+        "matrix:139",
+        "matrix:140",
+        "matrix:141",
+        "matrix:142",
+        "matrix:143",
+        "matrix:144",
+        "matrix:145",
+        "matrix:146",
+        "matrix:147",
+        "matrix:148",
+        "matrix:149",
+        "matrix:150",
+        "matrix:151",
+        "matrix:152",
+        "matrix:169",
+        "matrix:170",
+        "matrix:171",
+        "matrix:172",
+        "matrix:173",
+        "matrix:174",
+        "matrix:175",
+        "matrix:176",
+        "matrix:177",
+        "matrix:178",
+        "matrix:179",
+        "matrix:180",
+        "matrix:181",
+        "matrix:182",
+        "matrix:183",
+        "matrix:184",
+        "matrix:185",
+        "matrix:186",
+        "matrix:204",
+        "matrix:205",
+        "matrix:206",
+        "matrix:207",
+        "matrix:208",
+        "matrix:209",
+        "matrix:210",
+        "matrix:211",
+        "matrix:222",
+        "matrix:223",
+        "matrix:224",
+        "matrix:225",
+        "matrix:226"
+      ],
+      "orientation": "row PN -> column mature KC",
+      "shape": [
+        40,
+        73
+      ],
+      "edges": 365,
+      "contacts": 2188
+    },
+    "added_nodes": [
+      {
+        "id": "grown:1005:0:80:0",
+        "donor_column": 1,
+        "donor_id": "matrix:85",
+        "stratum": 1,
+        "pn_columns": [
+          4,
+          28,
+          31
+        ],
+        "pn_ids": [
+          "matrix:8",
+          "matrix:49",
+          "matrix:52"
+        ],
+        "raw_counts": [
+          1,
+          17,
+          1
+        ]
+      },
+      {
+        "id": "grown:1005:0:80:1",
+        "donor_column": 12,
+        "donor_id": "matrix:96",
+        "stratum": 1,
+        "pn_columns": [
+          32
+        ],
+        "pn_ids": [
+          "matrix:53"
+        ],
+        "raw_counts": [
+          44
+        ]
+      },
+      {
+        "id": "grown:1005:0:80:2",
+        "donor_column": 17,
+        "donor_id": "matrix:120",
+        "stratum": 2,
+        "pn_columns": [
+          13,
+          25,
+          37
+        ],
+        "pn_ids": [
+          "matrix:26",
+          "matrix:46",
+          "matrix:58"
+        ],
+        "raw_counts": [
+          14,
+          1,
+          25
+        ]
+      },
+      {
+        "id": "grown:1005:0:80:3",
+        "donor_column": 39,
+        "donor_id": "matrix:150",
+        "stratum": 3,
+        "pn_columns": [
+          9,
+          10,
+          15,
+          25,
+          38
+        ],
+        "pn_ids": [
+          "matrix:18",
+          "matrix:20",
+          "matrix:30",
+          "matrix:46",
+          "matrix:59"
+        ],
+        "raw_counts": [
+          2,
+          11,
+          5,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "grown:1005:0:80:4",
+        "donor_column": 50,
+        "donor_id": "matrix:177",
+        "stratum": 4,
+        "pn_columns": [
+          2,
+          4,
+          18,
+          21,
+          22,
+          23,
+          25,
+          38
+        ],
+        "pn_ids": [
+          "matrix:4",
+          "matrix:8",
+          "matrix:36",
+          "matrix:42",
+          "matrix:43",
+          "matrix:44",
+          "matrix:46",
+          "matrix:59"
+        ],
+        "raw_counts": [
+          20,
+          6,
+          1,
+          1,
+          7,
+          1,
+          9,
+          3
+        ]
+      },
+      {
+        "id": "grown:1005:0:80:5",
+        "donor_column": 53,
+        "donor_id": "matrix:180",
+        "stratum": 4,
+        "pn_columns": [
+          5,
+          7,
+          13,
+          16,
+          22,
+          24,
+          39
+        ],
+        "pn_ids": [
+          "matrix:10",
+          "matrix:14",
+          "matrix:26",
+          "matrix:32",
+          "matrix:43",
+          "matrix:45",
+          "matrix:60"
+        ],
+        "raw_counts": [
+          4,
+          1,
+          13,
+          5,
+          10,
+          3,
+          2
+        ]
+      },
+      {
+        "id": "grown:1005:0:80:6",
+        "donor_column": 62,
+        "donor_id": "matrix:206",
+        "stratum": 5,
+        "pn_columns": [
+          6,
+          7,
+          16,
+          17,
+          19,
+          22,
+          25,
+          33,
+          39
+        ],
+        "pn_ids": [
+          "matrix:12",
+          "matrix:14",
+          "matrix:32",
+          "matrix:34",
+          "matrix:38",
+          "matrix:43",
+          "matrix:46",
+          "matrix:54",
+          "matrix:60"
+        ],
+        "raw_counts": [
+          1,
+          7,
+          5,
+          4,
+          2,
+          1,
+          18,
+          5,
+          6
+        ]
+      }
+    ],
+    "seed_namespace": [
+      3,
+      2,
+      1005,
+      1,
+      0,
+      80
+    ],
+    "native_replacement": null,
+    "null_swaps": null
+  }
+}

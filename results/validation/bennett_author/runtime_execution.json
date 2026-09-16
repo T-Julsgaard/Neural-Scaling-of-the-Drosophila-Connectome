@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-11T21:59:53.455497+00:00",
+  "calls": [
+    {
+      "command": [
+        "C:\\Users\\thoma\\Documents\\Git\\Neural-Scaling-of-the-Drosophila-Connectome\\.cache\\octave-runtime\\octave-11.3.0-w64\\mingw64\\bin\\octave-cli.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\thoma\\Documents\\Git\\Neural-Scaling-of-the-Drosophila-Connectome\\results\\validation\\bennett_author",
+      "returncode": 0,
+      "stdout": "GNU Octave (x86_64-w64-mingw32) version 11.3.0\nCopyright (C) 1993-2026 The Octave Project Developers.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>\n\nThis is free software; see the source code for copying conditions.\nThere is NO WARRANTY, to the extent permitted by law.\n\nHome page:            <https://octave.org>\nSupport resources:    <https://octave.org/support>\nImprove Octave:       <https://octave.org/get-involved>\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\thoma\\Documents\\Git\\Neural-Scaling-of-the-Drosophila-Connectome\\.cache\\octave-runtime\\octave-11.3.0-w64\\mingw64\\bin\\octave-cli.exe",
+        "--no-init-file",
+        "--no-site-file",
+        "--no-history",
+        "--quiet",
+        "run_reference.m"
+      ],
+      "cwd": "C:\\Users\\thoma\\Documents\\Git\\Neural-Scaling-of-the-Drosophila-Connectome\\results\\validation\\bennett_author",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\thoma\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "C:\\Users\\thoma\\Documents\\Git\\Neural-Scaling-of-the-Drosophila-Connectome\\tools\\compare_bennett_reference.py",
+        "C:\\Users\\thoma\\Documents\\Git\\Neural-Scaling-of-the-Drosophila-Connectome\\results\\validation\\bennett_author\\author_trace.csv",
+        "--runtime",
+        "GNU Octave (x86_64-w64-mingw32) version 11.3.0"
+      ],
+      "cwd": "C:\\Users\\thoma\\Documents\\Git\\Neural-Scaling-of-the-Drosophila-Connectome",
+      "returncode": 0,
+      "stdout": "{\"kind\": \"provided_author_trace_comparison\", \"status\": \"passed\", \"maximum_absolute_error\": 6.661338147750939e-16, \"tolerance\": 1e-10, \"runtime_reported_by_operator\": \"GNU Octave (x86_64-w64-mingw32) version 11.3.0\", \"trace_sha256\": \"d52a905bf1fe58037c988a25f09716479bf8258b22286c3b6fe2169af7c0a705\", \"fixture_sha256\": \"381dd15ad985da49234cda4782863501d4c296fd0212125b4110c497ad04b513\", \"limit\": \"Numerical comparison alone does not authenticate author runtime execution; retain generation log and preparation manifest.\"}\n",
+      "stderr": ""
+    }
+  ]
+}

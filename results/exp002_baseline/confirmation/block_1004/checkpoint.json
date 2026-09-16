@@ -1,0 +1,337 @@
+{
+  "sha256": "1bcb29e46c7aa673872f6ed68a7c314292623a89c7d800e92d145db62ba79273",
+  "payload": {
+    "contract": {
+      "schema_version": 1,
+      "stage": "confirmation",
+      "configs": [
+        {
+          "representation": "native",
+          "arm": "frozen",
+          "eta": 0.0,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "reward_only",
+          "eta": 0.001,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "feedback",
+          "eta": 0.01,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.01,
+          "temperature": 0.1
+        },
+        {
+          "representation": "pn",
+          "arm": "delta",
+          "eta": 0.01,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "feedback",
+          "eta": 0.001,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.001,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "reward_only",
+          "eta": 0.001,
+          "temperature": 0.2
+        }
+      ],
+      "code_snapshot": {
+        "exp002/__init__.py": "821bba9a3abb389677122031cca3a9d69e676b34c3cdaa615a50159dd14fbb02",
+        "exp002/assay.py": "af684ef6078fc65bc3cbc4d32cf67696a4aad1b14cde94de45419111c3ba2067",
+        "exp002/baseline.py": "8773b744b17ed9f26fc18b0c180e4b950fd5787f94e10369cad671f0d6ffc34d",
+        "exp002/campaign.py": "62dbb56405e2c95d00682d1a5f9b8b9593463c3d6ef3592b0f49f38eb0feb009",
+        "exp002/data.py": "4ac262f2dff587e18ca8e3f74c88f115b8d13cbe4ef023decd81cd9f2b547d0d",
+        "exp002/rules.py": "fda3289a939bdaff09614bda6e8cc5b61e676702a454594da796647c38f8e793",
+        "experiments/EXP-002-baseline-protocol.md": "8b106629b405405c20b99cef342ca51e933f2003fb50d4e67a26d1e1cd0c41e6",
+        "tests/test_baseline.py": "da9ef683bf9abbdd51660b042ec718f7952eb82dca96a398d8aa4a0684975f61",
+        "tools/run_baseline.py": "ffc1987a63d793374d91f7c2a2d4e9517b2590043cc8e36eb1c72a0a58322844"
+      },
+      "projection": {
+        "source_id": "S64",
+        "archive_sha256": "c1dbbb9b3096d8d70e6093a6e14a0eafa9fe684ccaa1aefe1ab7d1cb81dbf85d",
+        "csv_sha256": "b9d06b052b0c4b91a7221b3dde9552b670bb81c034d0d3ed7fdb5e4a3b2cfc4b",
+        "projection_sha256": "5cbefe14a326e60c3307023323c25d9c614ebac25ecc392d7e14602a22cdc090",
+        "pn_ids": [
+          "matrix:0",
+          "matrix:2",
+          "matrix:4",
+          "matrix:6",
+          "matrix:8",
+          "matrix:10",
+          "matrix:12",
+          "matrix:14",
+          "matrix:16",
+          "matrix:18",
+          "matrix:20",
+          "matrix:22",
+          "matrix:24",
+          "matrix:26",
+          "matrix:28",
+          "matrix:30",
+          "matrix:32",
+          "matrix:34",
+          "matrix:36",
+          "matrix:38",
+          "matrix:40",
+          "matrix:42",
+          "matrix:43",
+          "matrix:44",
+          "matrix:45",
+          "matrix:46",
+          "matrix:47",
+          "matrix:48",
+          "matrix:49",
+          "matrix:50",
+          "matrix:51",
+          "matrix:52",
+          "matrix:53",
+          "matrix:54",
+          "matrix:55",
+          "matrix:56",
+          "matrix:57",
+          "matrix:58",
+          "matrix:59",
+          "matrix:60"
+        ],
+        "kc_ids": [
+          "matrix:84",
+          "matrix:85",
+          "matrix:86",
+          "matrix:87",
+          "matrix:88",
+          "matrix:89",
+          "matrix:90",
+          "matrix:91",
+          "matrix:92",
+          "matrix:93",
+          "matrix:94",
+          "matrix:95",
+          "matrix:96",
+          "matrix:97",
+          "matrix:98",
+          "matrix:99",
+          "matrix:100",
+          "matrix:120",
+          "matrix:121",
+          "matrix:122",
+          "matrix:123",
+          "matrix:124",
+          "matrix:125",
+          "matrix:126",
+          "matrix:127",
+          "matrix:128",
+          "matrix:129",
+          "matrix:130",
+          "matrix:139",
+          "matrix:140",
+          "matrix:141",
+          "matrix:142",
+          "matrix:143",
+          "matrix:144",
+          "matrix:145",
+          "matrix:146",
+          "matrix:147",
+          "matrix:148",
+          "matrix:149",
+          "matrix:150",
+          "matrix:151",
+          "matrix:152",
+          "matrix:169",
+          "matrix:170",
+          "matrix:171",
+          "matrix:172",
+          "matrix:173",
+          "matrix:174",
+          "matrix:175",
+          "matrix:176",
+          "matrix:177",
+          "matrix:178",
+          "matrix:179",
+          "matrix:180",
+          "matrix:181",
+          "matrix:182",
+          "matrix:183",
+          "matrix:184",
+          "matrix:185",
+          "matrix:186",
+          "matrix:204",
+          "matrix:205",
+          "matrix:206",
+          "matrix:207",
+          "matrix:208",
+          "matrix:209",
+          "matrix:210",
+          "matrix:211",
+          "matrix:222",
+          "matrix:223",
+          "matrix:224",
+          "matrix:225",
+          "matrix:226"
+        ],
+        "orientation": "row PN -> column mature KC",
+        "shape": [
+          40,
+          73
+        ],
+        "edges": 365,
+        "contacts": 2188
+      },
+      "environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "os": "Windows-10-10.0.19045-SP0",
+        "processor": "Intel64 Family 6 Model 60 Stepping 3, GenuineIntel",
+        "logical_cpus": 8,
+        "machine_role": "current_session_not_colleague_target",
+        "executable": "C:\\Users\\thoma\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe"
+      },
+      "selection_sha256": "39fe3bd5788ff724322d600d11e25e8e0ed312ad5765de0df7c0c22178039129",
+      "r02_report_sha256": "517221b9159df036fe9b7f3ae05bb1f944969a3b12cbbaa75207d85f6a529b68",
+      "validation_report_sha256": "0e25fdd05d4a72e13ef7926cdad7a2f8bd79f325702156b30dbf47fc47e66a4e"
+    },
+    "block": 1004,
+    "stage": "confirmation",
+    "next_episode": 20,
+    "artifacts": [
+      {
+        "file": "episode_00.npz",
+        "sha256": "16f7cf05c730ec71e0b1ca5659aea4dd66b0acea9f5dfd5cec7c0356ea609c97",
+        "task_hash": "e8d84ce0e9910e668ba07781df0f06d2c4c4303d7f721487642d4e6bdbcbae7d"
+      },
+      {
+        "file": "episode_01.npz",
+        "sha256": "a94bcdd8738bc6c900b409ff58767fd3b3e552f2b483d57dccecbec08dc43369",
+        "task_hash": "b2b7cc00b92ae8e4ee24ab3bdd8810247aec8b3866d05cc1384af4c5be07d85b"
+      },
+      {
+        "file": "episode_02.npz",
+        "sha256": "2e8fabe8abf6c10cb787ec028171bdda66378d884b82ee181f24b965d3320843",
+        "task_hash": "bda7eb8767feba4a0f8b0e18fe8a01d7eb0be7468d2fa6071d7f45c7697d50d3"
+      },
+      {
+        "file": "episode_03.npz",
+        "sha256": "1342fe7cfc125db1da0cba89dcb287ec37bc98800268a50b19e2f1f6f97fbc45",
+        "task_hash": "34eab4bad9811a23e718d7012c0293ed261bef20cbe29076946357d5c611351f"
+      },
+      {
+        "file": "episode_04.npz",
+        "sha256": "126fc9432a478e5352b1668b48d5d0ab9e4a0c818346baf93e2764537fb5aeab",
+        "task_hash": "78daddcb8a252e616f2862ec2d7d97c57f42b36a3f07ee62ba9ab46b9766299a"
+      },
+      {
+        "file": "episode_05.npz",
+        "sha256": "2865699fff6a82cd7749417e765df8bfe75f4e1a11c119fe030275e4bbd7f137",
+        "task_hash": "0c987d12486393a775dca9c7927e4565b99b6dd7079de110c17f98d292e4de37"
+      },
+      {
+        "file": "episode_06.npz",
+        "sha256": "fdadc9107d174cdc4442915b8a3ad452fbe7ae1b0504538eb4f253c92bc8a13d",
+        "task_hash": "906077f11e9b49309fdce1bb4e15a70a2ca2d3cb7ecae0b566ec12c274bb9eb1"
+      },
+      {
+        "file": "episode_07.npz",
+        "sha256": "20236fca064a15e1fe01605bf555c9d31aac96f6feeecbfadb4657b8a9129cf9",
+        "task_hash": "90d6f8ee9f588718e4bfa19b866d7c95d16b1cea17bd86a9f88388e6344ab874"
+      },
+      {
+        "file": "episode_08.npz",
+        "sha256": "cddeffa4f6d0d805086f5202bebb30f4b99def5ffcc2144ce307dda3ba6de3b8",
+        "task_hash": "133961cc5031ecf6d0c067dfca2b0538b7b8073a2fb8122014cb70607d2e601b"
+      },
+      {
+        "file": "episode_09.npz",
+        "sha256": "c16eca19a51ec1c60327273273d10a92262f71b6cd66e7da237e3b53208104b1",
+        "task_hash": "47b75f83a15b1548bc17aaf1f6556f94bb2d054aac862102552ebb643686c7f1"
+      },
+      {
+        "file": "episode_10.npz",
+        "sha256": "4abe57e2bc3331910891afaba7c1a5286b1b1f1b206845ade386c5d2ec61ec47",
+        "task_hash": "2732e9f3107cac4b23fa72cfda040c7c4a733c9966b4f26614694c66cce7c3bc"
+      },
+      {
+        "file": "episode_11.npz",
+        "sha256": "819808d6df0c6c1e213d143234168bc6df09c3f75b17eea1c0168881d2e9fa5e",
+        "task_hash": "8be2f317b6a1765c2a01e8f6966a5477d73b83ca7f26ec7054c72b93e66e58eb"
+      },
+      {
+        "file": "episode_12.npz",
+        "sha256": "e126ebf2da66132b81cdcd7875e8f7d3401eaf348552c6168999e2d5cd7ebc21",
+        "task_hash": "12878c1f6d60bce5e8513c5f76a8e17bd589aee5c2a7468a4a8dd1d4e0c3ac30"
+      },
+      {
+        "file": "episode_13.npz",
+        "sha256": "46e725e0fa51dc298e045b9ce436c6b5bb10a146b5881aa3191579ca7a5e1841",
+        "task_hash": "360428351e8c88f110ef555ed3db93d570417bdba8c0d54ede05d88396610090"
+      },
+      {
+        "file": "episode_14.npz",
+        "sha256": "8a2bbc5171022d36c7ea4ee0d5c498b298b285b4264c4e476b9b435f704b0a8f",
+        "task_hash": "fd9cff260558bc1e1223ba11f3af9caceabb6282470c36082f213e2bdf5c18be"
+      },
+      {
+        "file": "episode_15.npz",
+        "sha256": "2c48730f5cdcdc59c8fa1cbf32134c58c8ad6fda4889f9144c75eab215e09294",
+        "task_hash": "17893a27c5c1db0c7691d3f5f54f2c4c103cd18f4de8c9e2594b3f4ef32a0f74"
+      },
+      {
+        "file": "episode_16.npz",
+        "sha256": "ce0855a2abb15a5974258261abcf7bf742b56f994bf5905e4f4175c7a8aa866d",
+        "task_hash": "c88c1887df07ff5f4a4fcdcb867efc5aaeff12d5617ee899cae48c0380686ac2"
+      },
+      {
+        "file": "episode_17.npz",
+        "sha256": "b8ab1afd4917054039346c505bebe26785dcd7520c069f425910d8bf1ceb338b",
+        "task_hash": "d4d7c548a77e80350b11f9a95ada28abe91ae36c259d6b856fe5e48531bc43e8"
+      },
+      {
+        "file": "episode_18.npz",
+        "sha256": "d26351e834ed0d9ef44e84843955aa5079d81f61752f9bd17e225772b0f64728",
+        "task_hash": "f18bd23009cd56ac1e8de88bf82503eff1205eea2c6eae38a0ece01a281f9791"
+      },
+      {
+        "file": "episode_19.npz",
+        "sha256": "b9b010d7524b7340b7aad714d5af250ee76277c1431221a72db04ede5d53a0e9",
+        "task_hash": "34c8bd3a2648c61852dd5e563a9dd54b1afecdb205dcff1446162d66fe72dc8d"
+      }
+    ],
+    "wall_seconds": 7.702580900018802,
+    "cpu_seconds": 6.796875,
+    "peak_working_set_bytes": 51089408,
+    "preprocessing_seconds": 2.145766600035131,
+    "learning_and_probe_seconds": 4.689520800078753,
+    "boundary": "reset before next episode; RNG streams derived from stage/block/episode",
+    "last_boundary_state": {
+      "artifact": "episode_19.npz",
+      "trial": 384,
+      "next_episode_weights": 0.1,
+      "live_rng": null,
+      "seed_template": [
+        2,
+        2,
+        1004,
+        0,
+        "component",
+        20
+      ]
+    }
+  }
+}

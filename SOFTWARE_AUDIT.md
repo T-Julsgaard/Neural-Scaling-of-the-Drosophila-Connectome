@@ -1,5 +1,16 @@
 # Software audit
 
+## EXP-011 validation and replay — 2026-09-15
+
+Five tests and 31 block replays passed; 11218 arrays compared exactly and 460 historical files unchanged. Bundled NumPy CPU runtime. Automated self-audit, not independent validation. [Report](experiments/EXP-011-results.md).
+
+## EXP-010 validation — 2026-09-15
+
+Five tests passed; existing delta arithmetic, ridge augmented least-squares equivalence, signed/nonnegative decomposition, orthogonal learning, scale equivalence, stream/access isolation and author order invariance checked. All 31 blocks and saved arrays replay exactly; 70 historical scientific files unchanged. Bundled SciPy was absent; before any task execution, the t critical value for fixed n=24 replaced that optional dependency. [EXP-010 report](experiments/EXP-010-results.md).
+
+## Session A selected compensation dependency — 2026-09-15
+
+The previous deferral of Abdelrahman's repository is superseded for EXP-009 only. Pinned commit 9f3f7e9e85117febef1ad32e3152c830570f74d3, GPL-3.0 source retained, GNU Octave 11.3.0 supplied-input reference executed. NumPy implements SI Eq.3/20/21 and author noise lookup; no execution/validation of the joint calibration optimizer. [Audit](research/SESSION_A_SOURCE_AUDIT.md), [validation](results/exp009/validation.json).
 Checked 2026-09-11 through public GitHub metadata and selected source inspection. Exact JSON records: [software_metadata.json](research/software_metadata.json), [asset_audit.json](research/asset_audit.json). A recent push is a maintenance signal, not a guarantee of support. Subsequent EXP-002 validation used a project venv with the installed bundled NumPy; no upstream runtime or scientific reproduction ran. [Validation environment and evidence](experiments/EXP-002-validation.md).
 
 | Candidate | Pinned commit | License reported | Last push / inspection / decision |

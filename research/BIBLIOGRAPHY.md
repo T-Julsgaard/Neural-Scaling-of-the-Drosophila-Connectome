@@ -1,5 +1,9 @@
 # Bibliography
 
+Manuscript follow-up: [content and attribution map](REPORT_CONTENT_AND_ATTRIBUTION.md) identifies point-of-use paper, code and dataset citations, including anatomical data and Bennett learning-rule lineage omitted from the first draft. It also distinguishes Zou-related context from direct implementation reuse. Use this alongside the historical catalog, not as a claim that every listed source was newly read in full.
+
+Session D supplement (2026-09-16): [primary-literature audit](SESSION_D_LITERATURE_AUDIT.md) adds versioned Zou/Zang/Ji and Fly-CL comparisons and refreshed compensation reading depth. The generated historical catalog below retains its original metadata date; its “no source reproduced” sentence describes the foundation, not the later bounded A adaptation.
+
 Checked 2026-09-11. Read depth and publication status are recorded explicitly. No source has been internally reproduced. Metadata verification is separate from scientific verification.
 
 - **S01** Dorkenwald et al. (2024). [Neuronal wiring diagram of an adult brain](https://www.nature.com/articles/s41586-024-07558-y). journal; `article_sections`.

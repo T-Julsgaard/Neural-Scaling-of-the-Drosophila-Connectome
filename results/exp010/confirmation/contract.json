@@ -1,0 +1,127 @@
+{
+  "created_utc": "2026-09-15T14:36:51Z",
+  "source": {
+    "tools/run_readout_diagnostic.py": "75496612305b0d4dcea9fb7520b41a01cefda03a1282b461fdb4c214f3501436",
+    "tests/test_exp010.py": "8e6e84766796fbf3ef726d079a329c39f0ea82c6e41595ca5db3cab2f8664c19",
+    "experiments/EXP-010-protocol.md": "5055ca36685099bf3f0cf3bc3097033bb115430f72976d329195f63d850d6269",
+    "results/exp007_calibration/calibration.npz": "66ff407480d426838b3cbd1ece4f1d467433ce5942d534a25d6983e02947afd1",
+    "exp002/assay.py": "af684ef6078fc65bc3cbc4d32cf67696a4aad1b14cde94de45419111c3ba2067",
+    "exp002/baseline.py": "8773b744b17ed9f26fc18b0c180e4b950fd5787f94e10369cad671f0d6ffc34d",
+    "exp002/campaign.py": "62dbb56405e2c95d00682d1a5f9b8b9593463c3d6ef3592b0f49f38eb0feb009",
+    "exp002/data.py": "4ac262f2dff587e18ca8e3f74c88f115b8d13cbe4ef023decd81cd9f2b547d0d",
+    "exp002/rules.py": "fda3289a939bdaff09614bda6e8cc5b61e676702a454594da796647c38f8e793",
+    "exp002/__init__.py": "821bba9a3abb389677122031cca3a9d69e676b34c3cdaa615a50159dd14fbb02",
+    "exp007/campaign.py": "eb0a7b09fcaad72cd4417317c11e6a969d5f7c14e7eb520c3d7a9bf17ebb193b",
+    "exp007/homeostasis.py": "4816267dbf2eff15a0094f583efcd76f7e7d1ff2653d0fe77d3119ff95d3eef2",
+    "exp007/memory.py": "5c2d288331ca62aa2bf6b263df34a16d1ad25c51176ea6c0a0639c03bce3a680",
+    "exp007/__init__.py": "bbcd0c3f2674ebba886ebab2a3fbd1cdb495b7767f0f54dcf0c87c749072098f",
+    "exp009/compensation.py": "dfb9576c54e76ac330b7f165e6d0a019232cae96e3fb0e0c0efc86f99ab61def",
+    "exp009/__init__.py": "5791de315d671342ffb40399bed2029f5e805f451358099ba59a0aa8f7fbc4b7"
+  },
+  "selection": {
+    "created_utc": "2026-09-15T14:36:35Z",
+    "source": {
+      "tools/run_readout_diagnostic.py": "75496612305b0d4dcea9fb7520b41a01cefda03a1282b461fdb4c214f3501436",
+      "tests/test_exp010.py": "8e6e84766796fbf3ef726d079a329c39f0ea82c6e41595ca5db3cab2f8664c19",
+      "experiments/EXP-010-protocol.md": "5055ca36685099bf3f0cf3bc3097033bb115430f72976d329195f63d850d6269",
+      "results/exp007_calibration/calibration.npz": "66ff407480d426838b3cbd1ece4f1d467433ce5942d534a25d6983e02947afd1",
+      "exp002/assay.py": "af684ef6078fc65bc3cbc4d32cf67696a4aad1b14cde94de45419111c3ba2067",
+      "exp002/baseline.py": "8773b744b17ed9f26fc18b0c180e4b950fd5787f94e10369cad671f0d6ffc34d",
+      "exp002/campaign.py": "62dbb56405e2c95d00682d1a5f9b8b9593463c3d6ef3592b0f49f38eb0feb009",
+      "exp002/data.py": "4ac262f2dff587e18ca8e3f74c88f115b8d13cbe4ef023decd81cd9f2b547d0d",
+      "exp002/rules.py": "fda3289a939bdaff09614bda6e8cc5b61e676702a454594da796647c38f8e793",
+      "exp002/__init__.py": "821bba9a3abb389677122031cca3a9d69e676b34c3cdaa615a50159dd14fbb02",
+      "exp007/campaign.py": "eb0a7b09fcaad72cd4417317c11e6a969d5f7c14e7eb520c3d7a9bf17ebb193b",
+      "exp007/homeostasis.py": "4816267dbf2eff15a0094f583efcd76f7e7d1ff2653d0fe77d3119ff95d3eef2",
+      "exp007/memory.py": "5c2d288331ca62aa2bf6b263df34a16d1ad25c51176ea6c0a0639c03bce3a680",
+      "exp007/__init__.py": "bbcd0c3f2674ebba886ebab2a3fbd1cdb495b7767f0f54dcf0c87c749072098f",
+      "exp009/compensation.py": "dfb9576c54e76ac330b7f165e6d0a019232cae96e3fb0e0c0efc86f99ab61def",
+      "exp009/__init__.py": "5791de315d671342ffb40399bed2029f5e805f451358099ba59a0aa8f7fbc4b7"
+    },
+    "lambdas": {
+      "native": {
+        "chosen": 0.1,
+        "full": 1e-06
+      },
+      "calibrated": {
+        "chosen": 0.01,
+        "full": 0.01
+      },
+      "random1": {
+        "chosen": 0.01,
+        "full": 0.01
+      },
+      "random1_cal": {
+        "chosen": 0.01,
+        "full": 0.01
+      },
+      "random2": {
+        "chosen": 1e-06,
+        "full": 1e-06
+      },
+      "random2_cal": {
+        "chosen": 0.1,
+        "full": 0.01
+      },
+      "random3": {
+        "chosen": 0.0001,
+        "full": 0.0001
+      },
+      "random3_cal": {
+        "chosen": 0.1,
+        "full": 0.01
+      },
+      "direct": {
+        "chosen": 1e-06,
+        "full": 0.0001
+      },
+      "direct_raw": {
+        "chosen": 1e-06,
+        "full": 1e-06
+      }
+    },
+    "gate": true,
+    "development_offline": 0.9810763888888889,
+    "development_supervised": 0.7667534722222222,
+    "n": 24,
+    "prediction": "Offline-full old-pair accuracy >= .80; paired lower 95% CI versus supervised online > .05; supervised acquisition-to-final old accuracy loss lower CI > .05. Failure of any criterion falsifies this fixed-regime prediction.",
+    "explanation": "Sequential error-dependent readout procedure loses still-linearly-recoverable preferences; full outcome access alone does not remove the deficit.",
+    "development_hashes": {
+      "block_101000.json": "71315cf4056c03b371e8c1d98e258c0463d2687d2ddbb49e2862b45c79a2e3b7",
+      "block_101001.json": "4a6e1601367d8f47b9b4334ee82eb06eb4355a102538ba7e97907907501627c5",
+      "block_101002.json": "8af4338f5432f9fdf7842174d3e6a5156fcd01c7f7f95a1bafa2313a8715ea17",
+      "block_101003.json": "c473faefa955c72de6b8f2ecdc533200fb104263382b00567ddd9dbb9c6e49af",
+      "block_101004.json": "dafbbce514d63830ba1a00b607db10e3b98bc5dcb2af68315c13421d29b369e3",
+      "block_101005.json": "cd6ca123830da4750192cb6f7346805011b151c2980d4d535ec323bdd847d657"
+    }
+  },
+  "blocks": [
+    102000,
+    102001,
+    102002,
+    102003,
+    102004,
+    102005,
+    102006,
+    102007,
+    102008,
+    102009,
+    102010,
+    102011,
+    102012,
+    102013,
+    102014,
+    102015,
+    102016,
+    102017,
+    102018,
+    102019,
+    102020,
+    102021,
+    102022,
+    102023
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-10-10.0.19045-SP0"
+}

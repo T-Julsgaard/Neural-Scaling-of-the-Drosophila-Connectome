@@ -1,5 +1,17 @@
 # Data provenance and access audit
 
+## EXP-011 synthetic task provenance — 2026-09-15
+
+Fresh root-11011 stage-separated synthetic compound-task streams; no new anatomical data. Reuses the hashed EXP-007 calibration archive and the three fixed randomized projections used by B. No evaluation-specific calibration. Inputs, labels, channel permutations and schedule indices are locally archived under results/exp011. [Protocol](experiments/EXP-011-protocol.md).
+
+## Session A source bundle — 2026-09-15
+
+[Source audit](research/SESSION_A_SOURCE_AUDIT.md) pins Abdelrahman et al. repository commit 9f3f7e9e85117febef1ad32e3152c830570f74d3, supplied fitted MAT instance, Hallem-Olsen PN table, MATLAB methods/noise/evaluator, published PDF, SI and Dataset S1. [Hash manifest](research/exp009_source_audit.json). GPL license and original bytes retained. One supplied calibrated instance is conditioning information, not a newly sampled animal. Saved labels are not reused for new learning. New prototype/noise/label streams and training-only scaling are declared in EXP-009. Source code says 4.5x while saved weights are 5x; no silent correction.
+
+## 2026-09-14 adult execution input
+
+D08 is now pinned for EXP-008: hemibrain:v1.1 exported traced adjacency archive, primary ROI CA(R), positive contacts from the author monoglomerular PN ID list to type KCg-m. The [anatomy manifest](results/exp008_anatomy/record.json) records source hashes, annotation commit, all IDs/exclusions, terms and normalization. 104 PNs, 590 KCs, 4,878 edges, 85,151 contacts. Every selected ROI count was checked against its total-neuron-pair count. The underlying [adult study](https://elifesciences.org/articles/62576#data-availability) states CC-BY; its [archive record](https://api.figshare.com/v2/articles/12818645) specifies CC BY 4.0. PN annotation repository is GPL-3.0; retain both attributions. The downloaded positional KC exclusion file is not applied without its original ID ordering. Source non-cropped traced filtering and residual completeness limits are explicit. Raw archive stays local; this is an adult subcircuit, not all adult MB inputs. Earlier dated audit below is historical.
+
 Checked **2026-09-11**. Publication access, metadata access, file download, schema inspection, and experimental use are separate states. No dataset has been used in a completed experiment. Public availability does not imply an unrestricted license.
 
 ## Candidate register

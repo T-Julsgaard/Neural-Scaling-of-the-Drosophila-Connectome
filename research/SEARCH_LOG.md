@@ -1,5 +1,29 @@
 # Search and reading record
 
+## 2026-09-16 — Manuscript attribution follow-up
+
+Traced direct model/data dependencies through local source, protocol, extraction and reproduction records; rechecked primary publisher/author records for Eichler, Scheffer, Li, Bennett and inherited sensory ingredients. Nature full-text access was intermittent; no new full reproduction or raw sensory-data processing is claimed. [Attribution map and reading scope](REPORT_CONTENT_AND_ATTRIBUTION.md). This supplements D's novelty review by distinguishing actual reuse from related work and specifying where citations belong.
+
+## 2026-09-16 — Session D targeted primary-literature review
+
+Rechecked Abdelrahman/Vasilaki/Lin published Results and Fig. 4, Zou/Zang/Ji 2025 primary PDF model/methods, and adjacent Fly-CL primary HTML. Added targeted primary connectivity/rehearsal checks. [Detailed source/version/read-depth audit](SESSION_D_LITERATURE_AUDIT.md). PMC/OpenReview challenges were handled with primary institutional/arXiv sources; no secondary summary supports the decision. The search narrows novelty to a modest empirical boundary case, not a new interference/homeostasis principle. No exhaustive priority search or external reproduction is claimed. The [D assessment](SESSION_D_ASSESSMENT.md) governs manuscript claims.
+
+## 2026-09-15 — Session A targeted compensation audit
+
+Inspected Abdelrahman et al. published Figure 4/complete caption, SI input/coding/learning/threshold-fitting methods and Eq.3/20/21/65, Dataset S1 Fig4 I3:I22 and M3:M22, and pinned author source/data. Search: `Abdelrahman Vasilaki Lin 2021 compensation github code`. Retrieved source tree/main commit through GitHub API and raw files; Europe PMC supplement mirror resolved PNAS challenge. No broad literature resurvey or novelty claim. [Source audit](SESSION_A_SOURCE_AUDIT.md) distinguishes extracted published values, supplied model, numerical validation and bounded adaptation. Exact figure ensemble and optimizer remain unvalidated.
+
+## 2026-09-14 — Targeted paper-novelty assessment after EXP-008
+
+Queries included `mushroom body homeostasis continual learning memory interference activity equalization learning rate connectome`, `"mushroom body" "continual learning" sparse coding homeostasis`, and `"mushroom body" "sparsity" "learning rate" capacity`. Checked compensation, stochastic coding, memory-capacity and structural-intervention primary sources. Particularly close: [Zou, Zang and Ji, 2025](https://arxiv.org/abs/2502.01427), *Structural features of the fly olfactory circuit mitigate the stability-plasticity dilemma in continual learning*. Inspected its primary PDF's model discussion, direct/no-KC comparisons and parameter tables; no code reproduction or publication-status claim beyond the inspected preprint. Also inspected primary summaries/indexed sections for [Srinivasan et al., 2023](https://repository.cshl.edu/id/eprint/41306/), [Ardin et al., 2016](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004683), and [Abdelrahman et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8670477/), alongside Xie/Ocker's primary preprint page. PMC full-page retrieval sometimes challenged access; indexed sections and primary PDFs supplied the stated reading depth.
+
+The broad themes already have precedent. No exact duplicate of the present bounded calibration comparison across larval/adult extracted circuits was identified in this targeted check; this does not establish worldwide priority. The [paper assessment](PAPER_ASSESSMENT_2026-09-14.md) records scope and reviewer concerns. This is not an exhaustive systematic search, a complete citation census or a refreshed bibliographic database.
+
+## 2026-09-14 — Adult transfer input selection for EXP-008
+
+Read the [Li et al. adult mushroom-body study](https://elifesciences.org/articles/62576), especially gamma-main versus gamma-d input anatomy and data availability (S70). The [v1.1 release page](https://dvid.io/blog/release-v1.1/) links the publicly downloadable adjacency archive. Inspected the archive README/schema and pinned the [author monoglomerular PN annotations](https://github.com/aclinlab/CompensatoryVariability) at the commit recorded in [the anatomy manifest](../results/exp008_anatomy/record.json). The [Figshare archive metadata](https://api.figshare.com/v2/articles/12818645) specifies CC BY 4.0. The annotation repository specifies GPL-3.0. No upstream analysis code executed.
+
+Selected CA(R) contacts to KCg-m using anatomy and bounded computational size before learning outcomes. The author's positional KC exclusions were not mapped to body IDs without their original ordering. PMC retrieval encountered an access challenge; the primary eLife article and public provider/archive metadata were accessible. Anonymous public shell downloads required approved sandbox network escalation. This is targeted source verification and new experimental input selection, not a literature-wide update.
+
 Date: **2026-09-11**. Search surface: web search/open/find; primary publisher and preprint pages; official provider documentation; public GitHub metadata/source; small publisher supplements; Crossref bibliographic metadata. No subscription database, private dataset or paid tool used. This is a documented broad survey and targeted follow-up, not an exhaustive PRISMA review or complete citation census.
 
 ## Coverage and progression

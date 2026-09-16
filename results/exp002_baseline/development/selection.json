@@ -1,0 +1,64 @@
+{
+  "sha256": "43c3b3bd5bbe958cd6d89c037c928c88e568876e665c9df1376c8b292ab87d5e",
+  "payload": {
+    "created_utc": "2026-09-11T22:02:24.041357+00:00",
+    "selected": {
+      "native_reward_only": {
+        "representation": "native",
+        "arm": "reward_only",
+        "eta": 0.001,
+        "temperature": 0.1
+      },
+      "native_feedback": {
+        "representation": "native",
+        "arm": "feedback",
+        "eta": 0.01,
+        "temperature": 0.2
+      },
+      "native_delta": {
+        "representation": "native",
+        "arm": "delta",
+        "eta": 0.01,
+        "temperature": 0.1
+      },
+      "pn_delta": {
+        "representation": "pn",
+        "arm": "delta",
+        "eta": 0.01,
+        "temperature": 0.1
+      }
+    },
+    "structural_candidate": {
+      "representation": "native",
+      "arm": "delta",
+      "eta": 0.01,
+      "temperature": 0.1
+    },
+    "provisional_adequacy": true,
+    "code_snapshot": {
+      "exp002/__init__.py": "821bba9a3abb389677122031cca3a9d69e676b34c3cdaa615a50159dd14fbb02",
+      "exp002/assay.py": "af684ef6078fc65bc3cbc4d32cf67696a4aad1b14cde94de45419111c3ba2067",
+      "exp002/baseline.py": "8773b744b17ed9f26fc18b0c180e4b950fd5787f94e10369cad671f0d6ffc34d",
+      "exp002/campaign.py": "62dbb56405e2c95d00682d1a5f9b8b9593463c3d6ef3592b0f49f38eb0feb009",
+      "exp002/data.py": "4ac262f2dff587e18ca8e3f74c88f115b8d13cbe4ef023decd81cd9f2b547d0d",
+      "exp002/rules.py": "fda3289a939bdaff09614bda6e8cc5b61e676702a454594da796647c38f8e793",
+      "experiments/EXP-002-baseline-protocol.md": "8b106629b405405c20b99cef342ca51e933f2003fb50d4e67a26d1e1cd0c41e6",
+      "tests/test_baseline.py": "da9ef683bf9abbdd51660b042ec718f7952eb82dca96a398d8aa4a0684975f61",
+      "tools/run_baseline.py": "ffc1987a63d793374d91f7c2a2d4e9517b2590043cc8e36eb1c72a0a58322844"
+    },
+    "development_contract_sha256": "7ef4d0c6a834d2784011edf54a2ca076bf894d8be3186562ec825a5323b7c7a6",
+    "development_block_summaries": {
+      "100": "2e88c1e65f0ad19d26f96a366d41c34a281739f3a3a42dda5e02761727877a11",
+      "101": "96502420cceaf182d92344b85b27a9b4fa66e513eb2dd78d900eb08ad165f13d",
+      "102": "b80003df69b282cfef0ceaad4cff68d00c617617744d174538fb22bd4df2fe63",
+      "103": "0189902102969e29992ecd72979f1758062000f77a9745d0d2cf38b91b1ed183",
+      "104": "3ba0d1013ab3a398e67952b45f978088e1f77a8a023369b4a22a0b4da5772eae",
+      "105": "59ad1123fe3218f64a68dd15fa909e64bbf5bf408becd1d5670f44c79dde6bb8",
+      "106": "6b4411a71774e2fe907c7e45ce71e0cb3fbb1b5fcf100dba35f7c1ebe9918b71",
+      "107": "801b19a62a7d8607a355c138e1f8b5261a9e3fd477dd152fcffabb1a6b4d5c8d",
+      "108": "eebfdad1ba03b3fb1a4648fce58013ef99dd82040a924e96f901ba6ac836eb5c",
+      "109": "1bbdd8eaee73f3f31e0cf930de11cdabc250a1fdb1be786d4c8b8b544ee83fba"
+    },
+    "limit": "Selection and adequacy on development data are provisional; no H2 inference"
+  }
+}

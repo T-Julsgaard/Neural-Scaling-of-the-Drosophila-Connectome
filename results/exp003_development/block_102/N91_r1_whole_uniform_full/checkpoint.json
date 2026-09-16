@@ -1,0 +1,211 @@
+{
+  "sha256": "2258a34450009413a4cc0dee5d2f212b1cca318a0ab7420371aee80b72fff654",
+  "payload": {
+    "identity": {
+      "contract_sha256": "bc026418b0aef21f616babaf16cf819060940148ff3efb8f8d0792f5ee898873",
+      "graph_sha256": "64e66a854a63698a4f7856368841a258e9181ce130ce9d10953e12a0ced6dee0",
+      "condition": "N91_r1_whole_uniform_full",
+      "mode": "full",
+      "inputs": [
+        "63dc7e050cb87a70813df46da4aa4ade86cf6585e93557c95d36b867003b63c3",
+        "2a6f27376f51b8a93dfc92d8ecde621ba26423906513c9858384b0ae6a973dd3",
+        "c50167baa7e134586c881ad6d98e8696d11afb99cb400467de8705ab4b0cf4b6",
+        "b8670da7064ce007fc14d1fe4063be74dbc3b3751abcdd8544af0c5ff3c2d418",
+        "b840c1c70f36c18dbeaff4e58fe11ae2bbac16fe17a34d23b7ef987bc707893d",
+        "f484eff3043825fb8f743d4c5d7c8b46e16bd8aee9702af74f4072577050b242",
+        "87e27cb8b53de284bb4b5a6fdc5f4703eb52b053f37ad3287e401b96333d8497",
+        "ee500cd0a0368b1e57ec843245879cb934abd2b09b963336aace4d12d2f06e7f",
+        "ee7a386a71693adad855f7cf621035981b759275676ff43cc00cd3c09dc3f1d7",
+        "d261418bc9cb7c469eab317c0a0517e8d2320a45bfba99f9a1862c70d8713257",
+        "4a178d996b493778ec56f25cdedb80440ca6f3070b4c3bdcce6f0b21aeaca5c2",
+        "1556c7fb21ec23e0c463736f99745b9f6404c0ce127a032455531f6c28ba3662",
+        "6806f0b1584d0534e27348c6bcd3c03f4cbc5eae6ccc3212abb2a5c83474753a",
+        "c335697858ed5d59ca3f05250fb88746e88114f891a8e51f8e7fba42e0194e29",
+        "ee92c43962da633b2b1c3c706a71ee2bde0575ab9c8fcca8cbd3002797c36b8f",
+        "558433bc8baba384bee8d80f22cd4ae3c012e92e157924ac87dcff498fed5155",
+        "0c26371f27e573323ec4653a86e49bcf587a88839a269309a116e0ca988227ce",
+        "2fe98ee359a54170530d8b984d8886d618aba696d97e7fd131892ce25cb1bae0",
+        "b3ad57c8abc1adca7ddc8d9b94c638fbfa23296204b8439085b24a245e0d0a31",
+        "a65b3a60ca618ab913bb5f0bd3e5fc88c5c493e696e59c3ede8429fcf121d0ba"
+      ],
+      "configs": [
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.0001,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.0001,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.0001,
+          "temperature": 0.5
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.001,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.001,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.001,
+          "temperature": 0.5
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.01,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.01,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.01,
+          "temperature": 0.5
+        }
+      ]
+    },
+    "next_episode": 20,
+    "artifacts": [
+      {
+        "file": "episode_00.npz",
+        "sha256": "bc5551a8b878d37933a9ce7e683dc850fdaf31cd83d728723ec76c7d24b91763",
+        "task_hash": "152ad36652d5d982da98c4f8152670840cf07038598e5a280a3924dd9bc8bcf6"
+      },
+      {
+        "file": "episode_01.npz",
+        "sha256": "b3e618c776fb7b745fe692381ec115d8baf0b3c31d5100a4c98003a886504f03",
+        "task_hash": "9c29338356e7d4b0eb8b3af0ed666577a6fb34239b77090ba9fc72f7eb10084e"
+      },
+      {
+        "file": "episode_02.npz",
+        "sha256": "3ea7b4fdbfa21e680a99ac374e5905feae4d110675adfeb50b3bfeee95003ca6",
+        "task_hash": "9eaa5194b1b041ea9b1edc0a1dcdda44a77b73c46c13d943d7cba5c44991b1e0"
+      },
+      {
+        "file": "episode_03.npz",
+        "sha256": "e11a1ebbd53261f2b5d8eb7ae48cbead8854191606d56a909bb88d65512d951f",
+        "task_hash": "de31094d1d50e0c409b8a4eec6240e38d0b8575e7fa3c770c9e91fc2e4a512d7"
+      },
+      {
+        "file": "episode_04.npz",
+        "sha256": "bdd0081754e218c15e4d19e8c1d8734660223f45fc60f35c583117f9aa483d5f",
+        "task_hash": "31c3a84b3947afbecdc957f7628671aea3984b0dbddc5807c8718dc9cabb76c7"
+      },
+      {
+        "file": "episode_05.npz",
+        "sha256": "514d4bd997614350d6ef343545237582014743f79ae62f767b0909d6929e209f",
+        "task_hash": "9251bfcc4ea3353fa5da37d810df2de6a47e95c2a95364feffc7442ad05e4177"
+      },
+      {
+        "file": "episode_06.npz",
+        "sha256": "dd7084ef6f00bb74d6a6e88ef7edc05d2328ed143ede5f5737e174998b3039f8",
+        "task_hash": "ae63c0dfa7c73cad2ac9817661630bca16fa28440ad1a738252c7c7d0f581f3c"
+      },
+      {
+        "file": "episode_07.npz",
+        "sha256": "b2e302fdbceab117613a143a88872ca5a113bbd14e5f8256d941f13692c2f3fb",
+        "task_hash": "4466f0701b5cee84a3181bb91671aca91e8823413fec80329905254e09a3caf0"
+      },
+      {
+        "file": "episode_08.npz",
+        "sha256": "4926602ad10a91341d4728da2a28064b298a10b6b48ebaaf9654777d94cd6237",
+        "task_hash": "4e69e23fcb67cd139275627e28fb164a529b9b2430e35a37995241661f25aa68"
+      },
+      {
+        "file": "episode_09.npz",
+        "sha256": "3fd0520ea20d003a5e2a619e6ce66dd6c7d2916c8533efdc6b3ff21034baed7a",
+        "task_hash": "c8495f244926b4515a50516c990c0250f53102432b3b5e538ff5680e60b9a9ab"
+      },
+      {
+        "file": "episode_10.npz",
+        "sha256": "eeccff3daf24925d991f0898738eb2673c02e1b30da399aa057a125fff15ec8a",
+        "task_hash": "229c1b03c6f80081ae0e6b2e6b1772df5146476941b3724f01c7e0a49a3047c0"
+      },
+      {
+        "file": "episode_11.npz",
+        "sha256": "efca4e123e5db2e59ffc663b6400f5ec7865b3cf0511a29de5d31c9b9ae30381",
+        "task_hash": "25b545bf28e445d5dbe6900e8bfc9322e54f2c205618396a493d36a5623a6092"
+      },
+      {
+        "file": "episode_12.npz",
+        "sha256": "815babfa191a5adfba4c1ac703d1473cfc25cf81ced3ccaddc7b44d1b726de70",
+        "task_hash": "4b203dd12cd2cf24cf54dbf1268397eff386f6e87aa7b00588d82f6d0d8c5c8e"
+      },
+      {
+        "file": "episode_13.npz",
+        "sha256": "082eddb747c8ca2cb0971ca46aae56b7b9bc25984ec7536f601417b7194cd457",
+        "task_hash": "174e3a28a98733e519c973874bd7e9439852a04edd3f651e1c2c2a6e7f13c086"
+      },
+      {
+        "file": "episode_14.npz",
+        "sha256": "3bb22b5271d570567349f5167905debd0574d30b0f2228aa2b674c56d96ea20f",
+        "task_hash": "84a419512a98c44d01574cf277dae2e8243951083db9658f4fac6d7df3dc5ae2"
+      },
+      {
+        "file": "episode_15.npz",
+        "sha256": "7b442430fa75fface929a20c7d147d6e8c2727ee126a9d6d14fc7d3eb7a9329a",
+        "task_hash": "7cd772246cd5667ac55d93cd6c00eadabd58a96870aa2f467b8e81247ed60369"
+      },
+      {
+        "file": "episode_16.npz",
+        "sha256": "01e40387a526dd144fe3af75ef4c69bc06d68bdb9f6b4dd54edafb51db34514d",
+        "task_hash": "f4c0e2ab580d6bfb301275ca0e44ce6790cda1857758db24d2bb30a9a82e8557"
+      },
+      {
+        "file": "episode_17.npz",
+        "sha256": "76045136180fac4dd0206aef536929bb938575c2c78eb0af8ba864ab43fb986c",
+        "task_hash": "41fffda142e44ddadf315fba028d9b6097728f5afa0e611b207dc46c27ca1f70"
+      },
+      {
+        "file": "episode_18.npz",
+        "sha256": "8b873b4fbdf9ae7a2eee185f67329ab462432c563564684165a84768cee4340c",
+        "task_hash": "b43ba4758b61927065af42513e3013b283f8c36df8619c28e8ba09b5cb2afcaa"
+      },
+      {
+        "file": "episode_19.npz",
+        "sha256": "920d1580991cd8f720bb2adee8e664b28b39933acca5e9f4bcfec37644c281c9",
+        "task_hash": "7b9c87e642cab5b0f02b431f47a0454b7bf0a5326b903e4751b11c96ab594791"
+      }
+    ],
+    "config_ids": [
+      "native_delta_eta0.0001_T0.1",
+      "native_delta_eta0.0001_T0.2",
+      "native_delta_eta0.0001_T0.5",
+      "native_delta_eta0.001_T0.1",
+      "native_delta_eta0.001_T0.2",
+      "native_delta_eta0.001_T0.5",
+      "native_delta_eta0.01_T0.1",
+      "native_delta_eta0.01_T0.2",
+      "native_delta_eta0.01_T0.5"
+    ],
+    "resources": {
+      "wall_seconds": 5.427990000025602,
+      "cpu_seconds": 4.453125,
+      "preprocessing_seconds": 0.22529120001127012,
+      "learning_seconds": 3.374389200034784,
+      "peak_worker_memory_bytes": 72708096
+    },
+    "boundary": "Next episode reset: all weights 0.1; no live RNG/state crosses boundary"
+  }
+}

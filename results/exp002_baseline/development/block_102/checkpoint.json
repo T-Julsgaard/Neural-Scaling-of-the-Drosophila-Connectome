@@ -1,0 +1,511 @@
+{
+  "sha256": "46b52e2e825c6da61e5c3dd1eccd5a18596482b651d8bc70fdd5be098bdc7a59",
+  "payload": {
+    "contract": {
+      "schema_version": 1,
+      "stage": "development",
+      "configs": [
+        {
+          "representation": "native",
+          "arm": "frozen",
+          "eta": 0.0,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "reward_only",
+          "eta": 0.0001,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "reward_only",
+          "eta": 0.0001,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "reward_only",
+          "eta": 0.0001,
+          "temperature": 0.5
+        },
+        {
+          "representation": "native",
+          "arm": "reward_only",
+          "eta": 0.001,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "reward_only",
+          "eta": 0.001,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "reward_only",
+          "eta": 0.001,
+          "temperature": 0.5
+        },
+        {
+          "representation": "native",
+          "arm": "reward_only",
+          "eta": 0.01,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "reward_only",
+          "eta": 0.01,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "reward_only",
+          "eta": 0.01,
+          "temperature": 0.5
+        },
+        {
+          "representation": "native",
+          "arm": "feedback",
+          "eta": 0.0001,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "feedback",
+          "eta": 0.0001,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "feedback",
+          "eta": 0.0001,
+          "temperature": 0.5
+        },
+        {
+          "representation": "native",
+          "arm": "feedback",
+          "eta": 0.001,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "feedback",
+          "eta": 0.001,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "feedback",
+          "eta": 0.001,
+          "temperature": 0.5
+        },
+        {
+          "representation": "native",
+          "arm": "feedback",
+          "eta": 0.01,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "feedback",
+          "eta": 0.01,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "feedback",
+          "eta": 0.01,
+          "temperature": 0.5
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.0001,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.0001,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.0001,
+          "temperature": 0.5
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.001,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.001,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.001,
+          "temperature": 0.5
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.01,
+          "temperature": 0.1
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.01,
+          "temperature": 0.2
+        },
+        {
+          "representation": "native",
+          "arm": "delta",
+          "eta": 0.01,
+          "temperature": 0.5
+        },
+        {
+          "representation": "pn",
+          "arm": "delta",
+          "eta": 0.0001,
+          "temperature": 0.1
+        },
+        {
+          "representation": "pn",
+          "arm": "delta",
+          "eta": 0.0001,
+          "temperature": 0.2
+        },
+        {
+          "representation": "pn",
+          "arm": "delta",
+          "eta": 0.0001,
+          "temperature": 0.5
+        },
+        {
+          "representation": "pn",
+          "arm": "delta",
+          "eta": 0.001,
+          "temperature": 0.1
+        },
+        {
+          "representation": "pn",
+          "arm": "delta",
+          "eta": 0.001,
+          "temperature": 0.2
+        },
+        {
+          "representation": "pn",
+          "arm": "delta",
+          "eta": 0.001,
+          "temperature": 0.5
+        },
+        {
+          "representation": "pn",
+          "arm": "delta",
+          "eta": 0.01,
+          "temperature": 0.1
+        },
+        {
+          "representation": "pn",
+          "arm": "delta",
+          "eta": 0.01,
+          "temperature": 0.2
+        },
+        {
+          "representation": "pn",
+          "arm": "delta",
+          "eta": 0.01,
+          "temperature": 0.5
+        }
+      ],
+      "code_snapshot": {
+        "exp002/__init__.py": "821bba9a3abb389677122031cca3a9d69e676b34c3cdaa615a50159dd14fbb02",
+        "exp002/assay.py": "af684ef6078fc65bc3cbc4d32cf67696a4aad1b14cde94de45419111c3ba2067",
+        "exp002/baseline.py": "8773b744b17ed9f26fc18b0c180e4b950fd5787f94e10369cad671f0d6ffc34d",
+        "exp002/campaign.py": "62dbb56405e2c95d00682d1a5f9b8b9593463c3d6ef3592b0f49f38eb0feb009",
+        "exp002/data.py": "4ac262f2dff587e18ca8e3f74c88f115b8d13cbe4ef023decd81cd9f2b547d0d",
+        "exp002/rules.py": "fda3289a939bdaff09614bda6e8cc5b61e676702a454594da796647c38f8e793",
+        "experiments/EXP-002-baseline-protocol.md": "8b106629b405405c20b99cef342ca51e933f2003fb50d4e67a26d1e1cd0c41e6",
+        "tests/test_baseline.py": "da9ef683bf9abbdd51660b042ec718f7952eb82dca96a398d8aa4a0684975f61",
+        "tools/run_baseline.py": "ffc1987a63d793374d91f7c2a2d4e9517b2590043cc8e36eb1c72a0a58322844"
+      },
+      "projection": {
+        "source_id": "S64",
+        "archive_sha256": "c1dbbb9b3096d8d70e6093a6e14a0eafa9fe684ccaa1aefe1ab7d1cb81dbf85d",
+        "csv_sha256": "b9d06b052b0c4b91a7221b3dde9552b670bb81c034d0d3ed7fdb5e4a3b2cfc4b",
+        "projection_sha256": "5cbefe14a326e60c3307023323c25d9c614ebac25ecc392d7e14602a22cdc090",
+        "pn_ids": [
+          "matrix:0",
+          "matrix:2",
+          "matrix:4",
+          "matrix:6",
+          "matrix:8",
+          "matrix:10",
+          "matrix:12",
+          "matrix:14",
+          "matrix:16",
+          "matrix:18",
+          "matrix:20",
+          "matrix:22",
+          "matrix:24",
+          "matrix:26",
+          "matrix:28",
+          "matrix:30",
+          "matrix:32",
+          "matrix:34",
+          "matrix:36",
+          "matrix:38",
+          "matrix:40",
+          "matrix:42",
+          "matrix:43",
+          "matrix:44",
+          "matrix:45",
+          "matrix:46",
+          "matrix:47",
+          "matrix:48",
+          "matrix:49",
+          "matrix:50",
+          "matrix:51",
+          "matrix:52",
+          "matrix:53",
+          "matrix:54",
+          "matrix:55",
+          "matrix:56",
+          "matrix:57",
+          "matrix:58",
+          "matrix:59",
+          "matrix:60"
+        ],
+        "kc_ids": [
+          "matrix:84",
+          "matrix:85",
+          "matrix:86",
+          "matrix:87",
+          "matrix:88",
+          "matrix:89",
+          "matrix:90",
+          "matrix:91",
+          "matrix:92",
+          "matrix:93",
+          "matrix:94",
+          "matrix:95",
+          "matrix:96",
+          "matrix:97",
+          "matrix:98",
+          "matrix:99",
+          "matrix:100",
+          "matrix:120",
+          "matrix:121",
+          "matrix:122",
+          "matrix:123",
+          "matrix:124",
+          "matrix:125",
+          "matrix:126",
+          "matrix:127",
+          "matrix:128",
+          "matrix:129",
+          "matrix:130",
+          "matrix:139",
+          "matrix:140",
+          "matrix:141",
+          "matrix:142",
+          "matrix:143",
+          "matrix:144",
+          "matrix:145",
+          "matrix:146",
+          "matrix:147",
+          "matrix:148",
+          "matrix:149",
+          "matrix:150",
+          "matrix:151",
+          "matrix:152",
+          "matrix:169",
+          "matrix:170",
+          "matrix:171",
+          "matrix:172",
+          "matrix:173",
+          "matrix:174",
+          "matrix:175",
+          "matrix:176",
+          "matrix:177",
+          "matrix:178",
+          "matrix:179",
+          "matrix:180",
+          "matrix:181",
+          "matrix:182",
+          "matrix:183",
+          "matrix:184",
+          "matrix:185",
+          "matrix:186",
+          "matrix:204",
+          "matrix:205",
+          "matrix:206",
+          "matrix:207",
+          "matrix:208",
+          "matrix:209",
+          "matrix:210",
+          "matrix:211",
+          "matrix:222",
+          "matrix:223",
+          "matrix:224",
+          "matrix:225",
+          "matrix:226"
+        ],
+        "orientation": "row PN -> column mature KC",
+        "shape": [
+          40,
+          73
+        ],
+        "edges": 365,
+        "contacts": 2188
+      },
+      "environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "os": "Windows-10-10.0.19045-SP0",
+        "processor": "Intel64 Family 6 Model 60 Stepping 3, GenuineIntel",
+        "logical_cpus": 8,
+        "machine_role": "current_session_not_colleague_target",
+        "executable": "C:\\Users\\thoma\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe"
+      },
+      "selection_sha256": null,
+      "r02_report_sha256": "517221b9159df036fe9b7f3ae05bb1f944969a3b12cbbaa75207d85f6a529b68",
+      "validation_report_sha256": "0e25fdd05d4a72e13ef7926cdad7a2f8bd79f325702156b30dbf47fc47e66a4e"
+    },
+    "block": 102,
+    "stage": "development",
+    "next_episode": 20,
+    "artifacts": [
+      {
+        "file": "episode_00.npz",
+        "sha256": "3460f1e62d5583bfda7467bbf2756fa378c08d3fdc283777c0be433d088c5df7",
+        "task_hash": "88101fdb3d2c667b45139e8ddec6bb405bf407a3872cdc705b3ece422fcf3029"
+      },
+      {
+        "file": "episode_01.npz",
+        "sha256": "bbacd3dc4733f71e4dc848c2927f302bcafffdfdea29ef2802a8025e4adca560",
+        "task_hash": "74f088f2dbbd3e59b963cb701862a7ce3dc12b4239c93c8fd0a8464bc61b1b82"
+      },
+      {
+        "file": "episode_02.npz",
+        "sha256": "772aba5fc59513452fce23fc2133d3061a2f526f119d5b8347feee76f4f62144",
+        "task_hash": "1d97006414d782aac21662124d2e13eea54bfcf9cdb678be5d99ace71f7deba1"
+      },
+      {
+        "file": "episode_03.npz",
+        "sha256": "2c31f8986cbe5e08936ca401e205971cf282c5537d2ea7c609dae948ac746210",
+        "task_hash": "7ba838a93d24797981197a825e39373d43d181192f578e82400dfe43fecd19d9"
+      },
+      {
+        "file": "episode_04.npz",
+        "sha256": "73724ac70bdce32ad0271b1d43600933f4848e4900ec5f698770d1f0c8176e0b",
+        "task_hash": "a5242620ea2bdd98445b015563459460ca65429daeff8dbb70ac4dce319defe4"
+      },
+      {
+        "file": "episode_05.npz",
+        "sha256": "a0dfae54f5077a0dd50c6181fe533f9d5ebd57af12c1b07abf63f774884214a7",
+        "task_hash": "a663746882297590ae79006347aa30106da1829d42bfc7bd5be1b8d139a78c8d"
+      },
+      {
+        "file": "episode_06.npz",
+        "sha256": "0abe90fd0d33209196de6feae592c3bf16f037d28ff9334387eb697acb5df9cf",
+        "task_hash": "f19856a2976dc32ed6cdc958b4cea3edffe0e0e54e6490bfcf342d4a0594c574"
+      },
+      {
+        "file": "episode_07.npz",
+        "sha256": "745472a91eea5349fe6b9c13cfa560bc773b55cb14ac6e3077f8769272f0d4f5",
+        "task_hash": "4d0e2f0165d5803155e1e7f81700d6d9680f7efaa8b55180a03ebf3123b44201"
+      },
+      {
+        "file": "episode_08.npz",
+        "sha256": "2685fe640cfe93f9dc379d4428b047ba1bb7f5e1daf43a8109567fb5446e3588",
+        "task_hash": "66889666b24a97b983b7772909d1b1872c41f65d2bf8cdc38529912d5f82e051"
+      },
+      {
+        "file": "episode_09.npz",
+        "sha256": "ce30298618cb4299b4df90916dbb1fda68c5fd80f76e92d9fd216ab484030b4a",
+        "task_hash": "f7eb91ea64b160387b1b3a6fc3364e23764e4adadf46ac39a3db6669565742eb"
+      },
+      {
+        "file": "episode_10.npz",
+        "sha256": "e1ac9c1dd08c11d7ec32a3755f22fd2e187c9f172aa4c4ac4f942d8c8cbee90a",
+        "task_hash": "c28d83a6bf9c1fa265846e2a42d7d68bea0290ee171ccb3431e946aa7d362fa1"
+      },
+      {
+        "file": "episode_11.npz",
+        "sha256": "536bf03c25c7d8007a008f086cdbe3caddee16f0f166e8ff2f9d0c0e0259ad73",
+        "task_hash": "f07d5350cbd848211288ff19944b2879c709847bdeb289ce8ad4f40a6511eb2e"
+      },
+      {
+        "file": "episode_12.npz",
+        "sha256": "8165bd1b505cfaf989797de86989a2e55c9327512606858299ea0e8101a27274",
+        "task_hash": "943819490a1dabb9eb67b170282b4234c2b4f8fed07e353b16bfca843310c36a"
+      },
+      {
+        "file": "episode_13.npz",
+        "sha256": "19feb767f9fd0e7e53895ec4808e2a73ce807d96004761369b60f8bd0f9665c3",
+        "task_hash": "38cc1c0ebb957e2b5827db65c1de66ad47d6fdbd3962cb60712064cb4f31e52c"
+      },
+      {
+        "file": "episode_14.npz",
+        "sha256": "87521c2cb3aa158a183c03230bc1b86727d552e70bb8dac8a79a8d148b7bc62d",
+        "task_hash": "ed85efbf5c896087f69ecebdf23a7c941cfa24e77164440dc81a9e9cc8ad6ab7"
+      },
+      {
+        "file": "episode_15.npz",
+        "sha256": "1691b4952094fdc9094eea55467d6440f05d9820fc596a12b0c6e3018de3fa40",
+        "task_hash": "bb1ce2e2e65b4f36b7cc9acaba49f0331527c6e8411aa1cf70bb35cab2f0a8e8"
+      },
+      {
+        "file": "episode_16.npz",
+        "sha256": "9709ac930ce1e2f4a565d7cd8a2efc10523f362bcbb5e19d94505d14d1a339d0",
+        "task_hash": "0a46da932e4071bef093f11774d406a93e2d64e4a4232eb622bc9098011b0a0f"
+      },
+      {
+        "file": "episode_17.npz",
+        "sha256": "0be4048e04c0912a2b4a9fac3a568d4af3624ae8b4cc3e0b7c8356399445c1b0",
+        "task_hash": "6aa4957ef22395e008eb3d46e688f4f4c5dc2d072087550cd568302002324490"
+      },
+      {
+        "file": "episode_18.npz",
+        "sha256": "bb17f6a8f01d95bfddd63cf456d245a3c9792eb5e77a53930fcb98e39e3ff5fa",
+        "task_hash": "e2fb7918d7c6e74191e3b86bb454dd9cb0b6f6150df566b06ab135da64698c18"
+      },
+      {
+        "file": "episode_19.npz",
+        "sha256": "84f7036df3dbbe54cd914201a366fb4388dbb67643c16e9e2fb6d9124ac707e7",
+        "task_hash": "817dd4afe3aafd19586ab2f8d550f72241f9fbdec99563e92d15e0253847b7c4"
+      }
+    ],
+    "wall_seconds": 9.074036400008481,
+    "cpu_seconds": 8.140625,
+    "peak_working_set_bytes": 87363584,
+    "preprocessing_seconds": 2.122576700086938,
+    "learning_and_probe_seconds": 5.188779299962334,
+    "boundary": "reset before next episode; RNG streams derived from stage/block/episode",
+    "last_boundary_state": {
+      "artifact": "episode_19.npz",
+      "trial": 384,
+      "next_episode_weights": 0.1,
+      "live_rng": null,
+      "seed_template": [
+        2,
+        1,
+        102,
+        0,
+        "component",
+        20
+      ]
+    }
+  }
+}

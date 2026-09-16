@@ -1,0 +1,215 @@
+{
+  "geometry": {
+    "native": {
+      "rank": 42.541666666666664,
+      "clean_rank": 27.458333333333332,
+      "condition": 111.96886857888092,
+      "pair_distance": 4.0290984137436725,
+      "noise_deviation": 1.7392758969907411,
+      "norm2": 16.666666666666664,
+      "scale": 1.0,
+      "models": {
+        "chosen": {
+          "acquisition_old": 0.9958550347222221,
+          "forgetting_old": 0.21332465277777776,
+          "clips": 83.45833333333333
+        },
+        "supervised": {
+          "acquisition_old": 0.9995876736111112,
+          "forgetting_old": 0.22543402777777777,
+          "clips": 557.7083333333334
+        },
+        "unclipped": {
+          "acquisition_old": 0.9993272569444445,
+          "forgetting_old": 0.20047743055555556,
+          "clips": 21598.666666666668
+        },
+        "replay": {
+          "acquisition_old": 0.9995876736111112,
+          "forgetting_old": 0.1343315972222222,
+          "clips": 1739.375
+        }
+      }
+    },
+    "calibrated": {
+      "rank": 46.458333333333336,
+      "clean_rank": 28.416666666666668,
+      "condition": 108.68209852310429,
+      "pair_distance": 4.09272441853846,
+      "noise_deviation": 2.1288836443865744,
+      "norm2": 16.666666666666664,
+      "scale": 1.0,
+      "models": {
+        "chosen": {
+          "acquisition_old": 0.9936414930555556,
+          "forgetting_old": 0.2104166666666667,
+          "clips": 84.29166666666667
+        },
+        "supervised": {
+          "acquisition_old": 0.9994140625000001,
+          "forgetting_old": 0.2392361111111111,
+          "clips": 518.7916666666666
+        },
+        "unclipped": {
+          "acquisition_old": 0.999240451388889,
+          "forgetting_old": 0.22287326388888887,
+          "clips": 20184.583333333332
+        },
+        "replay": {
+          "acquisition_old": 0.9994140625000001,
+          "forgetting_old": 0.15303819444444444,
+          "clips": 1668.0416666666667
+        }
+      }
+    },
+    "direct": {
+      "rank": 40.0,
+      "clean_rank": 32.0,
+      "condition": 45.265824470215314,
+      "pair_distance": 3.7656714252986645,
+      "noise_deviation": 0.35411003813930186,
+      "norm2": 16.666666666666668,
+      "scale": 1.3313659002745486,
+      "models": {
+        "chosen": {
+          "acquisition_old": 0.9972222222222222,
+          "forgetting_old": 0.10985243055555553,
+          "clips": 84.79166666666667
+        },
+        "supervised": {
+          "acquisition_old": 1.0,
+          "forgetting_old": 0.13576388888888888,
+          "clips": 907.0833333333334
+        },
+        "unclipped": {
+          "acquisition_old": 1.0,
+          "forgetting_old": 0.10243055555555554,
+          "clips": 25930.125
+        },
+        "replay": {
+          "acquisition_old": 1.0,
+          "forgetting_old": 0.021831597222222224,
+          "clips": 2744.9583333333335
+        }
+      }
+    },
+    "direct_raw": {
+      "rank": 40.0,
+      "clean_rank": 32.0,
+      "condition": 45.2658244702153,
+      "pair_distance": 2.8284271247461903,
+      "noise_deviation": 0.1997763420803468,
+      "norm2": 9.402731950540423,
+      "scale": 1.0,
+      "models": {
+        "chosen": {
+          "acquisition_old": 1.0,
+          "forgetting_old": 0.10386284722222222,
+          "clips": 142.58333333333334
+        },
+        "supervised": {
+          "acquisition_old": 1.0,
+          "forgetting_old": 0.12365451388888889,
+          "clips": 1790.625
+        },
+        "unclipped": {
+          "acquisition_old": 1.0,
+          "forgetting_old": 0.08402777777777777,
+          "clips": 42657.625
+        },
+        "replay": {
+          "acquisition_old": 1.0,
+          "forgetting_old": 0.006467013888888905,
+          "clips": 4820.125
+        }
+      }
+    }
+  },
+  "interference": {
+    "native_chosen": [
+      0.306982421875,
+      0.017617404460906982,
+      -0.00027629959186015185
+    ],
+    "native_supervised": [
+      0.30543077256944445,
+      0.01757201529107988,
+      -0.0003150848527487445
+    ],
+    "native_unclipped": [
+      0.30318739149305557,
+      0.017536199612853427,
+      -0.00027846111667410395
+    ],
+    "native_replay": [
+      0.30543077256944445,
+      0.01757201529107988,
+      -0.0003150848527487445
+    ],
+    "calibrated_chosen": [
+      0.29560546875,
+      0.017264162617114682,
+      -0.00029115674988133833
+    ],
+    "calibrated_supervised": [
+      0.2967434353298611,
+      0.017205276992172003,
+      -0.0003263838383039304
+    ],
+    "calibrated_unclipped": [
+      0.29470757378472223,
+      0.017188764177262783,
+      -0.0002973792143166065
+    ],
+    "calibrated_replay": [
+      0.2967434353298611,
+      0.017205276992172003,
+      -0.0003263838383039304
+    ]
+  },
+  "resources": {
+    "validation": {
+      "blocks": 1,
+      "compute_wall_seconds": 11.57023019999906,
+      "cpu_seconds": 11.4375,
+      "peak_mib": 86.84765625,
+      "archive_mib": 18.399131774902344
+    },
+    "development": {
+      "blocks": 6,
+      "compute_wall_seconds": 81.97200579998025,
+      "cpu_seconds": 78.359375,
+      "peak_mib": 127.1484375,
+      "archive_mib": 108.11294937133789
+    },
+    "confirmation": {
+      "blocks": 24,
+      "compute_wall_seconds": 301.77166230004514,
+      "cpu_seconds": 293.875,
+      "peak_mib": 126.08203125,
+      "archive_mib": 405.5072431564331
+    }
+  },
+  "descriptive_contrasts": {
+    "matched_chosen_fit_gap": {
+      "mean": 0.11030815972222223,
+      "lower": 0.07349957732351148,
+      "upper": 0.14711674212093298
+    },
+    "offline_feedback_access": {
+      "mean": 0.0765407986111111,
+      "lower": 0.05702719625638944,
+      "upper": 0.09605440096583276
+    },
+    "remove_clipping": {
+      "mean": 0.02044270833333334,
+      "lower": 0.00939204999939654,
+      "upper": 0.03149336666727014
+    },
+    "ten_pass_replay": {
+      "mean": 0.0886501736111111,
+      "lower": 0.062028895339281964,
+      "upper": 0.11527145188294025
+    }
+  }
+}

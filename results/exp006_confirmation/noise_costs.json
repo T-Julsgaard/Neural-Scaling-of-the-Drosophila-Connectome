@@ -1,0 +1,56 @@
+{
+  "scope": "descriptive post-confirmation diagnostic, load16/overlap6/128 per pair",
+  "cost_definition": "retention at sigma .1 minus retention at sigma .3",
+  "profiles": {
+    "native4": {
+      "mean": 0.02860339270811331,
+      "interval": [
+        0.01982925298346143,
+        0.037173398841004804
+      ]
+    },
+    "native6": {
+      "mean": 0.0440337679815795,
+      "interval": [
+        0.037768402161815706,
+        0.050130485463470625
+      ]
+    },
+    "direct": {
+      "mean": 0.04228036936196285,
+      "interval": [
+        0.03649560702426211,
+        0.04785345860055154
+      ]
+    },
+    "random4": {
+      "mean": 0.035516442675550555,
+      "interval": [
+        0.029045834655989772,
+        0.0420243685338751
+      ]
+    },
+    "random6": {
+      "mean": 0.043988027747885905,
+      "interval": [
+        0.03813719752434182,
+        0.0498217220358315
+      ]
+    },
+    "oracle": {
+      "mean": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "k6_minus_k4_cost": {
+    "mean": 0.015430375273466187,
+    "interval": [
+      0.006204691892743042,
+      0.02506755283558015
+    ]
+  },
+  "source_sha256": "7e3fe6da803c55db3a6d4e790c234ecfa0fefa39e28082b8713d0c2eb1e3fece"
+}

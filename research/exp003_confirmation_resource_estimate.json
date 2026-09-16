@@ -1,0 +1,24 @@
+{
+  "sha256": "46ccfc40ea7132f8ae7eab20a88d7410ccab4c88b7ff482e24b54505e97c84c9",
+  "payload": {
+    "created_utc": "2026-09-12T14:33:15.802854+00:00",
+    "basis": "All ten completed development blocks; same encoding/episodes, nine learners versus one confirmation learner",
+    "by_size": {
+      "73": {
+        "conditions": 40,
+        "mean_episode_cpu_seconds": 0.16431640625,
+        "mean_condition_wall_seconds": 4.315551055011019
+      },
+      "146": {
+        "conditions": 150,
+        "mean_episode_cpu_seconds": 0.18053645833333334,
+        "mean_condition_wall_seconds": 4.5028326386677024
+      }
+    },
+    "confirmation_conditions": 1600,
+    "twice_development_episode_cpu_seconds": 5432.84375,
+    "three_worker_ideal_seconds": 1810.9479166666667,
+    "twice_development_artifact_bytes": 4267967942,
+    "caution": "Conservative encoding/grid proxy, not a guaranteed runtime: confirmation has fewer learner configurations but the same feature statistics. Wall time includes I/O and graph/audit overhead; old interrupted runs skew per-condition wall measurements."
+  }
+}

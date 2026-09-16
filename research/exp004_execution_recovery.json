@@ -1,0 +1,37 @@
+{
+  "sha256": "c2bb90ba5172036cd382720fee686cbc3d49bba0556ef1a95c3544e55e0527e4",
+  "payload": {
+    "created_utc": "2026-09-12T22:42:49.908931+00:00",
+    "reason": "Restricted-wrapper filesystem slowdown; resume identical frozen code with local access",
+    "scientific_code_changed": false,
+    "sample_changed": false,
+    "completed_episodes_preserved": true,
+    "prior_invocations": [
+      "invocation_1789251628832039000.json"
+    ],
+    "resource_limit": "Final invocation wall time is separate from earlier execution; retained-episode CPU excludes discarded uncheckpointed work",
+    "resume_requires_raw_checkpoint_verification": true,
+    "checkpoint_permission_recovery": {
+      "recorded_utc": "2026-09-13T11:33:36.024640+00:00",
+      "complete_blocks_before_resume": 31,
+      "failures": [
+        {
+          "file": "failure_1789254605141267800.json",
+          "created_utc": "2026-09-12T23:10:05.141267+00:00",
+          "error": "PermissionError(13, 'Access is denied')"
+        }
+      ],
+      "code_changed": false,
+      "episodes_excluded": 0,
+      "action": "Resume same frozen protocol from hash-verified checkpoints"
+    },
+    "status": "completed_and_audited_after_recovery",
+    "completed_utc": "2026-09-13T11:39:23.107368+00:00",
+    "audit_sha256": "e158fce99969558622c6265444f91feaa2343929efa700778afbdc40c53d026b",
+    "audit_seconds": 182.05656369996723,
+    "final_episode_batches": 17920,
+    "final_exclusions": 0,
+    "final_numerical_failures": 0,
+    "total_recorded_invocation_wall_seconds": 3281.929129299978
+  }
+}

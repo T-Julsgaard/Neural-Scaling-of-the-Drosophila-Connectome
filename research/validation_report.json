@@ -1,20 +1,37 @@
 {
-  "date": "2026-09-11",
+  "date": "2026-09-15",
   "kind": "offline_record_integrity_not_scientific_validation",
   "status": "passed",
   "errors": [],
-  "markdown_documents_checked": 23,
-  "local_links_checked": 86,
+  "historical_live_document_changes": [
+    {
+      "experiment": "EXP-003",
+      "file": "BENCHMARK_SPEC.md",
+      "frozen_sha256": "dabf31abddbc87afc319c4e98c0632afab2b8af206923da4ee2895833079c35d",
+      "current_sha256": "645ce427662442ab3591998a396f4c9f148b80cc8b05de41d4a90d48147ebe89",
+      "reason": "Project benchmark summary updated by subsequent experiments; historical digest retained. Experiment-specific protocol and executable hashes remain enforced."
+    }
+  ],
+  "markdown_documents_checked": 54,
+  "local_links_checked": 342,
   "bibliographic_sources": 70,
-  "experiment_specifications": 3,
+  "experiment_specifications": 9,
   "original_sha256": {
     "Initial Research Prompt for Astra — Scaling the Drosophila Connectome.md": "69eff8e8c9adc9b8669778f9949a1b7d1fe1d5eb0c5e43ff5f66e03ff5872317",
     "ASTRA_MASTER_RESEARCH_BRIEF.md.md": "4318599c2e83e48a62577938fbd38f6055036de56842eee22aba93b9b29ac0cb"
   },
-  "scientific_experiments_run": 0,
+  "scientific_experiments_run": 8,
   "exp002_bounded_validation": "passed",
   "exp002_validation_tests": 13,
-  "note": "Zero scientific campaigns; bounded learning-rule and toy/episode checks ran separately",
+  "exp002_baseline_validation_tests": 21,
+  "r02_author_runtime": "passed",
+  "r03_growth_validation": "passed",
+  "exp003_development_blocks": 10,
+  "exp003_confirmation_blocks": 20,
+  "exp004_evaluation_blocks": 32,
+  "exp005_evaluation_blocks": 32,
+  "exp006_confirmation_blocks": 32,
+  "note": "Offline verification of preserved experimental artifacts, frozen source and current handoff records",
   "limits": [
     "Does not verify remote URL availability",
     "Does not run upstream code or neural models",

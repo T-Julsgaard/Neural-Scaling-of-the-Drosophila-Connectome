@@ -1,0 +1,31 @@
+# EXP-002 measured baseline protocol — version 1.1
+
+Specified before development results, 2026-09-11. Implements the existing EXP-002 hypotheses, nine-setting grid, ten development blocks and twenty confirmation blocks. This addendum resolves implementation details left open by the shared benchmark. It does not change its primary contrast, practical margins or confirmation seed range.
+
+## Scope and entry
+
+The user authorized a validated, measured learning baseline. Complete R02 by author-runtime comparison, validate the block implementation on seeds 0–4, then run development seeds 100–109. If the assay meets provisional adequacy, freeze selection and run confirmation seeds 1000–1019. If development is uninformative, record and revise before confirmation. No growth, evolutionary search, paid compute or colleague-machine benchmark belongs to this milestone.
+
+## Tasks, streams and encoding
+
+Use the existing 40-PN/73-KC projection and chosen-action feedback. All episodes have 384 trials and reset weights to 0.1. Episode indices 0–9 are reversal; 10–19 are interference. The stream is `SeedSequence([2, stage, block, 0, component, episode])` for stimuli/noise/outcomes/actions (components 2–5). Graph tie priority uses `[2, stage, block, 0, 1]`, shared across all episodes and configurations in that block. Probe noise appends `[32, post_update_trial_count, round(sigma*1000)]` after episode to component 3. Stage codes and block seeds retain the shared contract. Bootstrap uses `[2, stage, first_block_seed, 0, 7]`, with 10,000 block resamples. Do not expose latent unchosen outcomes to updates.
+
+Generate one pair of A/B and one pair of C/D prototypes per episode, rejecting identical members within each pair. Cue permutation is shared across phases. Native encoding remains four active KCs with total activity 10. The exploratory direct-PN delta comparator uses the same noisy 40-dimensional observations normalized to total activity 10, without KC projection or winner selection. This comparator has 80 rather than 146 trainable weights and is not resource matched.
+
+## Selection and evaluation
+
+Search eta {0.0001,0.001,0.01} and temperature {0.1,0.2,0.5} independently for each of the three native adaptive arms and direct-PN delta. Frozen has one setting (eta 0, temperature 0.2). Selection score is the equal-weight mean of acquisition (trials 96–127 across both families), early reversal (128–159 of reversal episodes), and **post-interference A/B retention probability after trial 255**, before return training. This clarifies “final retention-probe probability” in EXP-002; a probe after return training would confound retention with relearning. Ties within 1e-6 use smaller eta, then larger temperature.
+
+Measure A/B retention after trials 127 and 255 on 32 independent noisy presentations, with no updates. Final robustness uses 32 A/B presentations at each sigma {0,0.1,0.3} after trial 383. Both families finish with A/B and its original preference. Report each family's 16-trial learning and reward curves. Covariance effective rank means participation ratio `(sum eigenvalues)^2 / sum(eigenvalues^2)`; compute across all online cue presentations in a block. Report per-cell participation and never-active fraction. These diagnostics use observations only, not learned choices.
+
+Choose the candidate for future structural work between selected native feedback and delta by development selection score, preferring delta if their scores differ by at most 0.02, as in EXP-003. Freeze this choice before confirmation. Development adequacy is provisional: acquisition lower 95% block-bootstrap interval >0.65 and at least one of early reversal or post-interference retention <0.90, with finite states. Selection on these same blocks makes development intervals descriptive. Apply the same adequacy check to the frozen candidate on confirmation for the actual continuation decision.
+
+Confirmation includes the four development-selected adaptive settings, frozen, and the prespecified native fixed-setting traces (eta=0.001, T=0.2), deduplicated if a selected setting already matches. Freeze exact config/graph/code/protocol hashes before accessing confirmation tasks. Primary H2 is feedback minus reward-only early reversal, with 98.33% paired block interval and +0.05 practical margin. Report 95% secondary intervals and acquisition noninferiority margin -0.02. Only a paired interval wholly within ±0.02 supports feedback/delta equivalence. Report all block values. Within-family generalization does not establish broad cognition or biological superiority.
+
+## Execution, recovery and resources
+
+Batch only independent configurations; compare full trajectories with the scalar validated Learner on validation tasks before use. Precompute exogenous observations and inputs without giving future outcomes to the learner. Persist per-trial scalar metrics, episode metrics, final weights and compact feature moments; do not retain full per-trial neural states for scientific runs.
+
+Each completed episode writes an atomic compressed artifact with hash, then advances a digest-protected block checkpoint. Completed episodes are immutable; interrupted episodes restart from their deterministic inputs and fresh weights. The checkpoint records the next episode, component seed derivation, configuration/graph/code hashes, completed artifact hashes, boundary learning state and elapsed counters. No live learning/RNG state crosses an episode reset; mid-episode state round trips are additionally tested. Completed blocks are aggregated without treating episodes as independent blocks. Resume refuses altered code, settings, graph, environment or artifact bytes.
+
+Record actual current-session Python/NumPy/OS/processor, logical CPUs, peak working set, active process and wall time, storage, model dimensions, inference trials, learning updates and probe presentations. Runtime and memory belong to this session, not the colleague's target. Report preprocessing time shared by batched configurations separately from learning; batched timings do not establish equal computational cost per rule. No energy estimate. Preserve at least 20 GB free disk; stop at 10 GB campaign artifacts, numerical failure or a seven-day elapsed campaign budget. A failed run is retained and must not silently lose an episode.

@@ -1,0 +1,105 @@
+{
+  "stage": 1,
+  "block": 2,
+  "created_utc": "2026-09-14T22:15:04.875137+00:00",
+  "rates": [
+    [
+      1e-05,
+      0.0001,
+      0.001,
+      0.0017782794100389228,
+      0.0031622776601683794,
+      0.005623413251903491,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    [
+      1e-05,
+      0.0001,
+      0.001,
+      0.0017782794100389228,
+      0.0031622776601683794,
+      0.005623413251903491,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ]
+  ],
+  "task_digest": "2b43a3320b98dd4efb6babfd89d269e5def3ada9c1ca73648c2def7b16068f90",
+  "sha256": "cac01955c65c340f7ab911dcac0eee91448ac4ac529987eee73917a0eed2d0dd",
+  "source_hashes": {
+    "exp009\\compensation.py": "dfb9576c54e76ac330b7f165e6d0a019232cae96e3fb0e0c0efc86f99ab61def",
+    "tools\\run_compensation.py": "7f119e3786027b2560ed2d2781d5164b55eb742c26114e45475a599574994ee8",
+    "tools\\prepare_compensation.py": "fa3e61848ec257907b605980765fc5cbdcbdac8bb686ace8ef2cbbafbacd7873",
+    "tools\\prepare_compensation_reference.m": "bdc315ddba4dafb616195e8fc226edb9ad9a89c19ce7eda8cf2499e380418601",
+    "tests\\test_exp009.py": "b5e7fd308ce84c4d2d7d4d39ecd3c8085db7131f313221e5cb6e51757a7a8980",
+    "experiments\\EXP-009-protocol.md": "7a3c7677adc25ef5df58426a43e4a44068a894cd3bad72964a4e86382c7c0d12",
+    "research\\sources\\exp009\\commit.json": "dc3f3b92ae522a09c3ee3a77433705af317464e5473be1bde122c9698071bacd",
+    "research\\sources\\exp009\\dataset.xlsx": "cf67bcb0681fd4486b0d269093a21f9b0985a1e3791d77dac92256ee40210dd4",
+    "research\\sources\\exp009\\paper.pdf": "bf802fbfaa5f066191ea25485e6786039e5a870c3a77b85f18368effcbaf2949",
+    "research\\sources\\exp009\\parameters.npz": "3fb7dc49349dbc129a8d06ff9bddead9dd1e78fe779d9f52ab54ebce28e9a0f3",
+    "research\\sources\\exp009\\supplement.pdf": "0fad86575e2051a5489408937055f87e74e35c3017a98bfa5fe9c8c9a77c9aa4",
+    "research\\sources\\exp009\\tree.json": "5b8ee98a168096d202637991609bbb4d3ae648f2ae3b6c1d2a7415ef84469812",
+    "research\\sources\\exp009\\author\\Data_submitted_fly_wNoise11.mat": "d4fa82d3fb14e3456cad8c5363072c1f8b6a3a0d8612b45ce374966b740ea26a",
+    "research\\sources\\exp009\\author\\LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "research\\sources\\exp009\\author\\README.md": "6479af313328e8d33c8f4b7c760a61e959424e4c6b7bef02775d1a7d220bd08b",
+    "research\\sources\\exp009\\author\\Compens_variab_rescue_Perf\\compensatoryVar_rescuePerf.m": "3e9458e8bc65b4190a4f7e24a16a2745a3433957fdf0bbb2b6122bec2196b986",
+    "research\\sources\\exp009\\author\\Compens_variab_rescue_Perf\\compensatoryVar_rescuePerf_trainingOnly.m": "19fe90c01968a9acc1821904ea77d4e84dc8eb16bab8e2d5448457853ea9cf59",
+    "research\\sources\\exp009\\author\\Compens_variab_rescue_Perf\\getPNStdevBhandawat.m": "4a7e6af2133bfafe9c1e2a5996b46f34384f588454a7cd2d1460c00d8526cfb2",
+    "research\\sources\\exp009\\author\\Compens_variab_rescue_Perf\\testingModels_accuracies_function.m": "1d51a2c658ab0c1f835c4e8d3b80007d4537a6ec467c90b2bdb060a6992e3f5b",
+    "research\\sources\\exp009\\author\\Compens_variab_rescue_Perf\\data\\hallem_olsen.mat": "d2d06bb4475d4713479297ad6bd1dc69d80d9352878e9422b306ca97d717aa1f"
+  },
+  "wall_seconds": 0.796313700004248,
+  "cpu_seconds": 0.703125,
+  "peak_bytes": 180637696,
+  "bytes": 1332221,
+  "scores": [
+    [
+      0.5141454991617647,
+      0.5316589059692721,
+      0.5421500962236435,
+      0.538773261042266,
+      0.5346011985341579,
+      0.5299626549387869,
+      0.5253754432378135,
+      0.5118091651791916,
+      0.506530891961258,
+      0.5054976094974963
+    ],
+    [
+      0.5145398035925993,
+      0.545389583414226,
+      0.6084634310800826,
+      0.6061394147370285,
+      0.5906566806627207,
+      0.5640073969783821,
+      0.5391068628697814,
+      0.5136096065798267,
+      0.5094119756863048,
+      0.5079284360089134
+    ]
+  ],
+  "profiles": [
+    {
+      "coding_level": 0.11319166666666666,
+      "unused_fraction": 0.418,
+      "mean_activity_cv": 2.527492848252099,
+      "effective_mean_activity_cells": 270.7011937219818,
+      "mean_squared_norm": 7.263706177639726,
+      "scale": 24.263999934511943,
+      "train_mean": 0.015119872914503988
+    },
+    {
+      "coding_level": 0.10591566666666667,
+      "unused_fraction": 0.0005,
+      "mean_activity_cv": 0.4641817107870491,
+      "effective_mean_activity_cells": 1645.461250156536,
+      "mean_squared_norm": 3.417884585965528,
+      "scale": 72.84982206373381,
+      "train_mean": 0.010004438068974981
+    }
+  ]
+}

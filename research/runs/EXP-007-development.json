@@ -1,0 +1,68 @@
+{
+  "experiment": "EXP-007",
+  "stage": "development",
+  "status": "completed",
+  "blocks": 8,
+  "source_hashes": {
+    "exp002/__init__.py": "821bba9a3abb389677122031cca3a9d69e676b34c3cdaa615a50159dd14fbb02",
+    "exp002/assay.py": "af684ef6078fc65bc3cbc4d32cf67696a4aad1b14cde94de45419111c3ba2067",
+    "exp002/baseline.py": "8773b744b17ed9f26fc18b0c180e4b950fd5787f94e10369cad671f0d6ffc34d",
+    "exp002/campaign.py": "62dbb56405e2c95d00682d1a5f9b8b9593463c3d6ef3592b0f49f38eb0feb009",
+    "exp002/data.py": "4ac262f2dff587e18ca8e3f74c88f115b8d13cbe4ef023decd81cd9f2b547d0d",
+    "exp002/rules.py": "fda3289a939bdaff09614bda6e8cc5b61e676702a454594da796647c38f8e793",
+    "exp006/__init__.py": "f5e0405fc716c6f3848faf6450fa6dde9f2906ce07c52559c0b42500c884adb7",
+    "exp006/campaign.py": "4ec7278dc2531cb0ffc48a72bf5b9cb839226612ca65f7a205f2c0cb3b31dd63",
+    "exp006/memory.py": "c4fe7b1d68dae03faab812a1a29b2810fb018dd2f37f39fd0757be8fa15696b8",
+    "exp007/__init__.py": "bbcd0c3f2674ebba886ebab2a3fbd1cdb495b7767f0f54dcf0c87c749072098f",
+    "exp007/campaign.py": "eb0a7b09fcaad72cd4417317c11e6a969d5f7c14e7eb520c3d7a9bf17ebb193b",
+    "exp007/homeostasis.py": "4816267dbf2eff15a0094f583efcd76f7e7d1ff2653d0fe77d3119ff95d3eef2",
+    "exp007/memory.py": "5c2d288331ca62aa2bf6b263df34a16d1ad25c51176ea6c0a0639c03bce3a680",
+    "experiments/EXP-007-protocol.md": "bc6e1ba8a9f0a88137e699aaae411f4aabb12fad60823bd79d741ec39678a414",
+    "tests/test_exp007.py": "66c97393728f83b72bbbb4684c8437837b0b6c219e9287c1a1b4c9818b239e65",
+    "tools/run_homeostasis.py": "fe32e594e0b97a1155a8b3b3a92beafa4993cc7d500f953dd4d75d339bab8354"
+  },
+  "code_commit": "6b1db2e33f7dbb61033c2081e8feee0a6378d2b2",
+  "dirty_worktree": true,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "executable": "C:\\Users\\thoma\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe"
+  },
+  "resources": {
+    "cpu_seconds": 565.96875,
+    "summed_worker_wall_seconds": 581.0250089999936,
+    "peak_worker_bytes": 94912512,
+    "checkpoint_bytes": 115459019
+  },
+  "contract_sha256": "6430eaab5d01258bd147b08380ac85bf4c7a07c69c6750e520cf67f336ef6c48",
+  "audit_sha256": "8117932a88f779049c29ba9dbaff7787a6654f6ac8aca89f2804f8e86ad1a02f",
+  "calibration_sha256": "66ff407480d426838b3cbd1ece4f1d467433ce5942d534a25d6983e02947afd1",
+  "results": "experiments/EXP-007-results.md",
+  "reporting_sources": {
+    "tools/report_homeostasis.py": "6cebb351a696f5fd5a7241307289d0c2c077b5c8b5faeda7733aa0bd5c429c3f",
+    "tools/finalize_homeostasis_records.py": "0d50b0a626402c1b7cdaa55c4418f30609f474ddadfbe88d8e52fb80e60b8cdc",
+    "tools/analyze_homeostasis_geometry.py": "ebba6bcaae475915f2b6361e7a082868fec2c98dbd8e8204a29fcc989cb5c6be"
+  },
+  "matched_sham_sources": {
+    "tools/run_homeostasis_matched_sham.py": "01d2fffc12669717c13ee3fc5442aa6da90fd51f00ccf374741e0ae500435486",
+    "experiments/EXP-007-matched-sham-addendum.md": "43064337ea722d4e210418863a0bad6cd90258e93cc4a1228fed04d759828d06"
+  },
+  "matched_sham_analysis_sha256": "4e0d652a68077b3bb9c5db555b7a93203f159fa447352e824184a9aa7133b22a",
+  "artifact_hashes": {
+    "results/exp007_development/audit.json": "8117932a88f779049c29ba9dbaff7787a6654f6ac8aca89f2804f8e86ad1a02f",
+    "results/exp007_development/block_100.json": "4adea1fa797a326fcaf5fd7444c356f5e78c617f2e0775a8c30efccf7cc134b7",
+    "results/exp007_development/block_101.json": "559828de597bf3920ee4f02160ed4f3f99a60683f0091268d83593f578da2779",
+    "results/exp007_development/block_102.json": "4bc508943c3f45823dfa3cef635ccba8ec3a7b87ec907e51f520ee5e3d3c338f",
+    "results/exp007_development/block_103.json": "ba500d5e72935b57014ff2c36d689a6ed3d8b4eef9c6ce7ffebf9da7ac0ccf7e",
+    "results/exp007_development/block_104.json": "6ab19193fd7dbb9ef17a2180b75b24315e0d840cb149c58ac2987d785c8b3540",
+    "results/exp007_development/block_105.json": "e3d2a04fb771453bb8a2ba6f4ed4226ddc86592c7d2928a3f3c6412af298cde9",
+    "results/exp007_development/block_106.json": "d634e6c11e5595bf39c6e6b0ffb98bfb0e7a9b4cdf31405803acf2178deca3e8",
+    "results/exp007_development/block_107.json": "3030f33883fe1d122e56dbceae83e2fbd5c29b695c170bf76ba575fed03d8ce7",
+    "results/exp007_development/contract.json": "6430eaab5d01258bd147b08380ac85bf4c7a07c69c6750e520cf67f336ef6c48",
+    "results/exp007_development/selection.json": "e9cde125de25b158afcd2a9f6888fc3f6e816ac12a9966438b74e347f633dfab"
+  },
+  "calibration_record_sha256": "1ad2b3e8fe08935a69b9ae16ed6d14e02b1b4e44fd981e0cca7845c8f93e1101",
+  "result_sha256": "ac4aafb609ff9e1416f188ad3d84127c190c9bcc5d92f6f602b6fcb08cb340cd",
+  "completion_record_source_sha256": "f8b6116bebf195c237392971fd76c591e64d48c41cd5cd9c3b4fac2f755888a8"
+}

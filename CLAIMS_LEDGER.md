@@ -1,8 +1,44 @@
 # Claims ledger
 
-Version 1, 2026-09-11. Statements below are normalized propositions, not verbatim quotations unless marked. **None is internally experimentally replicated.** “Supported” means the identified source supports the bounded statement, not that all assumptions or results are independently established. Source IDs resolve in [BIBLIOGRAPHY.md](research/BIBLIOGRAPHY.md); exact versions/read depths are in [references.json](research/references.json).
+## Session D claim adjudication — 2026-09-16
 
-Categories: **E** published empirical evidence; **M** published modeling result; **P** preprint claim; **D** provider/source documentation; **I** our interpretation; **H** hypothesis; **U** unresolved. Each row records a consequence, location and limitation. The ledger is authoritative for claim status; longer reasoning belongs in the synthesis.
+The [claim-to-evidence table](research/SESSION_D_ASSESSMENT.md) is the current adjudication, including counterevidence and comparison-access limits. Retain bounded EXP-007/008 equivalence and B/C readable-but-forgotten observations. Reject universal homeostasis failure, anatomical superiority, new interference mechanism, optimal-online failure, exact Figure 4 reproduction and biological/scaling extensions. C's secondary calibration benefit and quadratic sequential success are mandatory counterevidence. The causal bridge from the supplied compensation regime to our nulls remains unresolved. [Local empirical draft](research/EMPIRICAL_REPORT_DRAFT.md); no independent scientific validation is claimed.
+
+## Current Session C status — 2026-09-15
+
+The prospective prediction is supported: useful nonlinear distinctions remain readable from frozen sparse representations while the tuned sequential readout loses previously learned associations. Native/calibrated offline old-context accuracy 95.67 [92.91, 98.44]%; tuned sequential accuracy 51.73 [41.24, 62.21]%; paired gap 43.95 [34.23, 53.67] pp; acquisition-to-final loss 45.86 [35.78, 55.93] pp (95% intervals, 24 fresh blocks). [EXP-011 report](experiments/EXP-011-results.md). C is complete; D has not started. Current user authorization supersedes the historical C deferral below. Next action only when requested: D per [handoff](research/SESSION_D_HANDOFF.md). No publication.
+
+## Session B claim update — 2026-09-15
+
+Offline full-outcome old-pair accuracy 96.97% versus fully supervised online 76.72%; paired difference 20.26 pp [16.46, 24.05] (95%, 24 fresh task blocks, native/calibrated average). Frozen-feature information remains linearly recoverable despite sequential readout forgetting in this fixed larval assay. Offline is an explanatory diagnostic with different fitting/history access, not an equal-budget competitor or capacity bound. Five validation tests; six development tasks; all 31 validation/development/confirmation blocks replayed. B gate passed; C is explicitly deferred by the user. [EXP-010 report](experiments/EXP-010-results.md). The result does not establish unique causation by clipping, universal encoder sufficiency, biological homeostasis, or a novel mechanism. The published-versus-local compensation discrepancy remains incompletely explained.
+
+## Session A claim update — 2026-09-15
+
+- **Supported internal result:** compensation improves correct-valence choice probability by 8.58 pp [8.13, 9.03] (95% paired task-block interval), conditional on one author-fitted model and fresh tasks. [EXP-009](experiments/EXP-009-results.md).
+- **Supported arithmetic validation:** SI Eq.3/20/21 port agrees with supplied-input Octave reference within 1.17e-15. The optimizer is not validated.
+- **Unsupported:** exact Figure 4 reproduction; threshold-only causal effect; explanation/refutation of published compensation; identification of the cause of EXP-007/008 nulls; inference across networks or biological animals.
+- **Next hypotheses only:** pre-existing input normalization/limited residual compensation, and error-dependent readout interference. [Session B handoff](research/SESSION_B_HANDOFF.md).
+
+## EXP-008 additions — 2026-09-14
+
+Adult calibration minus ordinary tuning: -0.19 [-1.01, 0.68] pp (98.333333% interval). Transfer classification: equivalent; informative-benchmark gate passed. [EXP-008 results](experiments/EXP-008-results.md). The transferred procedure uses independently fitted adult offsets and declared activity/input/update mappings. Inference is conditional on one adult gamma-main anatomy and the synthetic assay. It does not establish unique causal mediation, biological homeostasis or general task transfer. Adaptation/tail guardrails remain separate from mean-retention equivalence.
+
+## EXP-007 additions — 2026-09-14
+
+Homeostasis and ordinary tuning are practically equivalent within the prespecified ±3-point retention band in the primary condition. Calibrated K6 retains 79.28% versus 79.55% for ordinary tuning; difference -0.27 [-1.67, 1.13] pp (98.333333%). [EXP-007 results](experiments/EXP-007-results.md).
+
+The lower learning-rate boundary was extended 16-fold, with 32 unique candidate settings per method. Native ordinary and calibrated K6 selected the same interior rate (.006667). Cell recruitment, behavioral gain, practical gain and adaptation/tail guardrails are separate claims. Results concern bounded frozen offsets in one normalized larval circuit; they do not establish biological homeostasis, online adaptation, all possible calibrations or second-anatomy transfer. The exact-multiset shuffle is a disclosed development-informed, pre-confirmation secondary addendum.
+
+## EXP-006 additions — 2026-09-14
+
+- Supported in this synthetic continuous-memory assay: K6-K4 retention +7.60 pp [4.68,10.43] and noise retention +6.06 [3.61,8.31], primary 98.75%, at load16/overlap6/128 per pair.
+- Load causes substantial forgetting with acquisition preserved. Average-capacity criterion certifies K6 through 8 pairs and direct input through 16; this does not guarantee every memory.
+- Inconclusive: extra high-load similarity penalty and native-K6 retention advantage over randomized K6. Stability/participation/collisions remain descriptive, not unique mediation.
+- Homeostasis, transfer and growth benefits remain untested here. Evidence: [EXP-006](experiments/EXP-006-results.md), [audited run](research/runs/EXP-006-confirmation.json).
+
+Version 3, 2026-09-13. Statements are normalized propositions. Published biological replications remain unrun; EXP-002/003/004 provide bounded internal task evidence. Source IDs resolve in [BIBLIOGRAPHY.md](research/BIBLIOGRAPHY.md). Supported means the specified evidence supports the scoped statement.
+
+Categories: **E** published empirical evidence; **M** published modeling result; **P** preprint claim; **D** provider/source documentation; **I** our interpretation; **H** hypothesis; **U** unresolved; **R** internally measured result. Each row records a consequence, location and limitation. The ledger is authoritative for claim status; longer reasoning belongs in the synthesis.
 
 | ID | Exact proposition being tracked | Source and location | Category / status | Counterevidence, uncertainty and implication |
 |---|---|---|---|---|
@@ -38,8 +74,26 @@ Categories: **E** published empirical evidence; **M** published modeling result;
 | C30 | The session's GPU report describes the intended experimental workstation | User clarification / approved plan | D / false | Target is separate 64 GB workstation; exact GPU/VRAM/storage/software unresolved |
 | C31 | Three pilot campaigns fit the target resources at the stated times | Experiment cost models | I / unmeasured estimate | Tiny state arrays suggest memory feasibility, but CPU throughput and trace costs require measurement |
 | C32 | Whole-adult structured enlargement with broad held-out/resource-controlled evaluation has no equivalent in our search | Search log and source portfolio | I / scoped search conclusion | Not guaranteed originality; update after new evidence and before a paper submission |
-| C33 | Master brief EXP-0047 describes an experiment we completed | Master “DEAD_ENDS” illustrative template | D / false | Preserve as source example only; actual registry has zero completed experiments |
+| C33 | Master brief EXP-0047 describes an experiment we completed | Master “DEAD_ENDS” illustrative template | D / false | Preserve as source example only; the actual completed experiment is EXP-002, not EXP-0047 |
 | C34 | The first three specifications test adult whole-brain scaling | This repository handoff | D / false | They test small circuit/model questions; adult validation is a later gate |
+| C35 | Python's isolated eq8 learning update matches execution of the supplied-input author fixture | [R02 runtime record](research/exp002_r02_runtime.json); GNU Octave 11.3.0, 256 updates | R / passed: maximum absolute error 6.66e-16, tolerance 1e-10 | Source-preserving deterministic fixture; does not reproduce published biological findings |
+| C36 | Feedback improves early reversal over reward-only learning in EXP-002 protocol 1.1 | [Baseline results](experiments/EXP-002-baseline-results.md), twenty confirmation blocks | R / supported: +0.7207, 98.33% interval [0.6819,0.7593] | Acquisition and retention costs remain. Feedback/delta equivalence and unique biological advantage are not established |
+| C37 | Development-selected native delta provides an adequate small learning assay for controlled structural experiments | [Run record](research/runs/EXP-002-baseline.json); frozen eta 0.01, T 0.1 | R / acquisition 0.9748, 95% interval [0.9715,0.9781]; early reversal 0.7428 and retention 0.9162 | Passes prespecified acquisition/headroom gate; no broader cognition or growth claim |
+| C38 | Many native features are unused under this assay's synthetic stimuli and sparsity rule | [Baseline feature diagnostics](experiments/EXP-002-baseline-results.md) | R / mean 38.8% never active per confirmation block; mean covariance participation rank 18.18 | Encoder/task-specific observation, not biologically inactive neurons or a demonstrated causal explanation of performance |
+| C39 | Main EXP-003 growth operators preserve their declared anatomical and lineage constraints and reuse the baseline assay correctly | [R03 validation](experiments/EXP-003-validation-results.md); 29 tests, 300 graphs | R / passed bounded implementation validation | No learning benefit or published biological finding reproduced |
+| C40 | Resampling can add distinct representations under the current synthetic task inputs | [Saved diagnostics](results/validation/exp003/diagnostics.json); one validation block, three graph replicates | R / at N=110 structured growth has 33.3% unused added cells and effective rank 20.07 versus native 16.43 | Uniform and null growth also add diversity; fixed-four sparsity leaves 52.3% of structured added cells unused. No preferred wiring prior or useful learning gain established |
+| C41 | Population growth improves the full adaptation/retention profile in this assay | Historical [EXP-003](experiments/EXP-003-confirmation-results.md); fresh crossed [EXP-004](experiments/EXP-004-results.md) | R / refined: EXP-003 diagonal retention gain was conditional; EXP-004 finds active-count benefit but fixed-readout population cost at matched K. Full-readout diagonal retention +3.07 pp [1.86,4.34] remains secondary-positive | No independent population benefit here. Fixed-readout diagonal +0.35 pp [-1.90,2.73] did not clearly reproduce the earlier gain; earlier qualified status retained in RESEARCH_LOG |
+| C42 | The conditioned structured prior outperforms its degree-matched null by the planned +.05 early-reversal minimum | [Confirmation primary analysis](results/exp003_confirmation/analysis.json) | R / evidence against planned practical advantage: -0.009 [-0.023, +0.007], 98.33% interval; upper bound below +.05 | Deprioritize this prior in this assay. Does not prove all organization effects are absent, or refute conditional scale/retention effects; earlier development status retained in RESEARCH_LOG |
+| C43 | Increasing normalized active KC count from 4 to 6 improves retention in the crossed assay | [EXP-004 primary analysis](results/exp004_evaluation/analysis.json), 32 task blocks | R / supported: fixed-readout active-count main effect +5.37 pp [3.89,6.97], 98.333333% | Total activity stays 10, so per-cell amplitude/effective updates change. Not count-only physiology or broad adaptation |
+| C44 | Increasing population from 73 to 110 improves retention independently of winner count | [EXP-004 primary analysis](results/exp004_evaluation/analysis.json) | R / evidence against: fixed-readout population main effect -5.03 pp [-7.27,-2.86], 98.333333%; full-readout K6 secondary effect also negative | Conditional on tested growth, encoder/readout and tasks. Interaction direction unresolved; interval only barely inside ±3 pp, not strong absence evidence |
+
+## EXP-005 additions — 2026-09-13
+
+- In this N73 synthetic assay, K6 retains a positive retention advantage after slow/fast nominal update matching and equal bounded tuning. Tuned +3.78 pp [2.39,5.27] (98.75%). This is not proof of a >3 pp effect or global tuning superiority.
+- Online new learning does not show a compensating deficit; the independent new-cue probe remains directionally uncertain. Secondary intervals are exploratory.
+- K6 has more repeatable noisy-cue representations and fewer unused cells, alongside slightly higher cross-cue overlap. These are descriptive candidate mechanisms, not identified causal mediation or a memory-capacity result.
+
+Evidence: [EXP-005 report](experiments/EXP-005-results.md), [audited run](research/runs/EXP-005-evaluation.json).
 
 ## Update rule
 

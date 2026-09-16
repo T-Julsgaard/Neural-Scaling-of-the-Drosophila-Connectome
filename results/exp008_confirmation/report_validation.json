@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "scope": "Reporting QA, not a new neural experiment",
+  "duplicate_sham_control": "Exact score equality in all 24 blocks",
+  "figures_visually_inspected": [
+    "transfer_comparison.png",
+    "retention_per_pair.png",
+    "retention_total.png"
+  ],
+  "historical_scientific_files_verified": 53,
+  "artifact_sha256": {
+    "experiments/EXP-008-results.md": "d6f79f4d88c7c4f5504f79760a12a7d95c9778c8fbd6c7b7266bbf8b01d6acb8",
+    "results/exp008_confirmation/retention_per_pair.png": "ba89673ac6495fa5059e0c7c80f0d0a9d3b21088f6afe6cfa828033a9d3af145",
+    "results/exp008_confirmation/retention_total.png": "f0c5b3ad1d9fe2e8fbbd699b1b735234bc8c819a3602ee336602b5bd6d95a154",
+    "results/exp008_confirmation/transfer_comparison.png": "40d5a3267dde765341b029fee9cc4f060274faccf1df4fa368a2dd765e764092",
+    "results/exp008_confirmation/profiles.csv": "c9807fa97483a7e36f2c3c46d1912334a63d2de9a069cdffe74e34d69ab67483",
+    "results/exp008_confirmation/memory_age.csv": "fa1bc5aac8dd0c423624169019637af8ad291ed2445fb1d3471cc7d61e6ac45c",
+    "results/exp008_confirmation/geometry.json": "ded9071e96c3fa59009460def1d8dc20e3c0c5a549d1257d25e744418efca1d7",
+    "results/exp008_confirmation/geometry_contrasts.json": "67a4f8c08f165dc25046a7c0d37572bc5d6090bef5fd4bd0b26e779f75565dbc"
+  },
+  "reporting_source_sha256": {
+    "tools/report_transfer.py": "c94c8ba908b12442b2a1dcc2b4681af8af1e2d17bb40562d38858bcb34410ae7",
+    "tools/analyze_transfer_geometry.py": "df95d08a9b030aaf72a0bba36be630bdce5b96c22324e50eeda032bccdd691e0",
+    "tools/finalize_transfer_records.py": "6f5827f6a47ae3cf4b44eab28756f49560dfd1eb0cfe110012704d12967c78a4",
+    "tools/record_transfer_completion.py": "0ed68709e46ff546f11fd44bde47e3f130979f5ccf9ad7ca25554dcb52ae2a04"
+  }
+}

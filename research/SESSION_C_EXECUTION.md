@@ -1,0 +1,11 @@
+# Session C execution checkpoint
+
+2026-09-15. EXP-011 allocated; one task chosen prospectively in experiments/EXP-011-protocol.md. No task alternatives or scientific outcomes inspected at this checkpoint.
+
+Implementation: tools/run_compound_transfer.py; tests/test_exp011.py. Running bundled Python with `tools/run_compound_transfer.py validate`; initial historical hashing precedes tests and validation block. Preserve existing process/checkpoints, do not restart completed stages. Task design, four-rate tuning and fixed n=24 are in protocol. After validation, inspect resources, run development, freeze selection with select, then conditional confirmation, analyze, audit, and report. Report command requires PYTHONPATH=.; no D or publishing. Missing optional matplotlib was an environment check only; numerical tables suffice.
+
+Pre-outcome engineering note: Initial broad historical hash scan interrupted after roughly ten minutes, with no validation contract or C scientific outcomes generated. Revised scope to historical code/reports, top-level compact results and stage contracts, prior audit manifests, all B raw blocks/checkpoints and calibration. No prior files altered. Independent five-test preflight passed during scan. Protocol additionally specifies common-rate schedule contrasts before C outcomes. Restart validate under this source, then continue unchanged task/design.
+
+Validation complete: 5 tests, 5.02 s full block, 89.74 MiB peak; projected 31-block compute 155.67 s, within 1800 s cap. Development six blocks completed. Selection frozen at 2026-09-15T19:37:12Z: capable/direct and sparse gates passed, n=24 unchanged. No confirmation data existed at selection. Proceed confirmation then audit; rates at grid boundary retained without widening.
+
+COMPLETE: All 24 frozen confirmation blocks finished, prediction supported. Scientific audit replayed 31 blocks / 11218 arrays and verified 460 historical files. Session C report and D handoff prepared. Legacy validate_foundation.py failed its count assertion because it accounts only through EXP-009 and lacks B/C schema; original source unchanged. Dedicated tools/audit_compound_records.py verifies current C records/links/hashes and secondary controls. No scientific rerun, tuning or sample extension followed outcomes. Current next action: stop; D only when requested.

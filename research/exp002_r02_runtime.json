@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-09-11T21:59:53.466492+00:00",
+  "status": "passed",
+  "runtime_executed": true,
+  "runtime_version": "GNU Octave (x86_64-w64-mingw32) version 11.3.0",
+  "runtime_executable": "C:\\Users\\thoma\\Documents\\Git\\Neural-Scaling-of-the-Drosophila-Connectome\\.cache\\octave-runtime\\octave-11.3.0-w64\\mingw64\\bin\\octave-cli.exe",
+  "runtime_executable_sha256": "387ac823fb5b01b3407fb34edda6ab1cdba0c9619841a0f6dee323d05a850f2d",
+  "runtime_download_source": "https://ftp.gnu.org/gnu/octave/windows/octave-11.3.0-w64.zip",
+  "runtime_archive_sha256": "b0e1bc72a87abe4e2a0cf7e76b7727d8fde5c99ec049c1576f095280c3e48e5a",
+  "source_commit": "7ec52afb9bd7bb748d94d60dea9f483645a2ce8e",
+  "source_sha256": "eaaf1641d19e225a84a022ae8d0ebbfafecdfe99cb8ea9f4fa9b58ce4a9aa1f6",
+  "maximum_absolute_error": 6.661338147750939e-16,
+  "tolerance": 1e-10,
+  "checked_code_sha256": {
+    "exp002/rules.py": "fda3289a939bdaff09614bda6e8cc5b61e676702a454594da796647c38f8e793",
+    "tests/decimal_reference.py": "5bb6977709b61d68dbbeea45fd155bb5f6fca548728dd2e765a4ff2c78c81d1f",
+    "tests/test_exp002.py": "954b7f5b21f763610251349b2d4f7ed0737cc6c53146e167c74985edd7a0f3f3",
+    "tests/fixtures/bennett_eq8_256.json": "381dd15ad985da49234cda4782863501d4c296fd0212125b4110c497ad04b513",
+    "tools/prepare_bennett_reference.py": "38ecb340d4801184847196216be39e4ad69f11625dd8029b5eba5ca03da6167b",
+    "tools/compare_bennett_reference.py": "6544d5b95380857536ce1e774a19ba2fe07c0f58b13024fbecb7c34786938c04",
+    "tools/run_bennett_reference.py": "2614a99a75aacaaf0328f08fc757496dfc879d25aa2ff6acbac42f5ba6e68d22"
+  },
+  "evidence_sha256": {
+    "results/validation/bennett_author/runtime_execution.json": "87840c5c92a54a09603ea478b5a3c805461b020a0441039dcb4b9589c7fe9af9",
+    "results/validation/bennett_author/preparation.json": "9632e48cac409fb6d4eef12175bec3a7ea5c4c7b8652d0ed240cd8531e9be154",
+    "results/validation/bennett_author/author_trace.csv": "d52a905bf1fe58037c988a25f09716479bf8258b22286c3b6fe2169af7c0a705",
+    "results/validation/bennett_author/mb_mv_a_fixture.m": "a8a86897a25d94f1b6d79d724d7019c7b1b31faff2183838db29a7fa36ee73fe",
+    "results/validation/bennett_author/run_reference.m": "22588805982163847bdef2bc89ed0eb5c9a45f2051d3e7a067f8cf5b78c5f8ff",
+    "research/exp002_author_comparison.json": "a5c90e4ec0421213bb69ee12cd4f3aef4474a9dec05fec480b33e7c3409f6e03",
+    "results/validation/bennett_author/activities.csv": "7e2f5461ae486b0bc68bb02825514829e2127fca815f8db5c05d7b3887f1b84f",
+    "results/validation/bennett_author/choices.csv": "87e494e8e5f580f1e066e5b48ed2a04237c94e5ce77d875713120257dfdc01dd",
+    "results/validation/bennett_author/rewards.csv": "0d559a975835356497636a50d52b155dea808a9acb49e31928bd71646c8aa4e9",
+    "results/validation/bennett_author/initial_plus.csv": "36d6e88ff8bd30eef647ac23686abc8df49a562f3fb5696e419c9b2fac57abc6",
+    "results/validation/bennett_author/initial_minus.csv": "40ea52ef144effbcc8d2215a7dacc8274e6ee3edc23ebf5322180defd720ef55"
+  },
+  "scope": "256 supplied-input author eq8 updates; source DAN/update arithmetic preserved",
+  "limit": "Equation-level author-runtime validation, not reproduction of the paper's figures or biological findings"
+}

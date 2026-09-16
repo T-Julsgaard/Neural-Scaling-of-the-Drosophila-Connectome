@@ -1,12 +1,602 @@
 {
-  "schema_version": 2,
-  "date": "2026-09-11",
+  "schema_version": 3,
+  "date": "2026-09-15",
   "purpose": "handoff index, not executable runtime configuration",
-  "scientific_experiments_completed": 0,
-  "target": {"relationship": "colleague_pc", "reported_ram_gb": 64, "reported_ram_type": "DDR5", "ram_type_confirmed_by_user": true, "ram_type_verified": false, "cpu": "AMD Ryzen 7 9800X3D", "gpu": "NVIDIA GeForce RTX 5090", "vram_gb": 32, "free_storage_gb": null, "environment_verified": false, "specification_source": "user_report", "measured_pilot": "skipped_by_user", "record": "research/target_hardware.json"},
+  "scientific_experiments_completed": 10,
+  "target": {
+    "relationship": "colleague_pc",
+    "reported_ram_gb": 64,
+    "reported_ram_type": "DDR5",
+    "ram_type_confirmed_by_user": true,
+    "ram_type_verified": false,
+    "cpu": "AMD Ryzen 7 9800X3D",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "vram_gb": 32,
+    "free_storage_gb": null,
+    "environment_verified": false,
+    "specification_source": "user_report",
+    "measured_pilot": "skipped_by_user",
+    "record": "research/target_hardware.json"
+  },
   "experiments": [
-    {"id": "EXP-001", "status": "proposed", "spec": "experiments/EXP-001.md", "branch": "B4", "rank": 2, "source_ids": ["S63", "S15", "S16", "S67"], "validation": ["R01"], "primary_margin": 0.02, "primary_interval_percent": 98.33, "confirmation_blocks": 20, "nested_graph_replicates": 3, "peak_ram_gb_estimate": 8, "retained_storage_gb_cap": 5, "runtime_measured": false},
-    {"id": "EXP-002", "status": "validation", "spec": "experiments/EXP-002.md", "branch": "B1", "rank": 1, "source_ids": ["S64", "S10", "S45", "S68"], "validation": ["R02"], "validation_report": "research/exp002_validation.json", "automated_checks": "passed", "r02_gate": "independent_review_or_author_runtime_pending", "development_blocks_completed": 0, "confirmation_blocks_completed": 0, "measured_pilot": "skipped_by_user", "primary_margin": 0.05, "primary_interval_percent": 98.33, "confirmation_blocks": 20, "episodes_per_block": 20, "trials_per_episode": 384, "kc_count": 73, "synthetic_outputs": 2, "peak_ram_gb_estimate": 2, "retained_storage_gb_cap": 2, "runtime_measured": false},
-    {"id": "EXP-003", "status": "proposed", "spec": "experiments/EXP-003.md", "branch": "B3", "rank": 3, "source_ids": ["S64", "S12", "S13", "S14", "S20", "S68"], "validation": ["R03", "validated_EXP-002_assay"], "primary_margin": 0.05, "primary_interval_percent": 98.33, "confirmation_blocks": 20, "nested_graph_replicates": 3, "kc_sizes": [73, 80, 91, 110, 146], "primary_kc_size": 110, "peak_ram_gb_estimate": 4, "retained_storage_gb_cap": 10, "runtime_measured": false}
-  ]
+    {
+      "id": "EXP-001",
+      "status": "proposed",
+      "spec": "experiments/EXP-001.md",
+      "branch": "B4",
+      "rank": 2,
+      "source_ids": [
+        "S63",
+        "S15",
+        "S16",
+        "S67"
+      ],
+      "validation": [
+        "R01"
+      ],
+      "primary_margin": 0.02,
+      "primary_interval_percent": 98.33,
+      "confirmation_blocks": 20,
+      "nested_graph_replicates": 3,
+      "peak_ram_gb_estimate": 8,
+      "retained_storage_gb_cap": 5,
+      "runtime_measured": false
+    },
+    {
+      "id": "EXP-002",
+      "status": "completed",
+      "spec": "experiments/EXP-002.md",
+      "branch": "B1",
+      "rank": 1,
+      "source_ids": [
+        "S64",
+        "S10",
+        "S45",
+        "S68"
+      ],
+      "validation": [
+        "R02"
+      ],
+      "validation_report": "research/exp002_validation.json",
+      "automated_checks": "passed",
+      "r02_gate": "passed_author_runtime_equation_comparison",
+      "development_blocks_completed": 10,
+      "confirmation_blocks_completed": 20,
+      "measured_pilot": "skipped_by_user",
+      "primary_margin": 0.05,
+      "primary_interval_percent": 98.33,
+      "confirmation_blocks": 20,
+      "episodes_per_block": 20,
+      "trials_per_episode": 384,
+      "kc_count": 73,
+      "synthetic_outputs": 2,
+      "peak_ram_gb_estimate": 2,
+      "retained_storage_gb_cap": 2,
+      "runtime_measured": true,
+      "execution_machine_role": "current_session_not_colleague_target",
+      "baseline_validation_report": "research/exp002_baseline_validation.json",
+      "run_record": "research/runs/EXP-002-baseline.json",
+      "results": "experiments/EXP-002-baseline-results.md",
+      "protocol_addendum": "experiments/EXP-002-baseline-protocol.md"
+    },
+    {
+      "id": "EXP-003",
+      "status": "completed",
+      "spec": "experiments/EXP-003.md",
+      "branch": "B3",
+      "rank": 3,
+      "source_ids": [
+        "S64",
+        "S12",
+        "S13",
+        "S14",
+        "S20",
+        "S68"
+      ],
+      "validation": [
+        "R03",
+        "validated_EXP-002_assay"
+      ],
+      "primary_margin": 0.05,
+      "primary_interval_percent": 98.33,
+      "confirmation_blocks": 20,
+      "nested_graph_replicates": 3,
+      "kc_sizes": [
+        73,
+        80,
+        91,
+        110,
+        146
+      ],
+      "primary_kc_size": 110,
+      "peak_ram_gb_estimate": 4,
+      "retained_storage_gb_cap": 10,
+      "runtime_measured": true,
+      "r03_gate": "passed",
+      "validation_report": "research/exp003_validation.json",
+      "validation_results": "experiments/EXP-003-validation-results.md",
+      "bounded_validation_runtime_measured": true,
+      "development_blocks_completed": 10,
+      "confirmation_blocks_completed": 20,
+      "development_status": "completed",
+      "confirmation_status": "completed_and_audited",
+      "development_protocol": "experiments/EXP-003-development-protocol.md",
+      "development_validation": "research/exp003_development_validation.json",
+      "development_contract": "results/exp003_development/contract.json",
+      "development_selection": "results/exp003_development/selection.json",
+      "development_run_record": "research/runs/EXP-003-development.json",
+      "development_results": "experiments/EXP-003-development-results.md",
+      "selected_eta": 0.01,
+      "selected_temperature": 0.1,
+      "development_episode_batches": 16000,
+      "development_configuration_episodes": 144200,
+      "confirmation_protocol": "experiments/EXP-003-confirmation-protocol.md",
+      "confirmation_validation": "research/exp003_confirmation_validation.json",
+      "confirmation_contract": "results/exp003_confirmation/contract.json",
+      "confirmation_episode_batches": 32000,
+      "confirmation_configuration_episodes": 32400,
+      "confirmation_run_record": "research/runs/EXP-003-confirmation.json",
+      "confirmation_results": "experiments/EXP-003-confirmation-results.md",
+      "confirmation_analysis": "results/exp003_confirmation/analysis.json",
+      "primary_decision": "against_practical_advantage",
+      "next_action": "Prospective active-count versus population diagnostic; new streams and precision/resource budget"
+    },
+    {
+      "id": "EXP-004",
+      "status": "completed",
+      "spec": "experiments/EXP-004.md",
+      "branch": "B3",
+      "source_ids": [
+        "S64",
+        "S12",
+        "S13",
+        "S14",
+        "S20",
+        "S68"
+      ],
+      "runtime_measured": true,
+      "protocol": "experiments/EXP-004-protocol.md",
+      "validation_report": "research/exp004_validation.json",
+      "development_blocks_planned": 4,
+      "evaluation_blocks_planned": 32,
+      "development_blocks_completed": 4,
+      "evaluation_blocks_completed": 32,
+      "nested_graph_replicates": 3,
+      "conditions_per_block": 28,
+      "primary_metric": "retention_after",
+      "primary_contrasts": [
+        "active_count",
+        "population",
+        "interaction"
+      ],
+      "primary_readout": "bottleneck",
+      "primary_interval_percent": 98.33333333333333,
+      "practical_band": [
+        -0.03,
+        0.03
+      ],
+      "seed_root": 5,
+      "validation_tests": 47,
+      "development_run": "research/runs/EXP-004-development.json",
+      "evaluation_contract": "results/exp004_evaluation/contract.json",
+      "resource_update": "research/exp004_resource_update.json",
+      "evaluation_run": "research/runs/EXP-004-evaluation.json",
+      "results": "experiments/EXP-004-results.md",
+      "episode_batches": 17920,
+      "configuration_episodes": 19200,
+      "excluded_episodes": 0,
+      "numerical_failures": 0,
+      "execution_recovery": "research/exp004_execution_recovery.json",
+      "next_action": "Next specify a fresh N73-only diagnostic separating winner count from activity per winner and effective learning-update size, with explicit normalization and learning-rate-matched controls. N73/K6 is a promising same-assay candidate; a new task family is needed before broader adaptation claims. Do not extend completed samples or prioritize population expansion from this evidence.",
+      "primary_results": {
+        "active_count": {
+          "mean": 0.05373211885074842,
+          "interval": [
+            0.03894389337510326,
+            0.06967109888171448
+          ],
+          "coverage": 0.9833333333333333,
+          "direction": "positive",
+          "within_practical_band": false
+        },
+        "population": {
+          "mean": -0.05026432725280097,
+          "interval": [
+            -0.07273046443444867,
+            -0.02858081252589155
+          ],
+          "coverage": 0.9833333333333333,
+          "direction": "negative",
+          "within_practical_band": false
+        },
+        "interaction": {
+          "mean": -0.00038354075669531223,
+          "interval": [
+            -0.02998649831371178,
+            0.029864714657359046
+          ],
+          "coverage": 0.9833333333333333,
+          "direction": "unresolved",
+          "within_practical_band": true
+        }
+      }
+    },
+    {
+      "id": "EXP-005",
+      "status": "completed",
+      "spec": "experiments/EXP-005.md",
+      "source_ids": [
+        "S64"
+      ],
+      "runtime_measured": true,
+      "seed_root": 6,
+      "development_blocks_completed": 6,
+      "evaluation_blocks_completed": 32,
+      "validation_tests": 21,
+      "primary_interval_percent": 98.75,
+      "results": "experiments/EXP-005-results.md",
+      "evaluation_run": "research/runs/EXP-005-evaluation.json",
+      "primary_results": {
+        "historical": {
+          "mean": 0.04250856455309682,
+          "interval": [
+            0.027073993992851604,
+            0.058965295172784885
+          ],
+          "coverage": 0.9875,
+          "block_values": [
+            0.026150472502727284,
+            0.006508394623260361,
+            0.09685995629548061,
+            0.042480267927544446,
+            0.004914274663073259,
+            0.024137582967044824,
+            0.04071663284829863,
+            0.08262806780065157,
+            0.07521847017493377,
+            0.0336460830829326,
+            0.032829315176805096,
+            -0.025298704777254266,
+            0.057510800935115625,
+            0.08565672627779364,
+            0.060844835476729586,
+            0.05036315324726548,
+            0.03384193064757823,
+            0.015213758237904274,
+            -0.0011153246273571948,
+            -0.006806617797550096,
+            0.01626561337638921,
+            0.08872476667540041,
+            0.04343439716461672,
+            0.026093034761793366,
+            0.047149989707326645,
+            0.12105554411826669,
+            0.06502719280345048,
+            -0.003702867442373581,
+            0.049167302081896236,
+            0.12534320465716609,
+            0.046223853954968086,
+            -0.0008080418427798275
+          ]
+        },
+        "slow_matched": {
+          "mean": 0.03777853632003443,
+          "interval": [
+            0.023941017305935855,
+            0.05274779680924695
+          ],
+          "coverage": 0.9875,
+          "block_values": [
+            0.010261270830508984,
+            -0.009531605054171832,
+            0.05710564223209991,
+            0.0499491738767166,
+            0.014778795218718943,
+            0.0866277629082286,
+            0.0362388092463618,
+            0.026390517897270982,
+            0.07078532166734997,
+            0.014005560097745673,
+            0.03699870346491618,
+            -0.02367978669972637,
+            0.043768456621800955,
+            0.04588975390344796,
+            0.008683720171024811,
+            0.03506828855007005,
+            0.027547554886471426,
+            0.0529854018979371,
+            0.01466192306936065,
+            0.008288789240904926,
+            0.007995712870395244,
+            0.06289065301162144,
+            0.0472078068598103,
+            0.026800831903220024,
+            0.0668617291794209,
+            0.11217401875080046,
+            0.08334161382246641,
+            0.0015523844171903,
+            0.03974349176791914,
+            0.1097418156342006,
+            0.054065136793778,
+            -0.010286086796758354
+          ]
+        },
+        "fast_matched": {
+          "mean": 0.03910324324024695,
+          "interval": [
+            0.021734247974493554,
+            0.05736506615075374
+          ],
+          "coverage": 0.9875,
+          "block_values": [
+            0.02599559368873605,
+            0.024317122670870606,
+            0.12416235065090175,
+            -0.05330337547639663,
+            0.010990886622221696,
+            0.025144628841779038,
+            0.03716840920572573,
+            0.09880688704124196,
+            0.08160319829485851,
+            0.03376808211814197,
+            0.04682294358620387,
+            -0.01936085889879513,
+            0.03659240486973003,
+            0.08597942798096536,
+            0.05451151201998594,
+            0.04905352966688137,
+            0.0401075908145877,
+            0.027387135790928108,
+            -0.03995818272348184,
+            0.019668946222440975,
+            0.016518842546449974,
+            0.06793081904577669,
+            0.012541784481050922,
+            0.029328487227719524,
+            0.04797217325305725,
+            0.09195397073434197,
+            0.0695679054222531,
+            0.014213041318714037,
+            -0.011398274821662557,
+            0.12580418767572488,
+            0.05146254021302177,
+            0.02595007360392776
+          ]
+        },
+        "tuned": {
+          "mean": 0.03777853632003443,
+          "interval": [
+            0.023941017305935855,
+            0.05274779680924695
+          ],
+          "coverage": 0.9875,
+          "block_values": [
+            0.010261270830508984,
+            -0.009531605054171832,
+            0.05710564223209991,
+            0.0499491738767166,
+            0.014778795218718943,
+            0.0866277629082286,
+            0.0362388092463618,
+            0.026390517897270982,
+            0.07078532166734997,
+            0.014005560097745673,
+            0.03699870346491618,
+            -0.02367978669972637,
+            0.043768456621800955,
+            0.04588975390344796,
+            0.008683720171024811,
+            0.03506828855007005,
+            0.027547554886471426,
+            0.0529854018979371,
+            0.01466192306936065,
+            0.008288789240904926,
+            0.007995712870395244,
+            0.06289065301162144,
+            0.0472078068598103,
+            0.026800831903220024,
+            0.0668617291794209,
+            0.11217401875080046,
+            0.08334161382246641,
+            0.0015523844171903,
+            0.03974349176791914,
+            0.1097418156342006,
+            0.054065136793778,
+            -0.010286086796758354
+          ]
+        }
+      },
+      "next_action": "Finalize and validate EXP-006 persistent-memory load/similarity benchmark"
+    },
+    {
+      "id": "EXP-006",
+      "status": "completed",
+      "spec": "experiments/EXP-006-protocol.md",
+      "source_ids": [
+        "S64"
+      ],
+      "runtime_measured": true,
+      "next_action": "Design priority 3 homeostasis with retained learning/reversal/noise and worst-memory guardrails; growth remains conditional",
+      "development_blocks_completed": 6,
+      "confirmation_blocks_completed": 32,
+      "validation_tests": 9,
+      "results": "experiments/EXP-006-results.md",
+      "run": "research/runs/EXP-006-confirmation.json",
+      "primary": {
+        "hard_retention_k6_minus_k4": {
+          "mean": 0.07601206851993218,
+          "interval": [
+            0.046824517071417604,
+            0.1043049786619781
+          ]
+        },
+        "hard_noise_k6_minus_k4": {
+          "mean": 0.06058169324646599,
+          "interval": [
+            0.036116969460202916,
+            0.08309416395468272
+          ]
+        },
+        "k6_load16_minus_load2_similar": {
+          "mean": -0.18219216059407647,
+          "interval": [
+            -0.22206114899087656,
+            -0.14048794093399736
+          ]
+        },
+        "k6_similar_minus_dissimilar_load16": {
+          "mean": -0.00017856049821996303,
+          "interval": [
+            -0.05214070276166005,
+            0.05132530153068546
+          ]
+        }
+      }
+    },
+    {
+      "id": "EXP-007",
+      "status": "completed",
+      "spec": "experiments/EXP-007-protocol.md",
+      "source_ids": [
+        "S64",
+        "S68"
+      ],
+      "runtime_measured": true,
+      "next_action": "Design priority 4: validate the observed retention/participation result in another circuit under equally strong tuning. Freeze the transfer prediction and algorithm before new anatomy-specific development. Growth remains conditional; do not retune or extend EXP-007 confirmation.",
+      "development_blocks_completed": 8,
+      "confirmation_blocks_completed": 32,
+      "validation_tests": 10,
+      "results": "experiments/EXP-007-results.md",
+      "run": "research/runs/EXP-007-confirmation.json",
+      "primary": {
+        "baseline6": {
+          "mean": -0.0027173243620971198,
+          "interval": [
+            -0.01672066421045329,
+            0.011338194895735598
+          ]
+        },
+        "ordinary": {
+          "mean": -0.0027173243620971198,
+          "interval": [
+            -0.01672066421045329,
+            0.011338194895735598
+          ]
+        },
+        "sham": {
+          "mean": -0.009989874063064903,
+          "interval": [
+            -0.025258896487439106,
+            0.003291690890014905
+          ]
+        }
+      },
+      "matched_sham_addendum": "experiments/EXP-007-matched-sham-addendum.md"
+    },
+    {
+      "id": "EXP-008",
+      "status": "completed",
+      "spec": "experiments/EXP-008-protocol.md",
+      "data": "results/exp008_anatomy/record.json",
+      "validation_tests": 9,
+      "runtime_measured": true,
+      "next_action": "Next: define a distinct held-out task family to test the limitation beyond this associative assay. Growth, collision-targeted rewiring and evolution retain their explicit entry conditions; no additional campaign is launched.",
+      "source_ids": [
+        "S68",
+        "S70"
+      ],
+      "validation_report": "research/exp008_validation.json",
+      "development_blocks_completed": 8,
+      "confirmation_blocks_planned": 24,
+      "confirmation_blocks_completed": 24,
+      "results": "experiments/EXP-008-results.md",
+      "run": "research/runs/EXP-008-confirmation.json",
+      "primary": {
+        "baseline_high": {
+          "mean": -0.0016380289014983663,
+          "interval": [
+            -0.006614439316814779,
+            0.0031561811613745397
+          ]
+        },
+        "ordinary": {
+          "mean": -0.001916997511310442,
+          "interval": [
+            -0.010090181939335544,
+            0.0067968464197318305
+          ]
+        },
+        "sham": {
+          "mean": -0.0007405753848644994,
+          "interval": [
+            -0.006354254840366696,
+            0.005257870956751765
+          ]
+        }
+      },
+      "transfer_classification": "equivalent",
+      "informative_gate": {
+        "ordinary_new_learning": true,
+        "oracle_retention": true,
+        "oracle_new_learning": true,
+        "below_ceiling": true,
+        "above_floor": true,
+        "passed": true
+      }
+    },
+    {
+      "id": "EXP-009",
+      "status": "completed",
+      "session": "A",
+      "spec": "experiments/EXP-009-protocol.md",
+      "results": "experiments/EXP-009-results.md",
+      "run": "research/runs/EXP-009-positive-control.json",
+      "source_ids": [
+        "S68"
+      ],
+      "validation_tests": 7,
+      "development_blocks_completed": 4,
+      "confirmation_blocks_completed": 24,
+      "primary": {
+        "mean": 0.08579968078903964,
+        "interval": [
+          0.08125794447842152,
+          0.09028390587912119
+        ]
+      },
+      "gate_passed": true,
+      "reproduction_class": "independent bounded author-parameter adaptation; equation-level author-runtime validation",
+      "next_action": "Session B per research/SESSION_B_HANDOFF.md; do not claim exact Figure 4 reproduction",
+      "runtime_measured": true
+    },
+    {
+      "id": "EXP-010",
+      "status": "completed_audited",
+      "spec": "experiments/EXP-010-protocol.md",
+      "results": "experiments/EXP-010-results.md",
+      "prediction_passed": true,
+      "next": "C permitted by evidence, explicitly deferred by user"
+    },
+    {
+      "id": "EXP-011",
+      "session": "C",
+      "status": "completed_audited",
+      "spec": "experiments/EXP-011-protocol.md",
+      "results": "experiments/EXP-011-results.md",
+      "prediction_passed": true,
+      "classification": "supported",
+      "next": "Stop; D only when requested"
+    }
+  ],
+  "session_d": {
+    "date": "2026-09-16",
+    "status": "completed",
+    "decision": "narrow_empirical_report",
+    "assessment": "research/SESSION_D_ASSESSMENT.md",
+    "draft": "research/EMPIRICAL_REPORT_DRAFT.md",
+    "figure_plan": "research/SESSION_D_FIGURE_PLAN.md",
+    "literature_audit": "research/SESSION_D_LITERATURE_AUDIT.md",
+    "new_experiments": 0,
+    "next_action": "Figure and portable-artifact preparation plus outside scientific review if pursued; no new campaign essential; no publication, submission or push"
+  }
 }

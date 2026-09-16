@@ -4,6 +4,8 @@
 
 Determine whether and how a Drosophila-derived neural architecture can be modified, enlarged, developed, or coupled to increase computational and adaptive capability. Distinguish an improvement with added resources from an advantage attributable to biological organization. Neither result is assumed.
 
+The long-term ambition is to produce increasingly capable Drosophila-derived digital nervous systems that can be shared as reproducible scientific objects. An ancestry-preserving evolutionary lineage is an integrated exploratory route toward that ambition. Learning, sparse rewiring, controlled growth, dynamics, development and module coupling remain competing or complementary routes. Evolution and biological superiority are hypotheses, not requirements for a positive result. Capability gains must first be established relative to a specified modeled ancestor; claims about exceeding a living fly require separate evidence.
+
 ## Scientific commitments
 
 Separate observed evidence, published claims, interpretations, hypotheses, speculation, and internally measured results. A connectome constrains possible interactions; it does not uniquely specify dynamics, learning, sensory encoding, or action. A model's success is not automatically a claim about a living fly.
@@ -14,7 +16,7 @@ Measure a capability profile: learning, retention, interference, adaptation, gen
 
 ## Current milestone
 
-EXP-002 learning-rule validation, authorized after the completed research foundation. Implement and run bounded equation, data and toy/episode correctness checks. Skip the measured workstation pilot as requested. Development/confirmation campaigns, paid compute and biological experiments remain later milestones; preserve the distinction between implementation checks and scientific evidence.
+**Priority 4 complete — EXP-008 audited.** Adult calibration minus ordinary tuning: -0.19 [-1.01, 0.68] pp (98.333333% interval). Transfer classification: equivalent; informative-benchmark gate passed. [EXP-008 results](experiments/EXP-008-results.md). Next: define a distinct held-out task family to test the limitation beyond this associative assay. Growth, collision-targeted rewiring and evolution retain their explicit entry conditions; no additional campaign is launched.
 
 ## Governance and continuity
 
@@ -27,3 +29,5 @@ Use local hardware and free public resources first. The target experiment machin
 ## Success
 
 A useful contribution establishes which changes matter, under what conditions, and why. Carefully bounded negative results are valid outcomes. A larger graph, a simulator demonstration, or a higher training reward alone does not establish the project's central claims.
+
+For a successful descendant, the intended scientific release includes a runnable model, architecture and learning parameters, source provenance, reconstructable ancestry and changes, environments, and held-out evaluation results. This is a future deliverable, conditional on useful evidence and redistribution rights; the present validation implementation is not such a descendant.

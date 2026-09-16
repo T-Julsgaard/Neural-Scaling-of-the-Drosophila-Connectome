@@ -1,0 +1,41 @@
+{
+  "sha256": "b1655457873b6d1d5cf4889fd41ddca24160766529e645942662d89d90655dbd",
+  "payload": {
+    "created_utc": "2026-09-12T20:54:33.890641+00:00",
+    "evaluation_blocks": 32,
+    "conditions": 896,
+    "episodes": 17920,
+    "planning_sd_assumption": 0.07,
+    "z": 2.394,
+    "expected_half_widths_by_sd": {
+      "0.04": 0.01692813634160595,
+      "0.07": 0.029624238597810413,
+      "0.1": 0.04232034085401487
+    },
+    "approximate_80percent_detectable_effect": 0.040043457018594186,
+    "historical_retention_contrast_sds_context_only": {
+      "clone_110_minus_73": 0.03966722698160086,
+      "clone_146_minus_73": 0.03892764802393258,
+      "structured_110_minus_73": 0.041985598500976995,
+      "structured_146_minus_73": 0.04735972573378821,
+      "uniform_110_minus_73": 0.04812001872275522,
+      "uniform_146_minus_73": 0.050960270742889946,
+      "degree_null_110_minus_73": 0.04450226504378946,
+      "degree_null_146_minus_73": 0.045866660191712545,
+      "whole_uniform_110_minus_73": 0.026570263894405456,
+      "whole_uniform_146_minus_73": 0.029515980140582446,
+      "structured_minus_null_110_full": 0.022710005944048515,
+      "structured_minus_null_110_fixed4": 0.0385306122097684,
+      "structured_minus_null_110_bottleneck": 0.06776664526318937,
+      "clone_110_minus_73_fixed4": 0.042408676468112826,
+      "structured_110_minus_73_fixed4": 0.05461548182334032,
+      "degree_null_110_minus_73_fixed4": 0.04600127693489975,
+      "structured_110_minus_73_bottleneck": 0.06488313788518091,
+      "degree_null_110_minus_73_bottleneck": 0.07058436420540812
+    },
+    "wall_seconds_proxy": 1203.7365861360006,
+    "retained_bytes_proxy": 393092518.56,
+    "free_disk_bytes": 37442027520,
+    "limits": "Assumed factorial SD; no power guarantee. Wall proxy excludes new audit."
+  }
+}
