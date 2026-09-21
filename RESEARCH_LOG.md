@@ -1,5 +1,15 @@
 # Research log
 
+## 2026-09-21 - Academic report production completed
+
+Completed the user-requested professional local report after reviewing the master production document, D assessment, attribution decisions, experiment protocols/results, saved arrays and primary-source context. The [publication package](publication/README.md) contains a 13-page main report, six-page technical supplement, three vector/high-resolution figures, editable Markdown, bibliography, figure-source CSVs, compact evidence, acquisition/rights notes, hashes and a ZIP. The requested report date remains 16 September 2026; production/access dates are recorded separately.
+
+The scientific narrative preserves calibration equivalence, tail guardrail failures, readable-but-forgotten information, XOR calibration counterevidence, random parity, quadratic success, noise degradation, tuning boundaries and the matched-update replay tradeoff. It makes no biological-mechanism, general-scaling or causal compensation-bridge claim. Citation work updated Fly-CL to inspected v2, corrected Xie/Ocker metadata and explicitly qualified inaccessible Robins methods and Zenodo archive metadata. The supplement specifies the exact supplied-model rate grid and 5x versus 4.5x mismatch.
+
+Verification: 43 B/C saved-block aggregate/paired-interval checks and 380 saved-array/summary checks passed. All 19 final pages were visually inspected; an orphan Methods page and a cropped low new-context block were repaired. The versioned [schema-3 record validator](tools/validate_foundation_v3.py) passed while preserving the legacy checker. Its [report](research/validation_report_v3.json) records 11 specifications, ten scientific experiments, source/selection/stage checks, and explicitly bounded historical document changes. Final package integrity and live handoff links are checked separately in the production manifest.
+
+This is report production, not EXP-012, independent scientific validation or a new campaign. Original experimental files and historical snapshots remain intact. No publication, submission, upload or push occurred. Next: Thomas's scientific approval and declarations, followed by independent review and any chosen venue's requirements, as listed in [readiness](publication/readiness.md).
+
 ## 2026-09-16 — Master prompt for final report production
 
 Created [the reusable production prompt](research/MASTER_PROMPT_PUBLICATION_REPORT.md) incorporating Session D, the content/attribution follow-up, numerical checkpoints, counterevidence, scope limits, three figures, reproducibility/validator work, render verification and outside-review limits. Thomas confirmed a venue-neutral report and the exact affiliation “Thomas Julsgaard — MSc student in Software Design, IT University of Copenhagen”; no email. Requested report date: 16 September 2026. This turn creates instructions for another instance, not the final report or new experiments. Publication, submission and push remain prohibited.
@@ -275,3 +285,8 @@ Final integrity checks passed for 22 generated Markdown documents, 67 local link
 **Current understanding:** the first scientific contribution should discriminate organization from normalization, learning and added resources. A validated negative result is useful. Small larval/visual assays can establish methods but do not substantiate an adult whole-brain claim.
 
 **Next concrete action:** select the recommended EXP-002 validation milestone, capture the actual target workstation specifications, and implement R02 plus the smallest task/chronology fixtures. Do not begin a full confirmation run until validation, measured sizing and development-only configuration selection pass. EXP-001 remains an independent alternative.
+
+
+## Public research release preparation — 2026-09-21
+
+The author requested committing and publishing the complete project, with the academic report as the primary entry point. The root README now leads with the report and supplement, while RESEARCH_HISTORY.md preserves its prior status narrative. REPRODUCIBILITY.md distinguishes publication rebuilding, original-evidence verification and scientific replay. All Git-ignored saved NPZ result arrays are packaged as checksummed release assets; machine runtimes and disposable caches remain excluded. CITATION.cff and RIGHTS.md clarify citation and existing source terms without inventing a blanket license. No scientific campaign, sample, selection or manuscript finding was changed for this release.

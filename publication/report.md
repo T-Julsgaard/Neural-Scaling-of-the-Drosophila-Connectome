@@ -42,9 +42,9 @@ Rehearsal against forgetting is similarly established [8]. The contribution here
 
 ### 3.1 Anatomical projections and synthetic readouts
 
-The larval projection was extracted from Supplementary Table 1 of Eichler et al. [1]. The selected left-side subset contains 40 projection neurons (PNs) and 73 mature Kenyon cells (KCs), with 365 positive neuron-pair edges and 2,188 contacts. Young KCs were excluded and original indices preserved. The adult extraction uses hemibrain v1.1 main-calyx CA(R) contacts to gamma-main KCs (KCg-m), with monoglomerular PN annotations from the pinned compensation repository [2–4]. It contains 104 connected PNs, 590 KCs, 4,878 positive neuron-pair edges and 85,151 contacts. These subsets and their normalization are project transformations of published resources.
+The larval projection uses Supplementary Table 1 of Eichler et al. [1]: 40 projection neurons (PNs), 73 mature Kenyon cells (KCs), 365 positive edges and 2,188 contacts. Young KCs were excluded and original indices preserved. Adult hemibrain v1.1 main-calyx CA(R) contacts to gamma-main KCs (KCg-m), filtered using the compensation repository's monoglomerular PN annotations [2–4], yield 104 connected PNs, 590 KCs, 4,878 edges and 85,151 contacts. Extraction and normalization are project transformations of these resources.
 
-Each KC's incoming contact weights sum to one. Anatomical counts are not assumed to be measured physiological efficacies. Synthetic inputs drive a feedforward projection; two synthetic opponent output vectors supply learned values. Adult PN coordinates remain independent even when corresponding biological PNs share a glomerular identity. The simulations contain no measured MBON dynamics, recurrent circuit or explicit dopamine model.
+Each KC's incoming weights sum to one; contact counts are not measured physiological efficacies. Synthetic inputs drive the projection and two synthetic opponent readouts. Adult PN coordinates are independent even when PNs share a glomerular identity. Measured MBON dynamics, recurrence and explicit dopamine dynamics are absent.
 
 For input u, normalized projection P and offset vector θ, the drive is z = uP − θ. The K highest-ranked drives receive amplitude 10/K; all other features are zero. Total activity is therefore 10 and squared feature norm is 100/K. The generic opponent delta rule uses error e = y − x·(w⁺ − w⁻), followed by w⁺ ← max(0, w⁺ + ηxe) and w⁻ ← max(0, w⁻ − ηxe). Maxima act coordinatewise. Earlier development implemented and checked the separate mixed-valence Eq. 8 from Bennett, Philippides and Nowotny against their author code [9,10]. That validation does not make the later generic rule a complete Bennett model or establish biological validity.
 
@@ -52,7 +52,7 @@ For input u, normalized projection P and offset vector θ, the drive is z = uP �
 
 Calibration acts after incoming-weight normalization. Separate pools of 4,096 unlabeled observations fit and validate offsets before rewarded development. A target interpolates baseline winner frequency toward K/N with strength 0.25 or 0.5. One hundred fitting steps adjust centered offsets, bounded in absolute value by one-quarter of the median positive drive standard deviation. Offsets remain frozen throughout evaluation. This is partial participation calibration, not full activity equalization or online physiological homeostasis.
 
-Each calibration study allocates 32 rewarded candidate settings per method and development condition. Ordinary tuning varies K, learning rate and decision temperature; calibrated methods vary calibration strength, rate and temperature at the higher K. Equal candidate counts do not imply identical search spaces, computation or fitted-parameter counts. Three fixed randomized or shuffled instances are averaged within each task block. They are not independent replicates or a deployed ensemble. Exact settings and data provenance are recorded in the supplement.
+Each study allocates 32 rewarded candidate settings per method and development condition. Ordinary tuning varies K, rate and temperature; calibration varies strength, rate and temperature at higher K. Search spaces, computation and fitted-parameter counts therefore differ. Three fixed null/sham instances are averaged within blocks, rather than treated as independent replicates or a deployed ensemble. The supplement records exact settings.
 
 ### 3.3 Associative retention and inference
 
@@ -210,4 +210,4 @@ The project history records substantial AI assistance with research synthesis, c
 
 [9] Bennett JEM, Philippides A, Nowotny T. Learning with reinforcement prediction errors in a model of the Drosophila mushroom body. *Nature Communications*. 2021;12:2569. [doi:10.1038/s41467-021-22592-4](https://doi.org/10.1038/s41467-021-22592-4).
 
-[10] Bennett JEM, Philippides A, Nowotny T. Learning with reinforcement prediction errors in a model of the Drosophila mushroom body: code and data. *Zenodo code archive*. 2021. [doi:10.5281/zenodo.4531420](https://doi.org/10.5281/zenodo.4531420). Pinned implementation revision specified in Supplement S1.
+[10] Associated code and data for Bennett et al. [9]. *Zenodo archive*. 2021. [doi:10.5281/zenodo.4531420](https://doi.org/10.5281/zenodo.4531420). Descriptive entry; pinned implementation in Supplement S1. Direct archive metadata was unavailable during report production.

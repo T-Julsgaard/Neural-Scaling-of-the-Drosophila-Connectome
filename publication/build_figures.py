@@ -4,6 +4,7 @@ import sys, os, json, hashlib, csv
 import numpy as np
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
+DATA_ROOT = ROOT if (ROOT/'results/exp011/analysis.json').exists() else HERE/'evidence'
 sys.path.append(str(ROOT / '.cache/baseline-plot-deps'))
 os.environ['MPLCONFIGDIR'] = str(HERE / 'qa/matplotlib')
 import matplotlib
@@ -16,7 +17,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 (HERE/'evidence').mkdir(exist_ok=True)
 inputs = {}
 def read(rel):
-    p = ROOT / rel
+    p = DATA_ROOT / rel
     raw = p.read_bytes()
     inputs[rel] = hashlib.sha256(raw).hexdigest()
     dst = HERE/'evidence'/rel
@@ -34,8 +35,8 @@ c = read('results/exp011/analysis.json')
 fixed = read('results/exp011/fixed_rate_controls.json')
 secondary = read('results/exp011/secondary_calibration.json')
 selection = read('results/exp011/selection.json')
-bs = [read(p.relative_to(ROOT).as_posix()) for p in sorted((ROOT/'results/exp010/confirmation').glob('block_*.json'))]
-cs = [read(p.relative_to(ROOT).as_posix()) for p in sorted((ROOT/'results/exp011/confirmation').glob('block_*.json'))]
+bs = [read(p.relative_to(DATA_ROOT).as_posix()) for p in sorted((DATA_ROOT/'results/exp010/confirmation').glob('block_*.json'))]
+cs = [read(p.relative_to(DATA_ROOT).as_posix()) for p in sorted((DATA_ROOT/'results/exp011/confirmation').glob('block_*.json'))]
 assert len(bs) == len(cs) == 24
 
 def interval(x):
@@ -156,7 +157,7 @@ for col,ep in enumerate(['old','new']):
         vals=cvals(s,ep,anchor=True); jitter=np.linspace(-.1,.1,len(vals))
         ax.scatter(i+jitter,100*vals,s=8,color=GRAY,alpha=.3,zorder=1)
         err(ax,fixed['native_calibrated'][s][ep],i,TEAL if s=='replay10' else NAVY)
-    ax.set(xticks=range(4),xticklabels=['Blocked','Shuffled','Local10','Replay10'],ylabel='Accuracy (%)',ylim=(-3,104) if ep=='old' else (55,103)); ax.grid(axis='y',alpha=.4)
+    ax.set(xticks=range(4),xticklabels=['Blocked','Shuffled','Local10','Replay10'],ylabel='Accuracy (%)',ylim=(-3,104)); ax.grid(axis='y',alpha=.4)
 ax=fig.add_subplot(gs[1,0]); title(ax,'C','Matched-update old benefit')
 err(ax,fixed['replay10_minus_local10']['old'],0,TEAL,True)
 ax.set(ylim=(-.8,.8),yticks=[],xlim=(-5,75),xlabel='Replay10 minus local10 (pp)'); ax.axvline(0,c=GRAY,lw=.8)
@@ -182,13 +183,16 @@ def flatten(v,path,source):
         if 'mean' in v and ('interval' in v or 'lower' in v):
             lo,hi=v.get('interval',[v.get('lower'),v.get('upper')])
             exp=source.split('/')[1]
-            conf='98.333333%' if '/primary/' in '/'+path+'/' and exp in ['exp007_confirmation','exp008_confirmation'] else '95% descriptive'
+            conf='98.333333% primary three-contrast family' if '/primary/' in '/'+path+'/' and exp in ['exp007_confirmation','exp008_confirmation'] else '95% descriptive'
+            if exp=='exp009' and path in ['primary','uncompensated','compensated']: conf='95% paired-bootstrap primary reference'
+            if exp=='exp010' and path in ['primary_gap','offline','supervised','forgetting']: conf='95% primary conjunction; conditional Student-t'
+            if exp=='exp011' and (path in ['primary_gap','primary_forgetting'] or path.startswith('tables/native_calibrated/offline/old') or path.startswith('tables/native_calibrated/blocked/old')): conf='95% primary conjunction; conditional Student-t'
             if 'guardrails/' in path: conf='one-sided alpha .05/12'
             rows.append(dict(source=source,sha256=inputs[source],key=path,mean=v['mean'],lower=lo,upper=hi,scale='original proportions unless geometry/count',interval_status=conf,n=32 if exp=='exp007_confirmation' else 24,unit='task block conditional on fixed anatomy'))
         else:
             for k,x in v.items(): flatten(x,path+'/'+k if path else k,source)
 for src in list(inputs):
-    if src.endswith(('analysis.json','geometry.json','fixed_rate_controls.json','secondary_calibration.json')): flatten(json.loads((ROOT/src).read_text()),'',src)
+    if src.endswith(('analysis.json','geometry.json','fixed_rate_controls.json','secondary_calibration.json')): flatten(json.loads((DATA_ROOT/src).read_text()),'',src)
 with (HERE/'figure_source_data.csv').open('w',newline='',encoding='utf-8') as f:
     w=csv.DictWriter(f,fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
 (HERE/'input_manifest.json').write_text(json.dumps(inputs,indent=2),encoding='utf-8')

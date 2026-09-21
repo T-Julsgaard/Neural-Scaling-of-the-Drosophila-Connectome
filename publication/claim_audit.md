@@ -1,0 +1,36 @@
+# Claim and numerical audit
+
+Report production completed 21 September 2026. All differences below are paired across independent task blocks, conditional on fixed anatomy, offsets and null instances. The source-number CSV contains original-precision values, keys and SHA-256 hashes. Figure reproduction reads saved results; no training or additional scientific sample was run.
+
+| Report location | Claim or quantity | Exact evidence within repository | Estimand and inference |
+|---|---|---|---|
+| Abstract, 4.1, Figure 1A | Larval calibration effect −0.27 [−1.67,1.13] pp | results/exp007_confirmation/analysis.json → primary/ordinary | Calibrated minus ordinary final preferred-choice probability; n=32; original 98.333333% paired bootstrap, 3-contrast family; ±3 pp equivalence |
+| Abstract, 4.1, Figure 1A | Adult effect −0.19 [−1.01,0.68] pp | results/exp008_confirmation/analysis.json → primary/ordinary | Same mean endpoint; n=24; same confidence level and margin; different search spaces |
+| 4.1, Figure 1B–C | Larval means 79.55/79.28%; new 98.78/98.49%; worst ordinary 13.54%; below chance 18.36% | Larval analysis → profiles/6_per_pair_16_False/{ordinary,homeostasis} | n=32; descriptive profiles; worst is per-sequence minimum before averaging; below chance is fraction of pairs, not mean probability |
+| 4.1, Figure 1D–E | Unused cells 40.88→35.66%; adult K48 25.61→24.34% | exp007_confirmation/geometry.json → 6_per_pair_16_False_{baseline6,homeostasis}; exp008_confirmation/geometry.json → 16_per_pair_16_False_{baseline_high,homeostasis} | Task-level proportion of unused presented cells; descriptive 95% intervals; adult comparison holds K48 fixed |
+| Methods, 4.1 | Offset saturation 49.32%, bound 0.052509 | results/exp007_calibration/record.json → fits/p0_l0.25 | Deterministic fitted-state description; no sampling interval; already normalized weights |
+| 4.1 | 9/12 guardrails pass, all three worst-pair tests fail | EXP-007/008 analysis.json → guardrails | One-sided α=.05/12; lower bound >−3 pp; failed preservation is not demonstrated harm |
+| 4.1 | Adult ordinary 93.94 [92.94,94.89]% | Adult analysis → profiles/16_per_pair_16_False/ordinary/retention | n=24; descriptive 95%; informative-gate record retained |
+| 4.2, Supplement S3 | A effect +8.58 [8.13,9.03] pp; means 53.88/62.46% | results/exp009/analysis.json → primary, uncompensated, compensated | Correct-valence probability; n=24 fixed-author-network tasks; original 95% paired percentile bootstrap |
+| 4.2, S3 | Supplied 5× versus script 4.5×; equation check 1.17e−15 | research/SESSION_A_SOURCE_AUDIT.md; research/exp009_source_audit.json; EXP-009-results.md | Known source mismatch retained; arithmetic validation, not optimizer/ensemble reproduction or threshold-only causal effect |
+| 4.3, Figure 2A | B offline 96.97%, full online 76.72%; gap 20.26 [16.46,24.05], loss 23.23 [19.02,27.45] pp | results/exp010/analysis.json → offline, supervised, primary_gap, forgetting; all confirmation/block_*.json | n=24; native/calibrated averaged within block; primary conjunction; paired Student-t 95% |
+| 4.3, Figure 2A | Chosen-only gap 11.03 [7.35,14.71]; feedback 7.65 [5.70,9.61]; unclipping 2.04 [0.94,3.15]; replay 8.87 [6.20,11.53] pp | experiments/EXP-010-results.md; results/exp010/report_details.json; confirmation block model summaries | n=24; descriptive unadjusted paired contrasts; feedback conditions have different update counts |
+| 4.3, Figure 2E | B high-noise offline old 84.49% | B block summaries → native/calibrated/models/offline_full_0/score[3] | n=24; mean native/calibrated old-pair accuracy at SD .3; does not imply intact information at all noise levels |
+| 4.4, Figure 2B | C offline 95.67 [92.91,98.44]%; blocked 51.73 [41.24,62.21]%; gap 43.95 [34.23,53.67]; loss 45.86 [35.78,55.93] pp | results/exp011/analysis.json → tables/native_calibrated, primary_gap, primary_forgetting; confirmation summaries | n=24; primary conjunction; mean recovery ≥80%, lower gap/loss bounds >5 pp; original untruncated Student-t 95% |
+| 4.4, Figure 2C | Random offline old 95.89%; quadratic sequential old/new 100% | C analysis → tables/random/offline/old; tables/polynomial/blocked/{old,new} | Three random instances averaged inside each block; 861 vs 73 dimensions; observed ceiling, not a population guarantee |
+| 4.4, Figure 2D | Calibration old +12.91 [5.56,20.25]; new +0.52 [−1.55,2.59] pp | results/exp011/secondary_calibration.json | n=24; prospectively secondary; unadjusted 95%; no global discovery or formal cross-task interaction |
+| 4.4 | Calibration offline old −0.22 [−1.85,1.41] pp; high-noise recovery 84.22% | C analysis → calibration_minus_native_offline_old; tables/native_calibrated/offline/high_old | Descriptive 95%; paired offline comparison; high-noise SD .2 |
+| 4.4 | Zero selected clipping; lower-grid rate | C confirmation summaries → native/calibrated/models/blocked_0/clips; selection.json → etas | All 24 blocks checked; selected η=1/2400; does not exclude slower-rate improvements |
+| 4.5, Figure 3 | Replay10−local10 old +56.68 [46.97,66.39]; new −0.89 [−1.44,−0.33] pp | results/exp011/fixed_rate_controls.json; block models *_2 | n=24; descriptive paired 95%; same 256 examples, 2,560 updates, η=1/150; order/history change jointly |
+| 4.5, Figure 3 | Fixed-rate schedule means and intervals | fixed_rate_controls.json → native_calibrated | Each row has its own old/new endpoint and 95% interval; block points visible without cropping |
+| 4.6, S5 | Early K/count/growth results | experiments/EXP-003-confirmation-results.md; EXP-004-results.md; EXP-005-results.md; EXP-006-results.md | Historical supporting evidence, original confidence levels preserved; no pooled estimate or scaling law |
+| Methods, S1–S4 | Dimensions, update counts, feedback, task generation, grids | exp007/008/homeostasis.py; exp009/compensation.py; tools/run_readout_diagnostic.py; tools/run_compound_transfer.py; frozen protocols | Design constants checked against implementation; ridge/history and normalization lookahead stated |
+| Data availability, S5–S6 | Raw data local; timings exclude reporting/audits; no independent review | Original experiment reports, run and provenance records | Availability is local; no public release, independent replication, biological experiment or method-level efficiency ranking asserted |
+
+## Interpretation controls
+
+The narrative preserves all material D-assessment qualifications: procedure-level equivalence; weak/bounded residual intervention; tail failures; feedback and tuning asymmetries; history and computation privileges; random parity; quadratic success; positive secondary calibration; lower-rate boundary; conditional anatomical inference; limited XOR transfer; incomplete causal bridge; and local rather than external preregistration.
+
+## Production corrections
+
+The resumed layout review removed a short orphan Methods page by tightening prose. A figure axis was expanded to retain a low new-context block rather than crop it. The supplementary A rate grid was checked against exp009/compensation.py and corrected before final delivery. Xie and Ocker's full title and author initials were verified against the primary arXiv record. Fly-CL uses v2 rather than the old draft's v1. These are production corrections; archived scientific results were not changed.

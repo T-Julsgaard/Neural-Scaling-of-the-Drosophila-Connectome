@@ -1,5 +1,9 @@
 # Evidence-gated roadmap
 
+## Current action - review the completed report, 2026-09-21
+
+Local report production is complete: [publication package](publication/README.md), [readiness and author actions](publication/readiness.md). The package contains the main PDF, technical supplement, three scientific figures and compact evidence with reproducibility instructions. Production and numerical checks passed; independent scientific scrutiny and Thomas's approval remain outstanding. No new experimental ID, training, sample extension or public release was created. Review this restricted empirical report before considering a venue or any further research. The earlier figure/preparation handoffs below are historical.
+
 ## Current decision — 2026-09-16
 
 Sessions A–D are complete. [D](research/SESSION_D_ASSESSMENT.md) chooses a [narrow empirical report](research/EMPIRICAL_REPORT_DRAFT.md): bounded calibration nulls with qualified larval readout diagnostics. C passes its operational gate, not a novelty or full-explanation gate. Next is a finite figure/portable-artifact/scientific-review pass, if pursued. No new experiment is required for this scope; growth, rewiring and evolution are not reopened. This supersedes the historical immediate handoffs below. No publication or push is authorized.

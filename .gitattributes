@@ -1,4 +1,6 @@
-* text=auto eol=lf
+# Scientific manifests hash original bytes, including historical line endings.
+# Preserve those bytes in clones on every platform.
+* -text
 "Initial Research Prompt for Astra — Scaling the Drosophila Connectome.md" -text
 ASTRA_MASTER_RESEARCH_BRIEF.md.md -text
 .cache/research_assets/** -text
