@@ -8,7 +8,7 @@ The completed report synthesizes the existing experiments; no new training or co
 
 ## Read and edit
 
-- [Main report](academic_report.pdf): 13 pages, including three original scientific figures.
+- [Main report](academic_report.pdf): 11 pages, including three original scientific figures.
 - [Technical supplement](technical_supplement.pdf): six pages of equations, settings, provenance and limitations.
 - Editable manuscripts: [report.md](report.md) and [supplement.md](supplement.md).
 - [Reference database](references.bib), [claim audit](claim_audit.md) and [readiness and author actions](readiness.md).
@@ -20,9 +20,11 @@ The completed report synthesizes the existing experiments; no new training or co
 
 ## Rebuild the publication
 
-The editable source format is deliberately small: Markdown headings, paragraphs, simple tables, numbered references, figure links and explicit `<!-- PAGE -->` page boundaries. `build_report.py` renders it using ReportLab and merges vector figure PDFs with pypdf. The numbered bibliography in the manuscripts is the rendered authority; `references.bib` is an accompanying reusable database, not an automatically resolved citation engine. Keep the two in agreement when editing.
+The editable source format is deliberately small: Markdown headings, paragraphs, simple tables, numbered references and figure links. `build_report.py` renders it using ReportLab and merges vector figure PDFs with pypdf. Historical `<!-- PAGE -->` markers remain in the source; the renderer honors the abstract boundary and otherwise flows the text automatically, with a separate references page in the main report. Figures and captions stay together and float to the next page when needed. The numbered bibliography in the manuscripts is the rendered authority; `references.bib` is an accompanying reusable database, not an automatically resolved citation engine. Keep the two in agreement when editing.
 
-Production used Windows, CPython 3.12.14, NumPy 2.3.5, Matplotlib 3.10.7, ReportLab 4.4.9, pypdf 6.10.0, pypdfium2 5.13.0 and Pillow 12.3.0. Exact direct dependencies are in [requirements.txt](requirements.txt). The report renderer also uses Cambria and Calibri from `C:/Windows/Fonts`; these proprietary fonts are not redistributed. On another OS, explicitly substitute installed fonts in `build_report.py` and recheck pagination. Figures use Matplotlib's bundled DejaVu Sans.
+The typography and page proportions follow [Attention Is All You Need, arXiv v7](https://arxiv.org/pdf/1706.03762v7): US Letter, a centered 5.5-inch text column, 10-point justified body text with 11-point leading, compact bold serif headings, title rules, an inset abstract and centered page numbers. The reference embeds Nimbus Roman; this renderer uses the closely matching Windows Times New Roman, rather than claiming an identical font or the official conference template. The original scientific text and figures are preserved.
+
+Production used Windows, CPython 3.12.14, NumPy 2.3.5, Matplotlib 3.10.7, ReportLab 4.4.9, pypdf 6.10.0, pypdfium2 5.13.0 and Pillow 12.3.0. Exact direct dependencies are in [requirements.txt](requirements.txt). The report renderer uses Times New Roman (regular, bold, italic and bold italic) and Cambria for missing mathematical symbols from `C:/Windows/Fonts`; these proprietary fonts are not redistributed. On another OS, explicitly substitute installed fonts in `build_report.py` and recheck pagination. Figures use Matplotlib's bundled DejaVu Sans.
 
 From the extracted publication directory, in an environment with those dependencies:
 

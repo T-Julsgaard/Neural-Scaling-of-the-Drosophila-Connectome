@@ -7,7 +7,7 @@ Report dated 16 September 2026 · Public research release prepared 21 September 
 
 This repository is the research and reproducibility companion to the report. It contains the experimental code, frozen protocols, development and confirmation records, negative results, source audits, figures and editable manuscripts. The report is the primary scientific account; earlier research directions and session records provide supporting context.
 
-- **[Read the report (PDF, 13 pages)](publication/academic_report.pdf)**
+- **[Read the report (PDF, 11 pages)](publication/academic_report.pdf)**
 - **[Read the technical supplement (PDF, 6 pages)](publication/technical_supplement.pdf)**
 - [Download the compact report package](publication/report_package.zip), including editable sources, figures and evidence summaries.
 - [Download the full saved-array evidence](https://github.com/T-Julsgaard/Neural-Scaling-of-the-Drosophila-Connectome/releases/tag/academic-report-2026-09-21) and follow the [reproduction guide](REPRODUCIBILITY.md).

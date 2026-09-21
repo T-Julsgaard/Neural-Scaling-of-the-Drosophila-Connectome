@@ -55,7 +55,7 @@ def main():
     assert json.loads((HERE / 'raw_array_checks.json').read_text())['checks_count'] == 380
     assert json.loads((ROOT / 'research/validation_report_v3.json').read_text())['status'] == 'passed'
     pdfs = {}
-    for name, n in [('academic_report.pdf', 13), ('technical_supplement.pdf', 6)]:
+    for name, n in [('academic_report.pdf', 11), ('technical_supplement.pdf', 6)]:
         reader = PdfReader(HERE / name)
         assert len(reader.pages) == n
         assert reader.metadata.author == 'Thomas Julsgaard'
@@ -77,7 +77,7 @@ def main():
     record = {
         'production_date': '2026-09-21', 'report_date': '2026-09-16',
         'status': 'passed', 'scope': 'Local publication production; not independent scientific validation',
-        'pdfs': pdfs, 'visual_review': 'All 19 pages inspected; final changed pages re-inspected',
+        'pdfs': pdfs, 'visual_review': 'All 17 pages inspected after the Times-family typography revision',
         'figure_input_hashes_verified': len(inputs), 'additional_provenance_copies_verified': len(provenance),
         'paired_summary_checks': 43, 'saved_array_and_summary_checks': 380,
         'live_handoff_local_links_checked': link_count,
