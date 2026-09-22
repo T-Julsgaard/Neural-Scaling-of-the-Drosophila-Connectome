@@ -5,6 +5,12 @@
 Thomas Julsgaard · MSc student in Software Design, IT University of Copenhagen
 Report dated 16 September 2026 · Public research release prepared 21 September 2026
 
+<p align="center">
+  <img src="assets/readme/flywire-50-largest-neurons.jpg" alt="A multicolored reconstruction of the 50 largest neurons in the adult fruit-fly brain connectome on a black background" width="100%">
+  <br>
+  <sub>The 50 largest neurons in the adult fruit-fly brain connectome. Credit: Tyler Sloan and Amy Sterling for <a href="https://flywire.ai/for_media">FlyWire</a>, Princeton University (Dorkenwald et al., 2024). Shown for anatomical context; this repository studies bounded derived circuits rather than simulating the whole brain.</sub>
+</p>
+
 This repository is the research and reproducibility companion to the report. It contains the experimental code, frozen protocols, development and confirmation records, negative results, source audits, figures and editable manuscripts. The report is the primary scientific account; earlier research directions and session records provide supporting context.
 
 - **[Read the report (PDF, 11 pages)](publication/academic_report.pdf)**
